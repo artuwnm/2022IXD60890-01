@@ -1,2 +1,2 @@
 # 2022IXD60890-01
-jFor IXD608 Fall class
+For IXD608 Fall class
