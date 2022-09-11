@@ -1,0 +1,58 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #5C2B8C, #9332AF);
+}
+svg{
+    width: 18.5vw;
+    height: 18.5vw;
+    fill:#F5F6F9;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    animation: float 2s infinite linear 1s;
+    
+}
+@keyframes float {
+    0%{top: 45%;}
+    35%{top: 46%;}
+    70%{top: 44%;}
+    100%{top: 45%;}
+}
+a{
+    text-decoration: none;
+    color: #F5F6F9;
+}
+h1{
+    display: inline-block;
+    color: #F5F6F9;
+    font-size: 2.5em;
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    padding-bottom: 0.25rem;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+}
+h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F5F6F9;
+    transition: all 0.35s ease;
+}
+h1:hover::before{
+    width:100%;
+}
+*::before, *::after {
+    margin:0;
+    padding:0;
+}
