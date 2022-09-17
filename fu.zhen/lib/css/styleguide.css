@@ -1,0 +1,167 @@
+
+/* CSS RESET */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--color--neutral-light: #eee;
+	--color--neutral-medium: #999;
+	--color--neutral-dark: #555;
+	--color--darkpink: #f26680;
+	--color--lightpink: #f2dedc;
+	--color--darkred: #590202;
+
+	--color-black: #000;
+	--color-white: #fff;
+
+	--header-height: 5rem;
+	--spacing: 1rem;
+
+
+
+	--font-serif: Georgia, "Times New Roman", serif;
+	--font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	font-size: 100%;
+	font-family: var(--font-sans);
+	color: var(--color--darkred);
+}
+
+h1,
+h2,{
+	font-family: var(--font-serif);
+}
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-serif);
+}
+
+a {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/* LAYOUT CLASSES */
+
+.container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.display-flex { display: flex;}
+.display-inline-flex { display: inline-flex;}
+.display-block { display: block;}
+.display-inline-block { display: inline-block;}
+
+.flex-stretch {flex: 1 1 auto;}
+.flex-none {flex: none;}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+
+
+/* COMPONENT CLASSES */
+
+.nav ul {
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+
+.navbar {
+	background-color: var(--color--darkpink);
+	color:  var(--color-white);
+	line-height: var(--header-height);
+}
+	.navbar h1 {
+		font-size: 3em;
+		margin: 0;
+		font-family: var(--font-sans);
+	}
+	.navbar a{
+		padding: 0 0.5em;
+	}
+
+
+
+/* CARD */
+
+.card {
+	background-color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+	.card.soft {
+		border-radius: 1em;
+		box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	}
+	.card.hard {
+		border-radius: 1em;
+		border: 2px solid var(--color--neutral-medium);
+	}
+
+	.card.dark{
+		background-color: var(--color--neutral-dark);
+		color: var(--color--neutral-light);
+	}
+	.card.medium {
+		background-color: var(--color--neutral-medium);
+	}
+
+	.card.flat {
+		padding: 0;
+	}
+	.card.light {
+		background-color: var(--color--neutral-light);
+	}
+
+
+
+
+
+.view-window {
+	height: 50vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+
+footer{
+	padding: 15px 0 15px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: lighter;
+	margin-top: 30px;
+	
+}
