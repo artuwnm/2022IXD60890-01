@@ -1,0 +1,465 @@
+/* CSS REST */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-light:#E9E9E9;
+    --color-neutral-medium:#8A8A8A;
+    --color-neutral-dark:#000;
+
+    --color-main-light: #e0fbfb;
+    --color-main-medium: #fc8e8f;
+    --color-main-dark: #ea6e6e;
+
+    --header-height: 3rem;
+    --spacing:1rem;
+
+    --font-serif: josefin-slab, Georgia, "Times New Romen", serif;
+    --font-sans: futura-pt, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: futura-pt, sans-serif;
+/*    background-image: url("../../img/candies.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #35BBBA;
+    padding-bottom: 30px;
+    background-color: var(--color-main-light);
+}
+
+.container {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* LAYOUT CLASSES */
+
+.display-flex { display: flex;}
+.display-inline-flex { display: inline;}
+.display-block { display: flex;}
+.display-inline-block { display: inline-block;}
+
+.flex-stretch {flex:1 1 auto;}
+.flex-none {flex:none}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+
+
+ /* COMPONENT */
+
+    #welcome {
+        font-family: lush, sans-serif;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 0;
+    }
+
+    #headings {
+        font-family: josefin-slab, serif;
+    }
+
+    #headings h1 {
+        font-weight: 900;
+    }
+
+    #headings h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+
+    #paragraphs p {
+        font-family: josefin-slab, serif;
+        font-size: 1.3em;
+    }
+
+
+
+    a {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1000;
+        cursor: pointer;
+        display: block;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.navbar {
+    padding-top: 15px;
+    background-color: #8A8A8A;
+    color: #fff;
+    line-height: var(--header-height);
+}
+
+#tableofcontent a {
+    color: #fff;
+}
+
+
+.nav {
+    background-color: transparent;
+    color: var(--color-neutral-medium);
+}
+
+.nav li {
+    line-height: 1.8em;
+}
+
+ .nav ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+ }
+
+     .nav a {
+        color: var(--color-neutral-medium);
+        font-size: 1.3em;
+        padding: 0.2em 0.5em;
+        font-family: josefin-slab, serif;
+        font-weight: 900;
+     }
+
+     .nav a:hover {
+        background-color: var(--color-main-medium);
+        color: #000;
+        text-decoration: none;
+     }
+
+.card .nav ul {
+    background-color: var(--color-main-dark);
+}
+
+.card .nav li a {
+    color: #fff;
+}
+
+.card .nav li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.card .active a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: var(--color-main-dark);
+    color: #fff;
+    line-height: var(--header-height);
+    font-family: josefin-slab, serif;
+}
+
+    .navbar h1 {
+        font-size: 2em;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .navbar a {
+        font-size: 1.1em;
+        padding: 0 0.5em;
+    }
+
+    .nav a:hover {
+        color: #000;
+        background-color: transparent;
+    }
+
+    .nav .active a {
+        color: #000;
+    }
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+    display: flex;
+}
+
+.nav-material li,
+.nav-stretch li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+/*.nav-pills a {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+
+.nav-crumbs li:not(:first-child)::before {
+    content: '/';
+}
+
+.nav-crumbs a {
+    display: inline-block;
+}
+
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+.nav-material a {
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+.nav-material .active a {
+    background-color: transparent;
+    color: inherit;
+}
+
+.nav-material a:hover {
+    background-color: var(--color-neutral-light);
+    color: inherit;
+}
+
+.nav-material a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--color-main-medium);
+    transition: all 0.3s;
+}
+
+.nav-material .active a::after {
+    height: 4px;
+}*/
+
+
+.block1 {
+    width: 80px;
+    height: 80px;
+    background-color: #ea6e6e;
+}
+.block2 {
+    width: 80px;
+    height: 80px;
+    background-color: #fc8e8f;
+}
+.block3 {
+    width: 80px;
+    height: 80px;
+    background-color: #e0fbfb;
+}
+.block4 {
+    width: 80px;
+    height: 80px;
+    background-color: #83d0cf;
+}
+.block5 {
+    width: 80px;
+    height: 80px;
+    background-color: #bcbcbc;
+}
+.block6 {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+}
+
+.color-block figcaption {
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+ 
+#color {
+    padding-right: 75px;
+}
+
+/* CARD */
+
+    .card {
+        font-family: josefin-slab, serif;
+        color: var(--color-neutral-dark);
+        display: block;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card.soft {
+        padding: 20px 20px;
+        margin-top: 8px;
+        border-radius: 8px;
+        border: solid 1.5px #83d0cf;
+    }
+
+    .card.hard {
+        border-radius: 0.2em;
+        border: 2px solid var(--color-neutral-medium);
+    }
+
+    .card.dark {
+        background-color: var(--color-neutral-dark);
+        color: var(--color-neutral-light);
+    }
+
+    .card.flat {
+        padding: 0;
+        box-shadow: 0;
+    }
+
+
+
+/*  TABLES  */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 0.2em 0.5em;
+}
+
+
+.table.striped tbody tr:nth-child(odd) {
+    background-color: var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child), 
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+    border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr, 
+.table.lined.horizontal tbody tr {
+    border-bottom: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+    border: 1px solid var(--color-neutral-medium);
+}
+
+/* FIGURE */
+
+.figure {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure img {
+    width: 100%;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    border: solid 1.5px #83d0cf;
+}
+
+.figure figcaption {
+    color: #000;
+    padding: 1em;
+}
+
+.figure.product {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/*.product-overlay {
+    position: relative;
+    overflow: hidden;
+}
+.product-overlay figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-overlay:hover figcaption {
+    opacity: 1;
+}
+
+.product-overlay .caption-body {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    transform:  translateY(2em);
+    transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+    transform: translateY(0);
+}
+
+.product-overlay img {
+    transform: scale(1,1);
+    transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+    transform: scale(1.4, 1.4);
+}
+
+@media (max-width: 600px) {
+    .product-overlay figcaption {
+        position: relative;
+        display: block;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: initial;
+        opacity: 1;
+        background-color: initial;
+    }
+    .product-overlay .caption-body {
+        transform: none;
+        padding: 0;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,363 @@
+/* CSS REST */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-light:#E9E9E9;
+    --color-neutral-medium:#A9A9A9;
+    --color-neutral-dark:#515151;
+
+    --color-main-light: #aee6f6;
+    --color-main-medium: #56a0cd;
+    --color-main-dark: darkblue;
+
+    --header-height: 3rem;
+    --spacing:1rem;
+
+    --font-serif: Georgia, "Times New Romen", serif;
+    --font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: omnes-pro, sans-serif;
+/*    background-image: url("../../img/candies.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-neutral-dark);
+    padding-bottom: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* LAYOUT CLASSES */
+
+.display-flex { display: flex;}
+.display-inline-flex { display: inline;}
+.display-block { display: flex;}
+.display-inline-block { display: inline-block;}
+
+.flex-stretch {flex:1 1 auto;}
+.flex-none {flex:none}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+
+
+ /* COMPONENT */
+
+    a {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1000;
+        cursor: pointer;
+        display: block;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.navbar {
+    padding-top: 15px;
+    background-color: #8A8A8A;
+    color: #fff;
+    line-height: var(--header-height);
+}
+
+
+.nav li {
+    line-height: 1.8em;
+}
+
+ .nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+ }
+
+     .nav a {
+        font-size: 1.3em;
+        padding: 0.2em 0.5em;
+     }
+
+     .nav a:hover {
+        background-color: var(--color-main-medium);
+        color: #fff;
+        text-decoration: none;
+     }
+
+
+
+.navbar {
+    background-color: var(--color-neutral-dark);
+    color: #fff;
+    line-height: var(--header-height);
+}
+
+    .navbar h1 {
+        font-size: 2em;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .navbar a {
+        font-size: 1.1em;
+        padding: 0 0.5em;
+    }
+
+    .nav a:hover {
+        background-color: var(--color-neutral-light);
+        color: inherit;
+    }
+
+    .nav .active a {
+        background-color: var(--color-main-medium);
+        color: #fff;
+    }
+
+.nav-material ul,
+.nav-crumbs ul,
+.nav-pills ul,
+.nav-stretch ul,
+.nav-flex ul {
+    display: flex;
+}
+
+.nav-material li,
+.nav-stretch li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-pills a {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+
+.nav-crumbs li:not(:first-child)::before {
+    content: '/';
+}
+
+.nav-crumbs a {
+    display: inline-block;
+}
+
+
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+.nav-material a {
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+.nav-material .active a {
+    background-color: transparent;
+    color: inherit;
+}
+
+.nav-material a:hover {
+    background-color: var(--color-neutral-light);
+    color: inherit;
+}
+
+.nav-material a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--color-main-medium);
+    transition: all 0.3s;
+}
+
+.nav-material .active a::after {
+    height: 4px;
+}
+ 
+
+/* CARD */
+
+    .card {
+        color: var(--color-neutral-dark);
+        display: block;
+        background-color: #fff;
+        margin: 10px auto;
+        padding: 10px 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card.soft {
+        margin-top: 8px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card.hard {
+        border-radius: 0.2em;
+        border: 2px solid var(--color-neutral-medium);
+    }
+
+    .card.dark {
+        background-color: var(--color-neutral-dark);
+        color: var(--color-neutral-light);
+    }
+
+    .card.flat {
+        padding: 0;
+        box-shadow: 0;
+    }
+
+
+
+/*  TABLES  */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 0.2em 0.5em;
+}
+
+
+.table.striped tbody tr:nth-child(odd) {
+    background-color: var(--color-neutral-light);
+}
+
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child), 
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+    border-left: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all tbody tr, 
+.table.lined.all tbody tr {
+    border-top: 1px solid var(--color-neutral-medium);
+}
+
+.table.lined.all,
+.table.lined.border {
+    border: 1px solid var(--color-neutral-medium);
+}
+
+/* FIGURE */
+
+.figure {
+    margin: 0;
+    background-color: #fff;
+}
+
+.figure img {
+    width: 100%;
+    vertical-align: text-bottom;
+}
+
+.figure figcaption {
+    padding: 1em;
+}
+
+.figure.product {
+    border-radius: 0.5em;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+    overflow: hidden;
+}
+
+
+.product-overlay {
+    position: relative;
+    overflow: hidden;
+}
+.product-overlay figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-overlay:hover figcaption {
+    opacity: 1;
+}
+
+.product-overlay .caption-body {
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    transform:  translateY(2em);
+    transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+    transform: translateY(0);
+}
+
+.product-overlay img {
+    transform: scale(1,1);
+    transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+    transform: scale(1.4, 1.4);
+}
+
+@media (max-width: 600px) {
+    .product-overlay figcaption {
+        position: relative;
+        display: block;
+        top: initial;
+        left: initial;
+        width: 100%;
+        height: initial;
+        opacity: 1;
+        background-color: initial;
+    }
+    .product-overlay .caption-body {
+        transform: none;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+

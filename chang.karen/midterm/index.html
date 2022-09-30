@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Styleguide</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/dgx7nvl.css" />
+
+    <link rel="stylesheet" href="../lib/css/gridsystem.css" />
+    <link rel="stylesheet" href="../midterm/midtermstyleguide.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Styleguide</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			
+			<nav class="flex-none nav">
+			<ul class="container display-flex">
+				<li id="tableofcontent"><a href="#tableofcontents">Table of Content</a></li>
+			</ul>
+		</nav>
+		</div>		
+	</header>
+
+	<div class="container" id="tableofcontents">
+		<h2>Table of Contents</h2>
+			
+				<nav class="nav">
+					<ul>
+						<li><a href="#typography">Typography</a></li>
+						<li><a href="#colors">Colors</a></li>
+						<li><a href="#cards">Cards</a></li>
+						<!-- <li><a href="#viewwindow">View Window</a></li> -->
+						<li><a href="#navigations">Navigations</a></li>
+						<li><a href="#gridsystem">Grid System</a></li>
+						<!-- <li><a href="#flexsystem">Flex System</a></li> -->
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#figures">Figures</a></li>
+					</ul>
+				</nav>
+	</div>
+
+	<div class="container" id="typography">
+
+		<h2>Typography</h2>
+
+		<div class="card soft" id="headings">
+			<h2 id="heading-label">Headings</h2>
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<h5>Heading 5</h5>
+			<h6>Heading 6</h6>
+		</div>		
+
+		<div class="card soft" id="paragraphs">
+			<h2>Paragraphs</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero repudiandae eveniet, consectetur obcaecati delectus illum veritatis doloremque quia. Aliquam molestiae assumenda cupiditate quasi rerum ab dolorem commodi voluptatum ut.</p>
+			<p>Dolorem labore nobis sequi assumenda quo quis voluptatem eligendi odio distinctio sint numquam iste modi ab maiores inventore pariatur, error architecto amet tenetur nisi! Dicta, dolor, obcaecati. Quas, praesentium dolor.</p>
+			<p>Quae non id porro sunt voluptas eos, eum sint recusandae praesentium possimus aliquid, maxime officiis minima tenetur, quis! Ipsa culpa repudiandae ad obcaecati, quibusdam maiores est, hic voluptatibus cum consectetur!</p>
+		</div>
+
+		<div class="container" id="colors">
+			<h2>Colors</h2>
+
+			<div class="card soft" id="color">
+			<h2>Colors</h2>
+			<div class="grid gap">
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block1"></div>
+							<figcaption>
+								<div>Strawberry</div>
+								<div>#ea6e6e</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block2"></div>
+							<figcaption>
+								<div>Rose</div>
+								<div>#fc8e8f</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block3"></div>
+							<figcaption>
+								<div>Aqua</div>
+								<div>#e0fbfb</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block4"></div>
+							<figcaption>
+								<div>Turquoise</div>
+								<div>#83d0cf</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block5"></div>
+							<figcaption>
+								<div>Grey</div>
+								<div>#bcbcbc</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-2">
+						<figure class="color-block">
+							<div class="block6"></div>
+							<figcaption>
+								<div>Black</div>
+								<div>#000</div>
+							</figcaption>
+						</figure>
+					</div>
+					
+			</div>
+		</div>
+
+		</div>
+
+		<div class="container" id="cards">
+			<h2>Cards</h2>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-6">
+					<div class="card">Card</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card soft">Card Soft</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="container" id="viewwindow">
+			<h2>View Window</h2>
+
+		</div> -->
+
+		<div class="container" id="navigations">
+			<h2>Navigations</h2>
+
+			<script>
+				const makeNav = (classes='') => {
+					const links = ['Home', 'Store', 'About'];
+					let ran = Math.floor(Math.random()*links.length);
+					document.write(`
+						<div>
+ 							<nav class="${classes}">
+ 								<ul>
+ 								${links.reduce((r,o,i)=>{
+ 									return r+`<li class="${ran==i?'active':''}"><a href="#">${o}</a></li>`
+ 								},'')}
+ 								</ul>
+ 							</nav>
+						</div>
+					`);
+				}
+			</script>
+
+
+			<div class="card soft">
+				<h3>Basic Nav</h3>
+
+				<script>makeNav('nav')</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Flex Nav</h3>
+
+				<script>makeNav('nav nav-flex')</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Stretch Nav</h3>
+
+				<script>makeNav('nav nav-stretch')</script>
+			</div>
+
+			<!-- <div class="card soft">
+				<h3>Pills Nav</h3>
+
+				<script>makeNav('nav nav-pills')</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Crumbs Nav</h3>
+
+				<script>makeNav('nav nav-crumbs')</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Material Nav</h3> -->
+
+			<!-- 	<script>makeNav('nav nav-material')</script>
+			</div> -->
+
+			<script>
+				$("#navigations a").on("click", function(e){
+					e.preventDefault();
+					$(this).closest("li").addClass("active")
+						.siblings().removeClass("active")
+				})
+			</script>
+
+		</div>
+
+		<div class="container" id="gridsystem">
+			<h2>Grid System</h2>
+
+		</div>
+
+	<!-- 	<div class="container" id="flexsystem">
+			<h2>Flex System</h2>
+
+		</div> -->
+
+		<script>
+			
+			const makeTable1 = (classes='')=> {
+				const head = ['Store Items', '', '', '', ''];
+				const body = [
+					['Milk Butter Puff','$1.25','',''],
+					['Cinnamom Roll','$2.25','',''],
+					['Classic Cheesecake','$30.00','',''],
+					['T & 5 Coffee','$4.50','',''],
+					['','','',''],
+				];
+
+				document.write(`<table class="${classes}">
+				<thead>
+				<tr>
+
+				${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr>
+
+				</thead>
+				<tbody>
+			
+
+					${body.reduce((r,o)=>r+`<tr><td>${o[0]}</td><td>${o[1]}</td></tr>`,"")}
+				</tbody>
+
+				</table>`)
+			
+			}
+
+
+			const makeTable2 = (classes='')=> {
+				const head = ['Credit Card', '', '', '', ''];
+				const body = [
+					['Name on Card','Karen','',''],
+					['Card Number','1234-5678-9012-3456','',''],
+					['Expiration Month','00','',''],
+					['Expiration Year','0000','',''],
+					['CVV','xxx','',''],
+				];
+
+				document.write(`<table class="${classes}">
+				<thead>
+				<tr>
+
+				${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr>
+
+				</thead>
+				<tbody>
+			
+
+					${body.reduce((r,o)=>r+`<tr><td>${o[0]}</td><td>${o[1]}</td></tr>`,"")}
+				</tbody>
+
+				</table>`)
+			
+			}
+			
+		</script>
+
+		<div class="container" id="tables">
+
+			<h2>Tables</h2>
+
+			<div class="card soft">
+				<h3>Basic Table</h3>
+				<script>makeTable1("table")</script>
+			</div>
+
+			<!-- <div class="card soft">
+				<h3>Lined Table</h3>
+				<script>makeTable("table lined all")</script>
+			</div> -->
+
+			<!-- <div class="card soft">
+				<h3>Striped Table</h3>
+				<script>makeTable("table striped")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Lined Vertical</h3>
+				<script>makeTable("table lined vertical")</script>
+			</div> -->
+
+			<div class="card soft">
+				<h3>Striped Lined Horizontal</h3>
+				<script>makeTable2("table lined horizontal")</script>
+			</div>
+
+			<!-- <div class="card soft">
+				<h3>Striped Lined Border</h3>
+				<script>makeTable("table lined border")</script>
+			</div> -->
+		</div>
+
+		<div class="container">
+			<h2 id="figures">Figures</h2>
+			<div class="card">
+				<h3>Basic Figure</h3>
+				<figure class="figure">
+					<img src="https://via.placeholder.com/200x200?text=product" alt="">
+					<!-- <figcaption>Product</figcaption> -->
+				</figure>
+			</div>
+
+			<!-- <h3>Figure Grid</h3>
+
+			<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+			</div> -->
+
+
+
+			<h3>Product Grid</h3>
+
+			<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/200x200?text=product" alt="">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+			</div>
+
+			<!-- <h3>Product Overlay</h3>
+
+			<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>
+								<div class="caption-body">	
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>
+								<div class="caption-body">	
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=product" alt="">
+							<figcaption>
+								<div class="caption-body">	
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+			</div> -->
+
+		</div>
+
+	</div>
+
+<body>
+	
+</body>
+</html>
