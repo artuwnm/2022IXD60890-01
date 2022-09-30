@@ -1,2 +1,1 @@
-# 2022IXD60890-01
-For IXD608 Fall class
+http://karenchangart.com/aau/ixd608/chang.karen/midterm/
