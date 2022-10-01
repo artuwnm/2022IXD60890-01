@@ -5,3 +5,40 @@
 body {
 	background-color: var(--color-offwhite);
 }
+
+@media (max-width: 800px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.navbar h1 {
+		padding-left: 0.5em;
+	}
+
+@media (max-width: 400px) {
+	.navbar .display-flex {
+		display: block;
+	}
+
+	.navbar .nav li {
+		line-height: 2em;
+	}
+}
+
+@media (max-width: 600px) {
+	.product-overlay figcamption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+	}
+
+	.product-overlay .caption-body {
+		transform: none;
+		padding-left: 0;
+	}
+}
