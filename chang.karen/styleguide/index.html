@@ -53,6 +53,8 @@
 							<li><a href="#buttons">Buttons</a></li>
 						</ul>
 						<li><a href="#hotdog">Hotdog</a></li>
+						<li><a href="#select">Select</a></li>
+						<li><a href="#checkbox">Check Boxes</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -394,7 +396,7 @@
 				</div>
 			</form>
 		</div>
-
+	</div>
 
 		<div class="container" id="buttons">
 			<h3>Buttons</h3>
@@ -418,35 +420,109 @@
 			</div>
 		</div>
 
-		<h2 id="hotdog">Hotdog</h2>
+		<div class="container" id="hotdog">
 
-		<div class="card soft">
-			<div class="form-control">
-				<form>
-					<input type="search" class="hotdog" placeholder="Search">
-				</form>
+			<h2>Hotdog</h2>
+
+			<div class="card soft">
+				<div class="form-control">
+					<form>
+						<input type="search" class="hotdog" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form>
+						<input type="search" class="hotdog dark" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="card dark">
+						<input type="search" class="hotdog light" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="hotdog">
+							<span>&equiv;</span>
+							<input type="search" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="hotdog">
+							<input type="search" placeholder="Search">
+							<span>&equiv;</span>
+					</form>
+				</div>
 			</div>
-			<div class="form-control">
-				<form>
-					<input type="search" class="hotdog dark" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form class="card dark">
-					<input type="search" class="hotdog light" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form class="hotdog">
-						<span>&equiv;</span>
-						<input type="search" placeholder="Search">
-				</form>
+		</div>
+		
+		<div class="container" id="select">
+
+			<h2>Select</h2>
+
+			<div class="card soft" id="card-select">
+				<div class="form-control">
+					<div class="form-select">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="display-flex">
+						<div class="flex-stretch"></div>
+						<div class="flex-none">
+							<div class="form-select">
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
+		<div class="container" id="checkbox">
+			<h2>Check Boxes</h2>
+
+			<div class="card soft">
+				<label>Label <input type="checkbox" id="input-1"></label>
+				<label for="input-1">Label</label>
+
+				<h3>Heart Checkbox</h3>
+				<div class="favorite">
+					<input type="checkbox" id="heart-example" class="hidden">
+					<label for="heart-example">&hearts;</label>
+				</div>
+
+				<h3>Toggle</h3>
+				<div class="toggle">
+					<input type="checkbox" id="toggle-1" class="hidden">
+					<label for="toggle-1"></label>
+				</div>
+				<div class="display-flex flex-align-center">
+					<div class="flex-stretch">
+						<label for="toggle-2" class="form-label">Display Warning?</label>
+					</div>
+					<div class="flex-none">
+						<div class="toggle" style="font-size:2em;">
+							<input type="checkbox" id="toggle-2" class="hidden">
+							<label for="toggle-2"></label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
 
 
-	</div>
 	
 </body>
 </html>
