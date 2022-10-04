@@ -534,7 +534,14 @@ body {
 }
 
 
-
+.view-window {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 
 
