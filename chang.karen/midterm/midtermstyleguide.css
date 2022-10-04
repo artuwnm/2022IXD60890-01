@@ -11,6 +11,7 @@
 
     --color-main-light: #e0fbfb;
     --color-main-medium: #fc8e8f;
+    --color-main-blue: #83d0cf;
     --color-main-dark: #ea6e6e;
 
     --header-height: 3rem;
@@ -57,6 +58,12 @@ body {
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
 
+
+/* SMALL */
+
+.hidden {
+    display: none;
+}
 
 
  /* COMPONENT */
@@ -256,6 +263,19 @@ body {
     height: 4px;
 }*/
 
+.rectangle-1 {
+    display: inline-block;
+    font-size: 1em;
+    background-color: var(--color-main-blue);
+    opacity: 0.7;
+    text-align: center;
+    padding: 0.2em;
+}
+
+.grid.gap {
+    --grid-gap: 0.4em;
+}
+
 
 .block1 {
     width: 80px;
@@ -391,10 +411,17 @@ body {
 .figure.product {
     border-radius: 10px;
     overflow: hidden;
+    transition: all 0.3s;
+}
+
+.figure.product:hover {
+    transform: scale(1.05,1.05);
+    overflow: hidden;
+    cursor: pointer;
 }
 
 
-/*.product-overlay {
+.product-overlay {
     position: relative;
     overflow: hidden;
 }
@@ -452,7 +479,204 @@ body {
         transform: none;
         padding: 0;
     }
-}*/
+}
+
+/*  FORMS  */
+
+#form-card {
+    padding-bottom: 10px;
+}
+
+.form-control {
+    margin: 1em 0;
+}
+
+
+.form-select>select,
+.form-select-small>select,
+.hotdog,
+.hotdog input,
+.form-button,
+.form-input,
+.form-item {
+    display: inline-block;
+    background-color: transparent;
+    border-width: 0;
+    padding: 0.3em 1em;
+    width: 100%;
+    font:  inherit;
+    -webkit-appearance: none;
+    color: var(--color-neutral-dark);
+    outline: 0;
+}
+
+.form-input {
+    padding: 0.5em 0.5em;
+    color: var(--color-neutral-dark);
+    border-bottom: 1px solid var(--color-neutral-medium);
+}
+
+.form-input:focus {
+    border-bottom-color: var(--color-neutral-dark);
+}
+
+.form-label {
+    margin-left: 0.5em;
+    color: var(--color-neutral-dark);
+    display: block;
+    width: 100%;
+}
+
+.form-button {
+    background-color: var(--color-neutral-light);
+    -webkit-appearance: none;
+    color: var(--color-neutral-dark);
+    outline: 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.form-button:hover {
+    text-decoration: none;
+    background-color: var(--color-main-medium);
+}
+
+.form-button:active {
+    background-color: var(--color-neutral-light);
+}
+
+.hotdog {
+    background-color: var(--color-neutral-light);
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    display: flex;
+}
+
+#placeOrder:hover,
+#backToShopping:hover {
+    text-decoration: none;
+    background-color: var(--color-neutral-medium);
+}
+
+#placeOrder {
+    background-color: var(--color-neutral-dark);
+    color: #fff;
+}
+
+#backToShopping {
+    background-color: var(--color-main-blue);
+    color: #fff;
+}
+
+.hotdog span {
+    font-size: 1.1rem;
+    font-family: arial, sans-serif;
+    margin-right: 5px;
+    transform: translateY(2px);
+    margin-left: 0;
+}
+
+.hotdog input {
+    padding: 0;
+}
+
+.hotdog.dark {
+    background-color: var(--color-neutral-dark);
+    color: #fff;
+}
+
+.hotdog.light {
+    background-color: var(--color-neutral-light);
+    color: #000;
+}
+
+
+#card-select {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.form-select>select {
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    border: 2px solid var(--color-main-blue);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.form-select-small>select {
+    padding: 0.1em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--color-neutral-dark);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.form-select,
+.form-select-small {
+    position: relative;
+}
+
+
+.form-select-small::after,
+.form-select::after {
+    content:'▾';
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    right: 0.5em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-neutral-medium);
+}
+
+.favorite input:checked + label {
+    color: var(--color-main-dark);
+    transform: scale(1.5, 1.5);
+}
+.favorite label {
+    transition: all 0.3s;
+    display: inline-block;
+    transform: scale(1,1);
+    color: var(--color-main-blue);
+}
+
+/* TOGGLE */
+
+.toggle label {
+    font-size: 1.3em;
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid var(--color-main-blue);
+    border-radius: 1em;
+    position: relative;
+}
+
+.toggle label::after {
+    content: '';
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 1em;
+    position: absolute;
+    background-color: var(--color-neutral-light);
+    transition: all 0.3s;
+}
+
+.toggle input:checked + label::after {
+    transform: translateX(1em);
+}
+
+
+
+
+
+
 
 
 
