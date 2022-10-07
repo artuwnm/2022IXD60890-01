@@ -9,9 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
 	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-<body class="styleguidebody">
+<body>
 
 	<header class="navbar">
 		<div class="container display-flex">
@@ -66,14 +67,39 @@
 						<li><a href="#fig-product">Product Grid</a></li>
 						<li><a href="#fig-overlay">Product Overlay</a></li>
 					</ul>
+					<li><a href="#forms">Forms</a></li>
+						<ul>
+							<li><a href="#default-input">Deafult Input</a></li>
+							<li><a href="#form-input">Form Input</a></li>
+							<li><a href="#form-labels">Form Label</a></li>
+							<li><a href="#form-controls">From Control</a></li>
+						</ul>
+					<li><a href="#buttons">Buttons</a></li>
+						<ul>
+							<li><a href="#default-button">Deafult Button</a></li>
+							<li><a href="#form-button">Form Button</a></li>
+						</ul>
+					<li><a href="#hotdog">Hotdog</a></li>
+						<ul>
+							<li><a href="#normal-hotdog">Normal Hotdog</a></li>
+							<li><a href="#input-hotdog">Input Hotdog</a></li>
+						</ul>	
+					<li><a href="#select">Select</a></li>
+					<li><a href="#checkboxes">Checkboxes</a></li>
+						<ul>
+							<li><a href="#basic-checkbox">Basic Checkbox</a></li>
+							<li><a href="#heart-example1">Heart Example</a></li>
+						</ul>
+					<li><a href="#toggle">Toggle</a></li>				
+
 
 				</ul>
 			</nav>
 		</div>
 	</div>
-
+<!---------------------------------------- TYPOGRAPHY ---------------------------------------->
 	<div class="container" id="typography">
-			<h2>Typography</h2>
+			<h2>Typography</h2> 
 		<div class="card soft" id="headings">
 
 			<h3>Headings</h3>
@@ -92,9 +118,9 @@
 			<p>Asperiores, corrupti, pariatur illo dolor impedit fugit temporibus aliquam sint officiis ipsam, obcaecati odio recusandae, provident beatae? Veniam error, beatae odit, eos dolorum velit eaque iste optio repellat veritatis itaque.</p>
 		</div>
 	</div>
-
+<!---------------------------------------- CARDS ---------------------------------------->
 	<div class="container" id="cards">
-		<h2>Cards</h2>
+		<h2>Cards</h2> 
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
@@ -117,13 +143,13 @@
 			</div>
 		</div>
 	</div>
-
+<!---------------------------------------- VIEW WINDOW ---------------------------------------->
 	<div class="container" id="viewwindow">
 		<h2>View Window</h2>
 
-		<div class="view-window" style="background-image: url('../img/view-window.jpg');"></div>
+		<div class="view-window" style="background-image: url('https://via.placeholder.com/400x400?text=product');"></div>
 	</div>
-
+<!---------------------------------------- NAVIGATION ---------------------------------------->
 	<div class="container" id="navigations">
 		<h2>Navigations</h2>
 
@@ -190,7 +216,7 @@
 		</script>
 
 	</div>
-
+<!---------------------------------------- GRID SYSTEM ---------------------------------------->
 	<div class="container" id="gridsystem">
 		<h2>Grid System</h2>
 
@@ -207,15 +233,13 @@
 
 		</div>
 	</div>
-
+<!---------------------------------------- FLEX SYSTEM ---------------------------------------->
 	<div class="container" id="flexsystem">
 		<h2>Flex System</h2>
 	</div>
-
-
+<!---------------------------------------- TABLES ---------------------------------------->
 	<div class="container" id="tables">
 		<h2>Tables</h2>
-
 
 	<div class="container">
 		<script>
@@ -287,7 +311,7 @@
 			<script>makeTable("table lined all striped vertical border")</script>
 		</div>
 	</div>
-
+<!---------------------------------------- FIGURES ---------------------------------------->
 	<div class="container" id="figures">
 		<h2>Figures</h2>
 
@@ -336,9 +360,9 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="card soft">
 			<h3>Product Grid</h3>
-			<div class="card soft grid gap" id="fig-product">
+			<div class="grid gap" id="fig-product">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
 						<img src="https://via.placeholder.com/400x400?text=product" alt="">
@@ -368,8 +392,10 @@
 					</figure>
 				</div>
 			</div>
+		</div>
+	<div class="soft card">
 			<h3>Product Overlay</h3>
-			<div class="grid gap card soft" id="fig-overlay">
+			<div class="grid gap" id="fig-overlay">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product-overlay">
 						<img src="https://via.placeholder.com/400x400?text=product" alt="">
@@ -404,9 +430,208 @@
 					</figure>
 				</div>
 			</div>
+		</div>
+	</div>
+<!---------------------------------------- FORMS ---------------------------------------->
+	<div class="container" id="form">
+		<h2>Forms</h2>
+
+		<div class="card soft" id="default-input">
+			<h3>Default Input</h3>
+
+			<form>
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="password"><br>
+				<input type="url"><br>
+				<input type="email"><br>
+				<input type="datetime-local"><br>
+				<input type="date"><br>
+				<input type="search"><br>
+			</form>
+		</div>
+		<div class="card soft" id="form-input">	
+			<h3>Form Input</h3>
+			<form>
+				<input type="text" placeholder="Text" class="form-input">
+				<input type="number" placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+		</div>
+		<div class="card soft" id="form-labels">	
+			<h3>Form Label</h3>
+			<form>
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+		</div>
+		<div class="card soft" id="form-controls">	
+			<h3>Form Control</h3>
+			<form>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="text" placeholder="Text" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<!---------------------------------------- BUTTONS ---------------------------------------->
+	<div class="container">
+		<h2>Buttons</h2>
+		<div class="card soft">
+			<h3 id="default-button">Default Buttons</h3>
+			<button>Button</button>
+		</div>
+		<div class="card soft">
+			<h3 id="form-button">Form Buttons</h3>
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input">
+			</div>
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+	</div>
+<!---------------------------------------- HOTDOG ---------------------------------------->
+	<div class="container" id=buttons>
+		<h2>Hot Dog</h2>
+		<div class="card soft">
+			<h3 id="normal-hotdog">Normal Hotdog</h3>
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog dark" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control card dark">
+				<form>
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+		</div>
+		<div class="card soft">
+			<h3 id="input-hotdog">Input Hotdog</h3>
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<input type="search" placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+		</div>
+	</div>
+<!---------------------------------------- SELECT ---------------------------------------->
+	<div class="container" id="select">
+		<h2>Select</h2>
+		<div class="card soft">
+			<h3>Select</h3>
+			<label class="form-select">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</label>
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="felx-none">
+					<label class="form-select">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</label>
+				</div>
+			</div>
+		</div>
 	</div>
 
+<!---------------------------------------- CHECKBOX ---------------------------------------->
+	<div class="container" id="checkboxes">
+		<h2>Check Boxes</h2>
+		<div class="card soft">
+			<h3 id="basic-checkbox">Basic Checkbox</h3>
+			<label>This is a label <input type="checkbox" id="input-1"></label>
+			<label for="input-1">Label 1</label>
+		</div>
+		<div class="card soft" id="heart-example1">
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class="hidden">
+				<label for="heart-example">&hearts;</label>
+			</div>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example2" class="hidden">
+				<label for="heart-example2">&#9825;</label>
+			</div>
+		</div>
+	</div>
+<!---------------------------------------- TOGGLE ---------------------------------------->
+	<div class="container" id="toggle">
+		<h2>Toggle</h2>
 
-<br><br><br><br><br>
+		<div class="card soft">
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class="hidden">
+				<label for="toggle-1"></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+				<div class="flex-none">
+					<div class="toggle" style="font-size: 2em;">
+					<input type="checkbox" id="toggle-2" class="hidden">
+					<label for="toggle-2"></label>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </body>
 </html>
