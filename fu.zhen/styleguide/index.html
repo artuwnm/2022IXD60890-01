@@ -44,6 +44,16 @@
 					<li><a href="#navigations">Navigations</a></li>
 					<li><a href="#gridsystem">Grid System</a></li>
 					<li><a href="#flexsystem">Flex System</a></li>
+					<li><a href="#tables">Tables</a></li>
+					<li><a href="#forms">Forms</a></li>
+					<ul>
+						<li><a href="#inputs">Inputs</a></li>
+						<li><a href="#labels">Labels</a></li>
+						<li><a href="#controls">Controls</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#hotdog">Hotdog</a></li>
+					</ul>
+					<li><a href="#figures">Figures</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -73,7 +83,7 @@
 
 	
 
-	<div class="container">
+	<div class="container", id="cards">
 		<h2>Cards</h2>
 
 		<div class="grid gap">
@@ -101,9 +111,12 @@
 
 	
 
-	<div class="container">
+	<div class="container" id="viewwindow">
 		<h2>View Window</h2>
 	</div>
+	<div class="view-window" style="background-image: url('../img/moutain.jpeg');">
+	</div>
+	
 
 
 	
@@ -177,8 +190,55 @@
 
 	
 
-	<div class="container">
+	<div class="container", id="gridsystem">
 		<h2>Gird System</h2>
+		<div class="card soft">
+			<h3>Grid</h3>
+			<div class="grid">
+				<div class="col-xs-6">colunm 6</div>
+				<div class="col-xs-6">colunm 6</div>
+			</div>
+			<div class="grid xs-small md-medium">
+				<div class="col-xs-4">colunm 4</div>
+				<div class="col-xs-4">colunm 4</div>
+				<div class="col-xs-4">colunm 4</div>
+
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-6">colunm 6</div>
+			</div>
+		</div>
+
+
+		<div class="card soft">
+			<h3>Responsive Grid</h3>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">colunm 6</div>
+				<div class="col-xs-12 col-md-6">colunm 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">colunm 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">colunm 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">colunm 4</div>
+
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+				<div class="col-xs-3">colunm 3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">colunm 2</div>
+				<div class="col-xs-2">colunm 2</div>
+				<div class="col-xs-2">colunm 2</div>
+				<div class="col-xs-2">colunm 2</div>
+				<div class="col-xs-2">colunm 2</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -214,7 +274,7 @@
 		`);
 	}
 	</script>
-	<div class="container">
+	<div class="container", id="tables">
 		<h2>Tables</h2>
 
 		<div class="card soft">
@@ -258,8 +318,207 @@
 			
 			<script>makeTable("table lined vertical border striped")</script>
 		</div>
+	
 
 
+
+	<div class="container" id="forms">
+		<h2>Forms</h2>
+
+		<h3>Inputs</h3>
+
+		<div class="card soft">
+			<div id="inputs">
+			<h3>Default Inputs</h3>
+			<form>
+				<input type="text"><br>
+				<input type="number"><br>
+				<input type="password"><br>
+				<input type="url"><br>
+				<input type="email"><br>
+				<input type="datetime-local"><br>
+				<input type="date"><br>
+				<input type="search">
+			</form>
+
+			<h3>Form Input</h3>
+			<form>
+				<input type="text" placeholder="Text" class="form-input">
+				<input type="number" placeholder="Number" class="form-input">
+				<input type="password" placeholder="Password" class="form-input">
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+			</div>
+
+			<div id="labels">
+			<h3>Form Label</h3>
+			<form>
+				<label class="form-label">Example</label>
+				<input type="text" placeholder="Text" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="number" placeholder="Number" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="password" placeholder="Password" class="form-input">
+				<label class="form-label">Example</label>
+				<input type="search" placeholder="Search" class="form-input">
+			</form>
+			</div>
+
+			<div id="controls">
+			<h3>Form Control</h3>
+			<form>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="text" placeholder="Text" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="number" placeholder="Number" class="form-input">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="password" placeholder="Password" class="form-input">
+				</div>
+				<div class="form-control display-flex flex-align-center">
+					<div class="flex-none">
+						<label class="form-label">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+					<div class="flex-none">
+						<label class="form-label">Example</label>
+					</div>
+					<div class="flex-stretch">
+						<input type="search" placeholder="Search" class="form-input">
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	
+		<div id="buttons">
+		<h3>Buttons</h3>
+
+		<div class="card soft">	
+			<h3>Default Buttons</h3>
+
+			<button>Button</button>
+
+			<h3>Form Buttons</h3>
+
+			<div class="form-control">
+				<button type="button" class="form-button">Button</button>
+			</div>
+			<div class="form-control">
+				<input type="button" class="form-button" value="Input">
+			</div>
+			<div class="form-control">
+				<a href="#" class="form-button">Anchor</a>
+			</div>
+		</div>
+		</div>
+
+		<div id="hotdog">
+		<h2>Hotdog</h2>
+
+		<div class="card soft">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog dark" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="card dark">
+					<input type="search" class="hotdog light" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<span>&equiv;</span>
+					<input type="search" placeholder="Search">
+				</form>
+			</div>
+			<div class="form-control">
+				<form class="hotdog">
+					<input type="search" placeholder="Search">
+					<span>&equiv;</span>
+				</form>
+			</div>
+		</div>
+		</div>
+
+
+		<h2 id="select">Select</h2>
+
+		<div class="card soft">
+			<div class="form-select">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</div>
+			<div class="display-flex">
+				<div class="flex-stretch"></div>
+				<div class="flex-none">
+					<div class="form-select">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h2 id="checkboxes">Check Boxes</h2>
+
+		<div class="card soft">
+			<label>Label <input type="checkbox" id="input-1"></label>
+			<label for="input-1"> Label</label>
+
+			<h3>Heart Checkbox</h3>
+			<div class="favorite">
+				<input type="checkbox" id="heart-example" class='hidden'>
+				<label for="heart-example">&hearts;</label>
+			</div>
+
+			<h3>Toggle</h3>
+			<div class="toggle">
+				<input type="checkbox" id="toggle-1" class='hidden'>
+				<label for="toggle-1"></label>
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<label for="toggle-2" class="form-label">Display Warning?</label>
+				</div>
+				<div class="flex-none">
+					<div class="toggle" style="font-size: 2em;">
+						<input type="checkbox" id="toggle-2" class='hidden'>
+						<label for="toggle-2"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+		
 
 		<h2 id="figures">Figures</h2>
 
