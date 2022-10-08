@@ -76,7 +76,9 @@ a:hover {
     max-width: 100%;
     vertical-align: text-bottom;
 }
-
+.hidden {
+    display: none;
+}
 
 /* COMPONENT CLASSES */
 
@@ -347,5 +349,129 @@ a:hover {
         padding: 0;
     }
 
+}
 
+
+
+
+/* Forms  */
+.form-control {
+    margin: 1em 0;
+}
+
+.form-select > select,
+.hotdog input,
+.hotdog,
+.form-button,
+.form-input,
+.form-item {
+    display:  inline-block;
+    background-color: transparent;
+    border-width: 0;
+    font: inherit;
+    -webkit-appearance:  none;
+    color: inherit;
+    width: 100%;
+    outline: 0;
+}
+
+.form-input {
+    padding: 0.5em 0.1em;
+    border-bottom: 1px solid var(--color-neutral-light);
+}
+
+.form-input:focus {
+    border-bottom-color: var(--color-primary-dark);
+}
+.form-label {
+    font-size: 0.8em;
+    color: var(--color-neutral-dark);
+    display: block;
+    width: 100%;
+}
+
+.form-button {
+    padding: 0.5em 0.1em;
+    background-color: var(--color-neutral-medium);
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-button:active{
+    background-color: var(--color-primary-light);
+}
+
+.form-button:hover{
+    text-decoration: none;
+}
+
+.hotdog{
+    background-color: var(--color-neutral-light);
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    display: flex;
+}
+.hotdog.dark{
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+.hotdog.light{
+    background-color: var(--color-neutral-light);
+    color: var(--color-black);
+}
+
+
+
+/* Select */
+.form-select > select{
+    padding: 0.5em 1.3em;
+    background-color: var(--color-neutral-light);
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+.form-select{
+    position: relative;
+}
+.form-select::after{
+    content: "▾";
+    font-family: arial, sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    right: 0.2em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-neutral-dark);
+}
+
+/* Toggle */
+.toggle label {
+    font-size: 1.3em;
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border:  0.1em solid var(--color-neutral-medium);
+    border-radius: 1em;
+    position: relative;
+    background-color: var(--color-primary-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle label:after {
+    content: "";
+    display: block;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 1em;
+    position: absolute;
+    background-color: var(--color-white);
+    transition: all 0.3s ease-in-out;
+}
+.toggle input:checked + label:after {
+    transform: translateX(1em);
+}
+
+.toggle input:checked + label{
+    background-color: var(--color-primary-medium);
 }
