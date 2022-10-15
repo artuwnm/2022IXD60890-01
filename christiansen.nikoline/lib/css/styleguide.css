@@ -448,6 +448,7 @@ article {
 	border: 0.1em solid var(--color-neutral-medium);
 	border-radius: 1em;
 	position: relative;
+	transition: all 0.3s ease-in-out;
 }
 
 .toggle label::after {
@@ -458,11 +459,15 @@ article {
 	border-radius: 1em;
 	position: absolute;
 	background-color: var(--color-neutral-light);
-	transition: all 0.3s;
+	transition: all 0.3s ease-in-out;
 }
 
 .toggle input:checked + label::after {
 	transform: translateX(1em);	
+}
+
+.toggle input:checked + label {
+	background-color: var(--color-neutral-medium);	
 }
 
 															/* PUT IN STORETHEME.CSS WHEN ISSUE FIXED */
@@ -503,7 +508,17 @@ article {
 	border-radius: 0.5em;
 	padding: 1em;
 	transform: translateY(2em);
-	transition: all 0.4 ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+#fig-overlay1 .product-overlay .caption-body {
+	background-color: white;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -513,7 +528,7 @@ article {
 
 .product-overlay img {
 	transform: scale(1,1);
-	transition: all 0.4 ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 
