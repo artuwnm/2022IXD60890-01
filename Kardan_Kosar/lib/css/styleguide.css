@@ -387,15 +387,15 @@ a:hover {
 
 .form-input {
     padding: 0.5em 0.1em;
-    border-bottom: 1px solid var(--color-neutral-light);
+    border-bottom: 1px solid var(--color-primary-dark);
 }
 
 .form-input:focus {
-    border-bottom-color: var(--color-primary-dark);
+    border-bottom-color: var(--color-secondary-light);
 }
 .form-label {
     font-size: 0.8em;
-    color: var(--color-neutral-dark);
+    color: var(--color-primary-dark);
     display: block;
     width: 100%;
 }
@@ -417,7 +417,7 @@ a:hover {
 }
 
 .hotdog{
-    background-color: var(--color-neutral-light);
+    background-color: var(--color-tertiary-light);
     border-radius: 2em;
     padding: 0.5em 1.5em;
     display: flex;

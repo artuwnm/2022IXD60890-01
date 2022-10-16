@@ -152,7 +152,7 @@ h1,h2,h3,h4,h5,h6{
 /* Form Label */
 .form-label-animated {
     font-size: 1.2em;
-    color: var(--color-neutral-dark);
+    color: var(--color-primary-dark);
     display: block;
     width: 100%;
     position: relative;
