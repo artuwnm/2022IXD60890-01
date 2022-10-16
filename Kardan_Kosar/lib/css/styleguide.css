@@ -68,7 +68,16 @@ a:hover {
 
 .flex-align-center{ align-items: center; }
 .flex-justify-center {justify-content: center;}
+.flex-justify-space-between {justify-content: space-between;}
+.flex-justify-space-around {justify-content: space-around;}
+.flex-justify-space-evenly {justify-content: space-evenly;}
+.gap {gap: 10px}
 
+
+/*  Flex Example  */
+#flexSysyem + div, #flexSysyem + div > div {
+    width: 100%;
+}
 
 /* Small Classes */
 
@@ -100,7 +109,7 @@ a:hover {
         text-decoration: none;
     }
     .nav .active a{
-        background-color: var(--color-primary-light);
+        background-color: var(--color-neutral-light);
         color: inherit;
     }
 
@@ -201,10 +210,11 @@ a:hover {
     }
     .card.dark{
         background-color: var(--color-primary-dark);
-        color: var(--color-neutral-light);
+        color: var(--color-white);
     }
     .card.medium {
         background-color: var(--color-neutral-medium);
+        color: var(--color-white);
     }
     .card.flat{
         padding: 0;

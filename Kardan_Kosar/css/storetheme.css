@@ -8,32 +8,36 @@
 
 /* BRAND STYLE */
 :root{
-	--color-offwhite: #f4f4f4;
+	--color-offwhite: #F3F5F6;
 
 	--font-heading: 'Roboto', sans-serif;
 	--font-body-text: 'Poppins', sans-serif;
 
-	--color-neutral-light: #e6e8e6;
-    --color-neutral-medium: #dee0de;
-    --color-neutral-dark: #cccecc;
+	--color-neutral-light: #CFCFCF;
+    --color-neutral-medium: #A0A0A0;
+    --color-neutral-dark: #606060;
+
+    --color-primary-light: #1474C9;
+    --color-primary-medium: #00539C;
+    --color-primary-dark: #003A6D;
+
+	--color-secondary-light: #FDDC15;
+    --color-secondary-medium: #FD9815;
+    --color-secondary-dark: #FD5315;
+
+	--color-tertiary-light: #F3F5F6;
+    --color-tertiary-medium: #DAE8F0;
+    --color-tertiary-dark: #C2D9E6;
     
     --color-overlay: #cccecc99 ;
     --color-box-shadow: #cccecc99;
 
-    --color-primary-light: #cdd6cf;
-    --color-primary-medium: #a1aca1;
-    --color-primary-dark: #818c7f;
 
-
-	--color-secondary-light: #f2e8da;
-    --color-secondary-medium: #f1dbba;
-    --color-secondary-dark: #e8ba97;
-
-    --color-overlay:  #818c7fCC;
+    --color-overlay:  #003A6DCC;
     --color-box-shadow:  #818c7fCC;
 }
 body {
-	background-color: var(--color-primary-light);
+	background-color: var(--color-offwhite);
 	font-family: var(--font-body-text) ;
 	color: var(--color-primary-dark);
 	/*padding-bottom: 4em;*/
@@ -50,7 +54,7 @@ body {
 	transform: scale(1);
 }
 .favourite input:checked + label {
-	color: red;
+	color: var(--color-primary-dark);
 	transform: scale(1.3);
 }
 
@@ -79,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* NavBar */
 #test .nav-matrial a {
-	color: var(--color-neutral-dark);
+	color: var(--color-neutral-medium);
 }
 #test .nav-matrial a:hover{
     background-color: transparent;
@@ -87,7 +91,7 @@ h1,h2,h3,h4,h5,h6{
 #test .nav-matrial a::after{
     height: 2px;
     
-    background-color: var(--color-neutral-dark);
+    background-color: var(--color-neutral-medium);
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -105,8 +109,8 @@ h1,h2,h3,h4,h5,h6{
 /* Table */
 
 .table.striped tbody tr:nth-child(odd){
-    background-color: var(--color-secondary-dark);
-    color: var(--color-white);
+    background-color: var(--color-secondary-light);
+    color: var(--color-primary-dark);
 }
 
 .table.lined.all th:not(:first-child),
