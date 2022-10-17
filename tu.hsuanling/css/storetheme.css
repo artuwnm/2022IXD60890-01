@@ -5,12 +5,32 @@
 	--color-main-light: #f2f2f2;
 	--color-main-medium: #bfbaa8;
 	--color-main-dark: #403d30;
+
+	--color-sub-light: #858c74;
+	--color-sub-medium: #657346;
+	--color-sub-dark: #344028;
+
+	--font-sans: 'Poppins', sans-serif;
 }
 
 
 body{
-	background-color: var(--color-offwhite);
+	background-color: var(--color-main-medium);
 	padding-bottom: 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-sans);
+	color: var(--color-sub-dark);
+}
+
+p {
+	font-weight: 300;
 }
 
 .favorite label {
@@ -25,11 +45,6 @@ body{
 	color: red;
 	transform: scale(1.5,1.5);
 }
-
-
-
-
-
 
 
 @media(max-width: 800px){
@@ -121,9 +136,32 @@ body{
 	}
 }
 
+/* Theme */
 
+.navbar {
+	background-color: var(--color-main-dark);
+}
 
+.nav a {
+	font-weight: 300;
+}
 
+.toggle label {
+	background-color: var(--color-sub-light);
+	border: 0.1em solid var(--color-sub-dark);
+}
+
+.toggle label::after {
+	background-color: var(--color-main-light);
+}
+
+.hotdog {
+	background-color: var(--color-main-light);
+}
+
+.hotdog.dark {
+	background-color: var(--color-main-dark);
+}
 
 
 
