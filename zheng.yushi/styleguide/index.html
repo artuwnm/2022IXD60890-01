@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/storetheme.css">
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	
@@ -47,10 +47,13 @@
 					<li><a href="#forms<">Forms</a></li>
 					<ul>
 						<li><a href="#inputs">Inputs</a></li>
-						<li><a href="#inputs">Labels</a></li>
-						<li><a href="#inputs">Controls</a></li>
-						<li><a href="#inputs">Buttons</a></li>
-						<li><a href="#inputs">Hotdog</a></li>
+						<li><a href="#labels">Labels</a></li>
+						<li><a href="#controls">Controls</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#hotdog">Hotdog</a></li>
+						<li><a href="#select">Select</a></li>
+						<li><a href="#checkboxes">Checkboxex</a></li>
+						<li><a href="#figures">Figures</a></li>
 					</ul>
 				</ul>
 			</nav>
@@ -80,7 +83,7 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" id="cards">
 		<h2>Cards</h2>
 
 		<div class="grid gap">
@@ -105,8 +108,9 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="ViewWindow">
 		<h2>View Window</h2>
+		<div class="view-window" style="background-image: url('../img/BTS.jpeg');">
 	</div>
 
 
@@ -184,14 +188,37 @@
 
 
 
-
-	<div class="container">
+	<div class="container" id="gridsystem">
 		<h2>Grid System</h2>
+
+		<div class="card soft">
+		<h2>Responsive Grid</h2>
+			<div class="grid gap">
+				<div class="card medium col-xs-12 col-md-6">6</div>
+				<div class="card medium col-xs-12 col-md-6">6</div>
+			</div>
+			<div class="grid gap">
+				<div class="card medium col-xs-12 col-md-4 col-xl-3">4</div>
+				<div class="card medium col-xs-12 col-md-4 col-xl-6">4</div>
+				<div class="card medium col-xs-12 col-md-4 col-xl-3">4</div>
+
+				<div class="card medium col-xs-3">3</div>
+				<div class="card medium col-xs-3">3</div>
+				<div class="card medium col-xs-3">3</div>
+				<div class="card medium col-xs-3">3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="card medium col-xs-2">2</div>
+				<div class="card medium col-xs-2">2</div>
+				<div class="card medium col-xs-2">2</div>
+				<div class="card medium col-xs-2">2</div>
+				<div class="card medium col-xs-2">2</div>
+			</div>	
+		</div>
 	</div>
 
-
 	<div class="container">
-		<h2>Flex System</h2>
+		<h2 id="flexsystem">Flex System</h2>
 	</div>
 
 
@@ -199,11 +226,11 @@
 	const makeTable = (classes='') => {
 		const head = ['ID','Office','Name','Email','Phone'];
 		const body = [
-            ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-            ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-            ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-            ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
-            ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
+            ['522','Hamilton Cline','hcline@academyart.edu','555-2424'],
+            ['522','Hamilton Cline','hcline@academyart.edu','555-2424'],
+            ['522','Hamilton Cline','hcline@academyart.edu','555-2424'],
+            ['522','Hamilton Cline','hcline@academyart.edu','555-2424'],
+            ['522','Hamilton Cline','hcline@academyart.edu','555-2424'],
 		];
 
 		//let ran = Math.floor(Math.random()*links.length);
@@ -219,7 +246,7 @@
 		`);
 	}
 	</script>
-	<div class="container">
+	<div class="container" id="tables">
 		<h2>Tables</h2>
 
 		<div class="card soft">
@@ -264,7 +291,7 @@
 	<div class="container" id="forms">
 		<h2>Forms</h2>
 
-		<h3>Inputs</h3>
+		<h3 id="inputs">Inputs</h3>
 
 		<div class="card soft">
 			<h3>Default Inputs</h3>
@@ -331,7 +358,7 @@
 
 
 
-		<h3>Buttons</h3>
+		<h3 id="buttons">Buttons</h3>
 
 		<div class="card soft">
 			<h3>Default Buttons</h3>
@@ -350,7 +377,7 @@
 				<a href="#" class="form-button">Anchor</a>
 			</div>
 
-			<h2>Hotdog</h2>
+			<h2 id="hotdog">Hotdog</h2>
 
 			<div class="card soft">
 				<div class="form-control">
@@ -444,7 +471,7 @@
 
 
 
-	<div class="container">
+	<div class="container" id="figures">
 		<h2 id="figures">Figures</h2>
 
 		<div class="card">
@@ -516,35 +543,35 @@
 
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-4">
-					<figure class="figure product overlay">
+					<figure class="figure product-overlay">
 						<img src="https://via.placeholder.com/400x400?text=product" alt="">
 						<figcaption>
 							<div class="caption-body">
-							<div>Product Name</div>
-							<div>$3.99</div>
+								<div>Product Name</div>
+								<div>$3.99</div>
 							</div>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-xs-12 col-md-4">
-					<figure class="figure product overlay">
+					<figure class="figure product-overlay">
 						<img src="https://via.placeholder.com/400x400?text=product" alt="">
 						<figcaption>
 							<div class="caption-body">
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</div>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</div>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-xs-12 col-md-4">
-					<figure class="figure product overlay">
+					<figure class="figure product-overlay">
 						<img src="https://via.placeholder.com/400x400?text=product" alt="">
 						<figcaption>
 							<div class="caption-body">
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</div>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</div>
 						</figcaption>
 					</figure>
 				</div>

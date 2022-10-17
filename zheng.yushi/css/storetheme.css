@@ -1,6 +1,10 @@
 
 :root {
 	--color-offwhite: #f4f4f4;
+
+	--color-main-light: #f2f2f2;
+	--color-main-medium: #bfbaa8;
+	--color-main-dark: #403d30;
 }
 
 body {
@@ -51,8 +55,9 @@ body {
 	overflow: hidden;
 }
 
-.figure.overlay {
+.figure-overlay {
 	position: relative;
+	overflow: hidden;
 }
 
 .product-overlay figcaption {
@@ -70,10 +75,9 @@ body {
 }
 .product-overlay:hover figcaption {
 	opacity: 1;
-	overflow: hidden
 }
 .product-overlay .caption-body {
-	background-color: whites;
+	background-color: white;
 	border-radius: 0.5em;
 	padding: 1em;
 	transform: translateY(2em);
@@ -92,15 +96,16 @@ body {
 	transform: scale(1.4,1.4);
 }
 
-@media (max-width600px) {
+@media(max-width: 600px) {
 	.product-overlay figcaption {
 		position: relative;
 		display: block;
 		top: initial;
-		left: initial;
+		left: inherit;
 		width: 100%;
 		height: initial;
 		opacity: 1;
+		background-color: initial;
 	}
 	.product-overlay .caption-body {
 		transform: none;

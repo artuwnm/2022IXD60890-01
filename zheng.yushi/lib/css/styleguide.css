@@ -76,6 +76,7 @@ a:hover {
 .flex-justify-center {justify-content: center;}
 
 
+
 /*Small Classes*/
 
 .media-image {
@@ -193,7 +194,6 @@ a:hover {
 
 	.card {
 		background-color: var(--color-white);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		margin-top: 1em;
 		margin-bottom: 1em;
 		padding: 1em;
@@ -288,6 +288,7 @@ a:hover {
 }
 .figure img {
 	width: 100%;
+	vertical-align: text-bottom;
 }
 .figure figcaption {
 	padding: 1em;
@@ -329,6 +330,7 @@ a:hover {
 }
 
 .form-button {
+	display: inline-block;
     background-color: var(--color-neutral-light);
     border-radius: 0.2em;
     padding: 0.5em 1em;
@@ -406,6 +408,6 @@ a:hover {
 	background-color: var(--color-neutral-medium);
 	transition: all 0.3s;
 }
-.toggle label:checked + label::after {
+.toggle input:checked + label::after {
 	transform: translateX(1em);
 }
