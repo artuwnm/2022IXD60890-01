@@ -26,6 +26,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--font-sans);
+	font-weight: 600;
 	color: var(--color-sub-dark);
 }
 
