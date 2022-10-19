@@ -18,7 +18,7 @@
 				}
 			
 				const makeTable1 = (classes='')=> {
-				const head = ['Cart Items', 'Price', 'Quantity'];
+				const head = ['Cart Items', 'Price', 'Qty'];
 				const body = [
 					['Milk Butter Puff','$1.25','1'],
 					['Cinnamom Roll','$2.25','1'],
@@ -45,11 +45,11 @@
 
 
 			const makeTable2 = (classes='')=> {
-				const head = ['Item Total','','','$45.00'];
+				const head = ['Item Total','$45.00'];
 				const body = [
-					['Tax','','','$2.90'],
-					['Shipping','','','Free'],
-					['Subtotal','','','$47.90'],
+					['Tax','$2.90'],
+					['Shipping','Free'],
+					['Subtotal','$47.90'],
 				];
 
 				document.write(`<table class="${classes}">
@@ -62,7 +62,7 @@
 				<tbody>
 			
 
-					${body.reduce((r,o)=>r+`<tr><td>${o[0]}</td><td>${o[1]}</td><td>${o[2]}</td><td>${o[3]}</td></tr>`,"")}
+					${body.reduce((r,o)=>r+`<tr><td>${o[0]}</td><td>${o[1]}</td></tr>`,"")}
 				</tbody>
 
 				</table>`)
@@ -71,21 +71,27 @@
 			
 			</script>
 
-			<div class="card soft">
-				<script>makeTable1("table")</script>
-			</div>
+			<div class="container" id="cart_separater">
 
-			<div class="card soft">
-				<script>makeTable2("table")</script>
+				<div class="card soft cart-card">
+					<script>makeTable1("table")</script>
+				</div>
+
+				<div class="checkout-block" id="place_order_container">
+					<div class="card soft cart-card" id="total-card">
+						<script>makeTable2("table")</script>
+					</div>
+					<a href="checkout.php"><button type="button" class="form-button" id="checkout">Checkout</button></a>
+				</div>	
 			</div>
 
 		</div>
 
-		<div class="container" id="place_order_container">
+<!-- 		<div class="container" id="place_order_container">
 			<div class="form-control">
 				<a href="checkout.php"><button type="button" class="form-button" id="checkout">Checkout</button></a>
 			</div>
-		</div>
+		</div> -->
 
 	</div>
 

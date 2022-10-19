@@ -13,7 +13,10 @@
 
 			<h1>Payment Information</h1>
 
-			<div class="card soft" id="form-card">
+			
+		<div class="container" id="placeorder_separater">
+
+			<div class="card soft cart-card" id="form-card">
 
 				<h3>Credit Card</h3>
 
@@ -69,15 +72,20 @@
 				}
 			</script>
 
-			<div class="card soft">
-				<script>makeTable2("table")</script>
-			</div>
+			<div class="placeorder">
+				<div class="card soft cart-card" id="total-box">
+					<script>makeTable2("table")</script>
+				</div>
 
-			<div class="container" id="place_order_container">
-				<div class="form-control">
-					<a href="confirmation.php"><button type="button" class="form-button" id="checkout">Place Order</button></a>
+				<div class="placeorder_button" id="place_order_container">
+					<div class="form-control">
+						<a href="confirmation.php"><button type="button" class="form-button" id="checkout">Place Order</button></a>
+					</div>
 				</div>
 			</div>
+				
+		</div>
+				
 
 		</div>
 	</div>
