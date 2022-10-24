@@ -66,11 +66,16 @@ a:hover {
 .flex-stretch {flex:  1 1 auto}
 .flex-none{ flex:none }
 
+.display-direction-row{flex-direction: row;}
 .flex-align-center{ align-items: center; }
+.flex-align-base{ align-items: baseline; }
 .flex-justify-center {justify-content: center;}
+.flex-justify-start {justify-content: flex-start;}
+.flex-justify-end {justify-content: flex-end;}
 .flex-justify-space-between {justify-content: space-between;}
 .flex-justify-space-around {justify-content: space-around;}
 .flex-justify-space-evenly {justify-content: space-evenly;}
+.flex-wrap-wrap {flex-wrap: wrap;}
 .gap {gap: 10px}
 
 
@@ -401,19 +406,24 @@ a:hover {
 }
 
 .form-button {
-    padding: 0.5em 0.1em;
-    background-color: var(--color-neutral-medium);
+    padding: 0.25em 0.1em;
+    background-color: var(--color-primary-dark);
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+    color: var(--color-white);
+    transition: 0.3s all ease-in-out;
 }
 
 .form-button:active{
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-medium);
 }
 
 .form-button:hover{
     text-decoration: none;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary-dark);
+    color: var(--color-primary-dark);
 }
 
 .hotdog{
