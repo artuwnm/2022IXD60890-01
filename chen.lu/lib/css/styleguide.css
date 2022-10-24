@@ -83,7 +83,9 @@ a:hover {
 	max-width: 100%;
 	vertical-align: text-bottom;
 }
-.hidden { display: none; }
+
+.hidden {display: none;}
+
 
 
 
@@ -217,17 +219,17 @@ a:hover {
 	}
 
 	.card.hard{
-		border-radius: 0.3em;
+		border-radius: 0.2em;
 		border: 2px solid var(--color-neutral-medium);
 	}
 
 	.card.dark{
-		background-color: var(--color-neutral-dark);
+		background-color: var(--color-black);
 		color: var(--color-neutral-light);
 	}
 
 	.card.medium{
-		background-color: var(--color-neutral-medium);
+		background-color: var(--color-neutral-dark);
 	}
 
 	.card.flat{
@@ -270,8 +272,8 @@ table td{
 }
 
 .table.lined.all tbody tr, 
-.table.lined.all tbody tr {
-   border-top: 1px solid var(--color-neutral-medium);
+.table.lined.horizontal tbody tr {
+   border-top: 1.25px solid var(--color-neutral-medium);
 }
 
 .table.lined.all,
@@ -409,17 +411,5 @@ table td{
 .toggle input:checked + label::after {
    transform: translatex(1em);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
