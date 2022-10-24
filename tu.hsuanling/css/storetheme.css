@@ -15,7 +15,7 @@
 
 
 body{
-	background-color: var(--color-main-medium);
+	background-color: var(--color-main-light);
 	padding-bottom: 4em;
 }
 
@@ -162,6 +162,11 @@ p {
 
 .hotdog.dark {
 	background-color: var(--color-main-dark);
+}
+
+#navigations li a {
+	font-weight: 300;
+	font-size: 0.8rem;
 }
 
 
