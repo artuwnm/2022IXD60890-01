@@ -13,6 +13,19 @@
 
 body {
 	background-color:var(--color-neutral-medium);
+	padding-bottom: 4em;
+}
+
+
+.favorite label{
+	transition: all 0.3s;
+	display: inline-block;
+	transform: scale(1,1);
+	color: var(--color-neutral-medium);
+}
+.favorite input:checked + label {
+	color: red;
+	transform: scale(1.5,1.5);
 }
 
 
@@ -99,6 +112,5 @@ body {
 	}
 	.product-overlay .caption-body{
 		transform: none;
-		padding: 0;
 	}
 }
