@@ -1,0 +1,60 @@
+.navbar {
+	font-family: josefin-slab, serif;
+	color: #fff;
+}
+
+
+.nav a{
+	color: white;
+}
+
+.nav.user_nav ul li a{
+	background-color: transparent;
+	color: #000;
+	font-weight: 400;
+}
+
+.nav.user_nav ul li a:hover{
+	background-color: lightgrey;
+}
+
+.nav.user_nav ul {
+	background-color: transparent;
+}
+
+.nav.nav-crumbs ul li a{
+	color: #7E7E7E;
+	font-size: 0.9rem;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+.nav.nav-crumbs ul{
+	padding: 0;
+	font-size: 0.8rem;
+	background-color: transparent;
+}
+.nav.nav-crumbs ul li{
+	padding: 0;
+}
+
+.nav.nav-crumbs ul li a:hover{
+	background-color: transparent;
+	color: #7E7E7E;
+	text-decoration: underline;
+}
+
+.object{
+	margin-bottom: 5px;
+}
+
+.form-control label{
+	font-weight: 900;
+}
+
+
+
+
+
+
+

@@ -1036,6 +1036,8 @@ body {
 
 
 #checkout {
+    font-family: josefin-slab, serif;
+    font-weight: 600;
     margin-top: 0;
     width: 100%;
     background-color: var(--color-neutral-dark);
