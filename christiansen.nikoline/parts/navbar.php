@@ -1,7 +1,7 @@
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>Store</h1>
+				<h1><a href="#">Rising Tide Brewery</a></h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">

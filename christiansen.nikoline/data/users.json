@@ -1,0 +1,33 @@
+[
+	{
+		"name":"Nikoline Christiansen",
+		"type":"Student",
+		"email":"nchristi4@art.edu",
+		"classes":[608,700,621]
+	},
+	{
+		"name":"Sebastian Christiansen",
+		"type":"HR",
+		"email":"seb@art.edu",
+		"classes":[608,700,621]
+	},
+	{
+		"name":"Peter Christiansen",
+		"type":"CFO",
+		"email":"pitsi@art.edu",
+		"classes":[608,700,621]
+	},
+	{
+		"name":"Jonna Madsen",
+		"type":"Graphic Designer",
+		"email":"Joma@art.edu",
+		"classes":[608,700,621]
+	},
+	{
+		"name":"Cecilia Sveen",
+		"type":"Chef",
+		"email":"food4lyfe@art.edu",
+		"classes":[608,700,621]
+	}
+
+]
