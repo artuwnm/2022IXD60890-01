@@ -1,0 +1,20 @@
+[
+	{
+		"name":"Yushi Zheng",
+		"type":"Student",
+		"email":"yushizheng97@gmail.com",
+		"classes":[608]
+	},
+	{
+		"name":"Hamilton Cline",
+		"type":"Teacher",
+		"email":"hcline@academyart.edu",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Monica Gellar",
+		"type":"Chef",
+		"email":"megllar1973@hotmail.com",
+		"classes":[601,608,617,820]
+	}
+]
