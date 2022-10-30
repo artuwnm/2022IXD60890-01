@@ -67,8 +67,10 @@ a:hover {
 .flex-none{ flex:none }
 
 .display-direction-row{flex-direction: row;}
+.display-direction-column{flex-direction: column;}
 .flex-align-center{ align-items: center; }
 .flex-align-base{ align-items: baseline; }
+.flex-align-end{ align-items: flex-end; }
 .flex-justify-center {justify-content: center;}
 .flex-justify-start {justify-content: flex-start;}
 .flex-justify-end {justify-content: flex-end;}

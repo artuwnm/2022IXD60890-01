@@ -77,6 +77,9 @@ a: hover {
     background-position: center;
     background-repeat: no-repeat;
 }
+fieldset {
+	border: 10px solid red;
+}
 
 
 /* NAVIGATION */

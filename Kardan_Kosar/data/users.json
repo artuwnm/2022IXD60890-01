@@ -1,0 +1,23 @@
+[
+	{
+		"name":"Kosar Kardan",
+		"type":"Student",
+		"email":"kkardan2@art.edu",
+		"classes":[608,613],
+		"imgSRC":"img/"
+	},
+	{
+		"name":"Bahar Hesabi",
+		"type":"Movie Editor",
+		"email":"bhesabi@gmail.com",
+		"classes":[608,613,123,911],
+		"imgSRC":"img/"
+	},
+	{
+		"name":"Masoud Moharami",
+		"type":"Software Developer",
+		"email":"mmoharammi@gmail.com",
+		"classes":[324,1011,911],
+		"imgSRC":"img/"
+	}
+]
