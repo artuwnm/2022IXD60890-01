@@ -12,3 +12,6 @@
 
 -http://www.hsuanlingdesign.com/aau/ixd608/tu.hsuanling/index.php
 
+-http://www.hsuanlingdesign.com/aau/ixd608/tu.hsuanling/notes/reading_data.php
+
+-http://www.hsuanlingdesign.com/aau/ixd608/tu.hsuanling/admin/users.php
