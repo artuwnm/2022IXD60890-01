@@ -41,7 +41,7 @@ $users_array = file_get_json("../data/users.json");
 			<?php 
 
 			// for is a loop function
-			for($i=0;$<count($notes_object->notes),$i++){
+			for($i=0;$i<count($notes_object->notes);$i++){
 				echo "<li>{$notes_object->notes[$i]}</li>";
 			}
 			 ?>
@@ -52,7 +52,7 @@ $users_array = file_get_json("../data/users.json");
 
 			<?php 
 
-			for($i=0;$<count($users_array),$i++){
+			for($i=0;$i<count($users_array);$i++){
 				echo "<li>
 				<strong>{$users_array[$i]->name}</strong>
 				<span>{$users_array[$i]->type}</span>

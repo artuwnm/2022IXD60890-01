@@ -11,10 +11,8 @@ function showUserPage($user) {
 	$classes = implode(", ", $user->classes);
 
 
-
-
 	echo <<<HTML
-	<nav class=" nav-crumbs">
+	<nav class="nav nav-crumbs">
 		<ul>
 			<li><a href="admin/users.php">Back</a></li>
 		</ul>
@@ -34,8 +32,10 @@ function showUserPage($user) {
 			<strong>Classes</strong>
 			<span>$classes</span>
 		</div>
-	<div>
-	HTML; //everything insife the <<<HDFSFH HDFSFH is a string, this call "heredoc", <<<HTML HTML works as well
+	</div>
+	HTML; 
+
+	//everything inside the <<<HDFSFH HDFSFH is a string, this call "heredoc", <<<HTML HTML works as well
 }
 
 
@@ -54,7 +54,7 @@ function showUserPage($user) {
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1>User Admin</h1>
+				<h1 style="color:white;">User Admin</h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none">
@@ -86,9 +86,9 @@ function showUserPage($user) {
 
 			<?php 
 
-			for($i=0;$<count($users),$i++){
+			for($i=0;$i<count($users);$i++){
 				echo "<li>
-				<a href='admin/users/php?id=$i'>{$users[$i]->name}</a>
+				<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
 				</li>";
 			}
 			 ?>

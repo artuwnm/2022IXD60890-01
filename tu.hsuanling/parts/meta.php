@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width">
 
 <!-- Pay attention on the relative links -->
-<base href="http://www.hsuanlingdesign.com/aau/ixd608/tu.hsuanling">
+<base href="http://www.hsuanlingdesign.com/aau/ixd608/tu.hsuanling/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
