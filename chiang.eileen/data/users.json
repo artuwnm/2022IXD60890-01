@@ -1,0 +1,32 @@
+[
+	{
+		"name":"Eileen Chiang",
+		"type":"Student",
+		"email":"echiang@academyart.edu",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Lucy Chen",
+		"type":"Student",
+		"email":"lchen@academyart.edu",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Cherry Louise",
+		"type":"Student",
+		"email":"clouise@academyart.edu",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Evan King",
+		"type":"Student",
+		"email":"eking@academyart.edu",
+		"classes":[608,617,820]
+	},
+	{
+		"name":"Welson Chiang",
+		"type":"Student",
+		"email":"wchiang@academyart.edu",
+		"classes":[608,617,820]
+	}
+]
