@@ -2,9 +2,9 @@
 
 ## Relevant Links
 
-- https://lchen.co
-- https://lchen.co/IXD608/chen.lu
-- https://lchen.co/IXD608/chen.lu/styleguide
+- http://lchen.co
+- http://lchen.co/IXD608/chen.lu
+- http://lchen.co/IXD608/chen.lu/styleguide
 - http://lchen.co/IXD608/chen.lu/index.php
 
 
