@@ -47,11 +47,11 @@
 
 			<script>
 				const makeTable2 = (classes='')=> {
-				const head = ['Item Total','','','$45.00'];
+				const head = ['Item Total','','','$10.89'];
 				const body = [
-					['Tax','','','$2.90'],
+					['Tax','','','$2.00'],
 					['Shipping','','','Free'],
-					['Subtotal','','','$47.90'],
+					['Subtotal','','','$12.89'],
 				];
 
 				document.write(`<table class="${classes}">
@@ -75,11 +75,8 @@
 			<div class="placeorder">
 				<div class="card soft cart-card" id="total-box">
 					<script>makeTable2("table")</script>
-				</div>
-
-				<div class="placeorder_button" id="place_order_container">
-					<div class="form-control">
-						<a href="confirmation.php"><button type="button" class="form-button" id="checkout">Place Order</button></a>
+					<div class="placeorder_button" id="place_order_container">
+						<a href="confirmation.php"><button type="button" class="form-button" id="checkout">Place Order</button></a>	
 					</div>
 				</div>
 			</div>

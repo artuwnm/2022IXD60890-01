@@ -1,3 +1,12 @@
+<?php 
+
+include_once "parts/templates.php";
+include_once "lib/php/functions.php"; 
+
+$cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (4,7,10)");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +17,40 @@
 	<?php include "parts/navbar.php"; ?>
 	<div class="cart_bg">
 
+		<!-- TEST -->
 
 		<div class="container" id="cart_container">
+			<a href="product_list.php">< Back</a>
+			<h2 class="cart-item-form"><br>In Your Cart</h2>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-7">
+					<div class="card soft">
+						<?= array_reduce($cart,'cartListTemplate') ?>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-5">
+					<div class="card soft cart-item-form" >
+						<div class="card-section display-flex">
+							<div class="flex-stretch"><strong>Subtotal</strong></div>
+							<div class="flex-none">&dollar;10.89</div>
+						</div>
+						<div class="card-section display-flex">
+							<div class="flex-stretch"><strong>Taxes</strong></div>
+							<div class="flex-none">&dollar;2.00</div>
+						</div>
+						<div class="card-section display-flex">
+							<div class="flex-stretch"><strong>Total</strong></div>
+							<div class="flex-none">&dollar;12.89</div>
+						</div>
+						<a href="checkout.php"><button type="button" class="form-button" id="checkout">Checkout</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- END-OF-TEST -->
+
+		<!-- <div class="container" id="cart_container">
 			<a href="product_list.php">< Back</a>
 			<script>
 
@@ -85,7 +126,7 @@
 				</div>	
 			</div>
 
-		</div>
+		</div> -->
 
 <!-- 		<div class="container" id="place_order_container">
 			<div class="form-control">

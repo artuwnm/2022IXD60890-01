@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="grid gap">
-					<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+					<!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 						<figure class="figure product">
 							<a href="product_item.php?id=1"><img src="img/chocolatecookies.jpg" alt=""></a>
 							<figcaption>
@@ -124,7 +124,28 @@
 								<div>$2.99</div>
 							</figcaption>
 						</figure>
-					</div>
+					</div> -->
+
+				<?php 
+
+					include_once "lib/php/functions.php";
+					include_once "parts/templates.php";
+
+					$result = makeQuery(
+						makeConn(),
+						"
+						SELECT *
+						FROM `products`
+						ORDER BY `date_create` DESC
+						LIMIT 12
+						"
+
+					);
+
+					echo array_reduce($result,'productListTemplate');
+
+				?>
+
 			</div>
 		</div>
 
@@ -134,6 +155,24 @@
 	<!-- FOOTER -->
 
 	<?php include "parts/footer.php"; ?>
+
+	<!-- CONNECTION -->
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>

@@ -52,13 +52,23 @@ body {
 .display-block { display: flex;}
 .display-inline-block { display: inline-block;}
 
-.flex-stretch {flex:1 1 auto;}
+.flex-stretch {
+    flex:1 1 auto;
+    height: 2rem;
+}
 .flex-none {flex:none;
             height: 70px;
             }
 
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
+
+.card-section {
+    height: 2.5rem;
+}
+.card-section-1 {
+    height: 3rem;
+}
 
 
 /* SMALL */
@@ -1045,6 +1055,13 @@ body {
 }
 #checkout:hover {
     background-color: var(--color-main-blue);
+}
+
+.cart-item-form {
+    font-family: josefin-slab, serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 /* CHECKOUT */

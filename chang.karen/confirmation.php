@@ -19,7 +19,7 @@
 					
 						<a href="product_list.php"><button type="button" class="form-button" id="checkout">Shop more</button></a>
 				
-						<a href="home.php"><button type="button" class="form-button" id="checkout">Home</button></a>
+						<a href="index.php"><button type="button" class="form-button" id="checkout">Home</button></a>
 				</div>
 
 			</div>

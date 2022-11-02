@@ -1,3 +1,13 @@
+<?php
+
+	include_once "lib/php/functions.php";
+
+	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
+
+	// print_p($product);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +22,13 @@
 
 			<figure class="figure" id="item-figure">
 				<a href="product_list.php">< Back</a>
-				<img src="img/chocolatecookies.jpg" alt="">
+				<img src="img/<?= $product->thumbnail ?>" alt="">
 			</figure>
 
 			<div class="content">
-				<h1>Chocolate Cookies (3pc)</h1>
-				<h1>$4.05</h1>
-				<p><br>Our crispy chocolate cookies are made of 75% dark chocolate chips, organic cocoa powder, and fresh peanuts.</p>
+				<h1><?= $product->name ?></h1>
+				<h1>&dollar;<?= $product->price ?></h1>
+				<p><br><?= $product->description ?></p>
 
 				<div class="form-control">
 					<p>Quantity:</p>
