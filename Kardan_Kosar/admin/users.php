@@ -7,7 +7,7 @@ $filename = "../data/users.json";
 
 $users = file_get_json($filename);
 
-$empty_user = (object) [
+$empty_user = (object)[
 	"name"=>"",
 	"type"=>"",
 	"email"=>"",
@@ -24,6 +24,7 @@ if (isset($_GET['action'])){
 		$users[$_GET['id']]-> type = $_POST['user-type'];
 		$users[$_GET['id']]-> email = $_POST['user-email'];
 		$users[$_GET['id']]-> classes = explode(", ", $_POST['user-classes']);
+		$users[$_GET['id']]-> imgSRC = $_POST['user-imgSRC'];
 
 		file_put_contents($filename, json_encode($users));
 
@@ -35,19 +36,22 @@ if (isset($_GET['action'])){
 		$empty_user-> type = $_POST['user-type'];
 		$empty_user-> email = $_POST['user-email'];
 		$empty_user-> classes = explode(", ", $_POST['user-classes']);
+		$empty_user-> imgSRC = $_POST['user-imgSRC'];
 
 		$id = count($users);
+		//count((is_countable($users)?$users:[]))
 
 		$users[] = $empty_user;
 
 		file_put_contents($filename, json_encode($users));
-
 		header("location:{$_SERVER['PHP_SELF']}?id=$id");
-			break;
+		break;
 
 		case 'delete':
-			// code...
-			break;
+		array_splice($users, $_GET['id'],1);
+		file_put_contents($filename, json_encode($users));
+		header("location:{$_SERVER['PHP_SELF']}");
+		break;
 	}
 }
 
@@ -69,16 +73,16 @@ function showUserPage($user) {
 
 	$classes = implode(", ",$user->classes);
 	//print_p($user);
-
+	$delete = $id =="new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
 	//heredoc
 	echo <<<HTML
 	<nav class="nav nav-crumbs">
 		<ul>
-			<li><a href="admin/users.php">< Back</a></li>
+			<li class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">< Back</a></li>
+			<li class="flex-none">$delete</li>
 		</ul>
 	</nav>
-	<ul id="userPageInfo" class="display-flex flex-justify-space-between">
-		<li>
+	<section id="userPageInfo" class="display-flex flex-justify-space-between">
 			<ul class="display-flex flex-align-end gap flex-align-end">
 				<li>
 					<img src="$user->imgSRC" alt="user image" width="300px" height="400px"/>
@@ -99,8 +103,6 @@ function showUserPage($user) {
 					</div>
 				</li>
 			</ul>
-		</li>
-		<li>
 			<form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
 				<h2>$addoredit User</h2>
 				<div class="form-control">
@@ -123,8 +125,7 @@ function showUserPage($user) {
 					<input type="submit" class="form-button" value="UPDATE">
 				</div>
 			</form>
-		</li>
-	</ul>
+	</section>
 	
 
 	HTML;
@@ -149,7 +150,6 @@ function showUserPage($user) {
 		 		<ul>
 		 			<li><a href="<?= $_SERVER['PHP_SELF'] ?>">User List</a></li>
 		 			<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New User</a></li>
-		 			<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Delete User</a></li>
 		 		</ul>
 		 	</nav>
 		 </div>
