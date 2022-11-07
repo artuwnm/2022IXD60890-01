@@ -117,7 +117,7 @@ $classes = implode(", ", $user->classes);
 		</form>
 	</div>
 	HTML;
-}
+
 
 	$output = $id == "new" ? $form : 
 		"<div class='grid gap'>
@@ -136,7 +136,7 @@ echo <<<HTML
 		$output
 	HTML;
 
-
+}
 
  ?>
 
