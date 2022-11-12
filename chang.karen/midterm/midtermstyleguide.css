@@ -52,13 +52,9 @@ body {
 .display-block { display: flex;}
 .display-inline-block { display: inline-block;}
 
-.flex-stretch {
-    flex:1 1 auto;
-    height: 2rem;
-}
-.flex-none {flex:none;
-            height: 70px;
-            }
+.flex-stretch {flex:1 1 auto;}
+
+.flex-none {flex:none;}
 
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
@@ -66,10 +62,10 @@ body {
 .card-section {
     height: 2.5rem;
 }
-.card-section-1 {
+/*.card-section-1 {
     height: 3rem;
 }
-
+*/
 
 /* SMALL */
 
@@ -361,6 +357,7 @@ body {
     .card.soft {
         padding: 20px 20px;
         margin-top: 8px;
+        margin-bottom: 10px;
         border-radius: 8px;
         border: solid 1.5px #83d0cf;
     }
@@ -577,6 +574,17 @@ body {
     background-color: var(--color-neutral-light);
 }
 
+.form-button.inline {
+    width: auto;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
 .hotdog {
     background-color: var(--color-neutral-light);
     border-radius: 2em;
@@ -638,7 +646,7 @@ body {
 }
 
 .form-select-small>select {
-    padding: 0.1em 0.5em;
+    padding: 0;
     background-color: #fff;
     border: 2px solid var(--color-neutral-dark);
     border-radius: 0.5em;
@@ -1015,7 +1023,8 @@ body {
 }
 
 .cart_bg {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100vw;
     background-image: url(../img/review-bg.jpg);
     background-size: cover;
@@ -1062,6 +1071,14 @@ body {
     text-align: left;
     padding: 0;
     margin: 0;
+}
+
+.images-thumbs img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* CHECKOUT */

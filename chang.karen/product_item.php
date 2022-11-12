@@ -4,7 +4,7 @@
 
 	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
-	// print_p($product);
+	// print_p($_SESSION);
 
 ?>
 
@@ -25,7 +25,10 @@
 				<img src="img/<?= $product->thumbnail ?>" alt="">
 			</figure>
 
-			<div class="content">
+			<form class="content" method="post" action="cart_actions.php?action=add-to-cart">
+
+<input type="hidden" value="<?= $product->id ?>" name="product-id">
+
 				<h1><?= $product->name ?></h1>
 				<h1>&dollar;<?= $product->price ?></h1>
 				<p><br><?= $product->description ?></p>
@@ -33,7 +36,7 @@
 				<div class="form-control">
 					<p>Quantity:</p>
 					<div class="form-select">
-						<select>
+						<select id="product-amount" name="product-amount">
 							<option>1</option>
 							<option>2</option>
 							<option>3</option>
@@ -49,10 +52,10 @@
 				</div>
 
 				<div class="form-control">
-					<button type="button" class="form-button" id="addtocart">Add to Cart</button>
+					<input type="submit" class="form-button" id="addtocart" value="Add To Cart">
 				</div>
 
-			</div>
+			</form>
 		</div>
 
 	</div>
