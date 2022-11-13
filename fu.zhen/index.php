@@ -26,74 +26,27 @@
 	<div class="container">
 		<div class="card soft">
 			<h2>Winter Collection</h2>
-			<div class="grid gap">
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<figure class="figure product-overlay">
-					<img src="https://via.placeholder.com/400x400?text=product" alt="">
-					<figcaption>
-						<div class="caption-body">
-							<div>Product Name</div>
-							<div></div>
-						</div>
-					</figcaption>
-				</figure>	
-			</div>
-		</div>
+
+			<?php
+
+			include_once "lib/php/functions.php";
+			include_once "parts/templates.php";
+
+			$result = makeQuery(
+				makeConn(),
+				"
+				SELECT *
+				FROM `products`
+				ORDER BY `date_create` 
+				LIMIT 6
+				"
+			);
+
+			echo "<div class='productlist grid gap'>",array_reduce($result,'collectionTemplate'),"</div>";
+
+			?>
+
+			
 		   
 
 			
