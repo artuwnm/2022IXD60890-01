@@ -53,6 +53,22 @@ body {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+.product.figure img {
+	height: 100%;
+	object-fit: contain;
+}
+
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
+
+.product.figure:hover {
+	box-shadow: 0 2px 15px rgba(0,0,0,0.2);;
 }
 
 .figure-overlay {
@@ -110,4 +126,20 @@ body {
 	.product-overlay .caption-body {
 		transform: none;
 		padding: 0;
+}
+
+
+.img {
+	object-fit: contain;
+}
+
+.image-main img {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
 }

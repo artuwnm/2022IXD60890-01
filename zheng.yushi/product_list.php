@@ -13,78 +13,27 @@
 
 
 	<div class="container">
-		<div class="card soft">
 			<h2>Shop</h2>
 
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=1">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=2">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=3">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=4">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=5">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<figure class="figure product">
-						<a href="product_item.php?id=6">
-						<img src="https://via.placeholder.com/400x400?text=product" alt="">
-						</a>
-						<figcaption>
-							<div>Product Name</div>
-							<div>$3.99</div>
-						</figcaption>
-					</figure>
-				</div>
-		</div>
-	</div>
+	<?php
 
+	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
+
+	$result = makeQuery(
+		makeConn(),
+		"
+		SELECT *
+		FROM `products`
+		ORDER BY `date_create` DESC
+		LIMIT 12
+		"
+		);
+
+	echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
+	
+	?>
+
+	</div>
 </body>
 </html>
