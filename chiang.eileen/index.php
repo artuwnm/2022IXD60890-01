@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
+	<title>Something Vintage</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 </head>
