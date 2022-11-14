@@ -33,7 +33,7 @@
 
 
 
-		<?php 
+	<?php 
 
 
 		include_once "lib/php/functions.php";
@@ -54,7 +54,7 @@
 		echo "<div class='productlist grid gap'>", array_reduce($result,'productlistTemplate'),"</div>";
 
 
-		 ?>
+	 ?>
 
 		 <!-- DESC = high to low; New to Old, ASC = low to high; Old to New -->
 
