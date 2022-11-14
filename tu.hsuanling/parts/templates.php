@@ -21,3 +21,19 @@ return $r.<<<HTML
 HTML;
 
 };
+
+function cardListTemplate($r,$o){
+	return $r. <<<HTML
+<div class="display-flex">
+	<div class="flex-none images-thumbs">
+		<img src="img/$o->thumbnail">
+	</div>
+	<div class="flex-stretch">
+		<strong>$o->title</strong>
+		<div>Delete</div>
+	</div>
+</div>
+
+
+HTML;
+}

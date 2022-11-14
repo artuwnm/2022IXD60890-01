@@ -193,9 +193,11 @@ p {
 
 .images-thumbs {
 	padding-top: 1em;
-	width:2em;
+	width:8em;
+	height: 6em;
 	object-fit: contain;
 }
+
 
 
 

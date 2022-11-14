@@ -75,6 +75,10 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- <div class="card soft light">
+			<p><?= $product->description ?></p>
+		</div> -->
 		
 	</div>
 
