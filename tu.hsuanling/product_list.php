@@ -20,18 +20,50 @@
 	</div>
 
 	<div class="container">
-		<div class="card soft">
+		
 			<h2>Product List</h2>
 
-			<ul>
+			<!-- <ul>
 				<li><a href="product_item.php?id=1">Product 1</a></li>
 				<li><a href="product_item.php?id=2">Product 2</a></li>
 				<li><a href="product_item.php?id=3">Product 3</a></li>
 				<li><a href="product_item.php?id=4">Product 4</a></li>
 			</ul>
-		</div>
+		 -->
 
-		<div class="grid gap">
+
+
+		<?php 
+
+
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(),
+			"
+			SELECT *
+			FROM `products`
+			ORDER BY `id` ASC
+			LIMIT 12
+			"
+		);
+
+		// print_p($result);
+
+		echo "<div class='productlist grid gap'>", array_reduce($result,'productlistTemplate'),"</div>";
+
+
+		 ?>
+
+		 <!-- DESC = high to low; New to Old, ASC = low to high; Old to New -->
+
+
+		
+
+	
+
+		<!-- <div class="grid gap">
 				<div class="col-xs-12 col-md-4">
 					<figure class="figure product">
 					<img src="https://via.placeholder.com/400x400?text=product" alt="">
@@ -61,7 +93,7 @@
 					</figcaption>
 					</figure>
 				</div>
-			</div>	
+			</div>	 -->
 	</div>
 
 

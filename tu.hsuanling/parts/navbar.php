@@ -9,7 +9,7 @@
 				<ul>
 					<li><a href="index.php">Home</a></li>
 					<li><a href="product_list.php">Succulents</a></li>
-					<li><a href="contact.php">Contact Us</a></li>
+					<li><a href="product_cart.php">Cart</a></li>
 				</ul>
 			</nav>
 		</div>
