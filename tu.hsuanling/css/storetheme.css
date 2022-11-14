@@ -191,11 +191,12 @@ p {
 	object-fit: cover;
 }
 
-.images-thumbs {
-	padding-top: 1em;
+.images-thumbs img{
+	padding-top: 0.3em;
+	padding-right: 1em;
 	width:8em;
 	height: 6em;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 

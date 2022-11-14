@@ -22,7 +22,7 @@ HTML;
 
 };
 
-function cardListTemplate($r,$o){
+function cartListTemplate($r,$o){
 	return $r. <<<HTML
 <div class="display-flex">
 	<div class="flex-none images-thumbs">
@@ -31,6 +31,10 @@ function cardListTemplate($r,$o){
 	<div class="flex-stretch">
 		<strong>$o->title</strong>
 		<div>Delete</div>
+	</div>
+
+	<div class="flex-none">
+		&dollar;$o->price
 	</div>
 </div>
 

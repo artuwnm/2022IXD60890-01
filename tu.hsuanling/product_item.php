@@ -38,9 +38,9 @@
 					<div class="images-main">
 						<img src="img/<?=$product->thumbnail ?>" alt="">
 					</div>
-					<!-- <div class="images-thumbs">
+					<div class="images-thumbs">
 						<?= $image_elements ?>
-					</div> -->
+					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
