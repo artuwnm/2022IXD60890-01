@@ -269,7 +269,10 @@ margin-top: 5px;
 /* NEED TO WORK ON THE MEDIA QUARY FOR THE FOOTER ON SMALL SCREEN DEVICE */
 
 
-
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
 
 
 
@@ -398,7 +401,7 @@ margin-top: 5px;
 }
 .form-label-motion {
     font-size: 0.8em;
-    top: -5.7em;
+    top: -1.7em;
 }
 input[type="text"]
 {
@@ -408,4 +411,14 @@ input[type="text"]
 
 
 
+.images-main {
+	width: 40vh;
+	height: 40vh;
+	object-fit: cover;
+}
+.images-thumbs {
+	width: 8em%;
+	height: 6em;
+	object-fit: contain;
+}
 

@@ -301,7 +301,11 @@ a:hover {
 .figure.product {
     border-radius: 0.5em;
     box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: hidden;  
+}
+.figure.product img {
+    height: 100%;
+    object-fit: contain;
 }
 
 .product-overlay{
