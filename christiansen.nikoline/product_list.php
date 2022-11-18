@@ -10,91 +10,32 @@
 
 <body>
 
-<?php include "parts/navbar.php"?>
+	<?php include "parts/navbar.php"; ?>
 
-	<div id="fig-overlay1" class="soft card">
+	<div class="container">
 			<h3>Products</h3>
-			<div class="grid gap">
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=1">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=2">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=3">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=4">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=5">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-4">
-					<a href="product_item.php?id=6">
-						<figure class="figure product-overlay">
-							<img src="https://via.placeholder.com/400x400?text=product" alt="">
-							<figcaption>
-								<div class="caption-body">
-									<div>Product Name</div>
-									<div>$00.00</div>
-								</div>
-							</figcaption>
-						</figure>
-					</a>
-				</div>
-			</div>
-		</div>
+				
+			
+		<?php 
+
+		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
+
+		$result = makeQuery(
+			makeConn(), 
+			"
+			SELECT *
+			FROM `products`
+			ORDER BY `price` DESC
+			LIMIT 12
+			"
+		);
+
+		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
+
+
+		?>
+	</div> 
 	
 </body>
 </html>

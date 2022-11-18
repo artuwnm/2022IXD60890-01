@@ -46,6 +46,10 @@ h6 {
 	font-weight: 800;
 }
 
+h2 .product-name {
+	text-align: center;
+}
+
 a {
 	text-decoration: none;
 	color: var(--color-neutral-dark);
@@ -54,7 +58,7 @@ a {
 }
 
 a:hover {
-	background-color: var(--color-main-medium);
+/*	background-color: var(--color-main-medium);*/
 	color: var(--color-white);
 	text-decoration: none;
 }
@@ -89,6 +93,8 @@ p {
 .flex-align-center { align-items: center; }
 .flex-justify { justify-content: center; }
 
+.flex-columbn { flex-direction: column; }
+
 
 															/* SMALL CLASS */
 
@@ -115,7 +121,7 @@ p {
 	}
 
 	.nav a:hover {
-		background-color: var(--color-main-medium);
+	/*	background-color: var(--color-main-medium);*/
 		color: var(--color-white);
 		text-decoration: none;
 	}
@@ -212,8 +218,13 @@ p {
 
 .navbar a {
 	padding: 0 0.5em;
+	font-weight: bold;
 }
 
+.logo_nav img {
+	height: 4em;
+    margin-top: 15px;
+}
 
 /* CARD */
 .card {
@@ -227,7 +238,7 @@ p {
 }
 
 .card.soft {
-	border-radius: 0.5em;
+/*	border-radius: 0.5em;*/
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -254,6 +265,18 @@ p {
 	padding: 0;
 }
 
+.card-section {
+	padding: 1em;
+
+}
+
+.card-section∼.card-section {
+border-top: 1px solid red;
+
+}
+
+
+
 
 															/* GOOD NAMING - NO "SQUARE", "CIRCLE" etc. */
 
@@ -277,9 +300,8 @@ article {
 
 /* CENTER */
 .mid {
-	margin-top: 40vh;
+	margin-top: 30vh;
 	width: 40vw;
-	opacity: 0.8;
 }
 
 .mid2 {
@@ -326,12 +348,13 @@ article {
 
 															/* FIGURE */
 .figure {
+	width: 100%;
 	margin: 0;
 }
 
 .figure img {
 	width: 100%;
-/*	vertical-align: text-bottom;*/
+	object-fit: contain;
 }
 
 .figure figcaption {
@@ -472,10 +495,26 @@ article {
 
 															/* PUT IN STORETHEME.CSS WHEN ISSUE FIXED */
 
+
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	overflow: hidden; 
+	height: auto;
+	background-color: white;
+	margin: 0;
+}
+
+.productlist a {
+	font-weight: initial;
+	cursor: pointer;
+}
+
+.productlist a:hover {
+	background-color: none;
+	color: black;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+	transition: all 0.3s ease-in-out;
 }
 
 .product-overlay {
@@ -534,5 +573,19 @@ article {
 
 .product-overlay:hover img  {
 	transform: scale(1.4,1.4);
+}
+
+
+
+.images-main img {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+
+.images-thumbs {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
 }
 
