@@ -565,6 +565,36 @@ body {
     padding: 0.5em;
 }
 
+.filter-button {
+    border-radius: 2em;
+    background-color: var(--color-main-blue);
+    font-family: josefin-slab, serif;
+    font-weight: 600;
+    color: #000;
+    margin-right: 5px;
+}
+
+.filter {
+    border-radius: 2em;
+    background-color: var(--color-main-blue);
+    font-family: josefin-slab, serif;
+    font-weight: 600;
+    color: #000;
+    margin-right: 20px;
+}
+
+
+
+.form-button.filter:hover {
+    text-decoration: none;
+    background-color: var(--color-neutral-light);
+}
+
+.form-button.filter:focus {
+    text-decoration: none;
+    background-color: var(--color-main-blue);
+}
+
 .form-button:hover {
     text-decoration: none;
     background-color: var(--color-main-medium);
@@ -626,8 +656,9 @@ body {
 }
 
 .hotdog.light {
-    background-color: var(--color-neutral-light);
+    background-color: #fff;
     color: #000;
+    border: 2px solid var(--color-main-blue);
 }
 
 
@@ -670,6 +701,38 @@ body {
     transform: translateY(-50%);
     pointer-events: none;
     color: var(--color-neutral-medium);
+}
+
+.sort-select>select {
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    border: 2px solid var(--color-main-blue);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.new-select > select{
+    width: 120px;
+    height: 35px;
+    font-family: josefin-slab, serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-left: 5px;
+    border-radius: 0.5em;
+}
+.new-select{
+    margin-left: auto;
+    border-radius: 0.5em;
+}
+
+#sort_and_filter {
+    position: relative;
+}
+
+.sort-select {
+    right:0px;
+    position: absolute;
 }
 
 .favorite input:checked + label {
@@ -857,6 +920,7 @@ body {
 #list_title_container {
     display: flex;
     text-align: left;
+    padding-bottom: 0;
 }
 
 #list-title {
@@ -986,6 +1050,12 @@ body {
     font-size: 1rem;
     line-height: 1rem;
     margin: 30px 0 5px 5px;
+}
+
+#search-form-control {
+    padding-top: 0;
+    margin-top: 0;
+    font-family: josefin-slab, serif;
 }
 
 /* CART */

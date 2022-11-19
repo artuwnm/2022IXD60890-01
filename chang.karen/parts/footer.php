@@ -9,7 +9,7 @@
 			<h2>8:00am - 5:00pm</h2>
 		</div>
 		<div class="col-xs-6 col-md-4 col-lg-3">
-			<h2>Search</h2>
+			<h2>Follow us</h2>
 			<div class="social__icons">
 	                    <a href="https://www.facebook.com/pages/T5-Bakery-Cafe/483914195276503" class="social__icon--link" target="_blank">
 	                        <i class="fab fa-facebook"></i>
