@@ -129,11 +129,7 @@ body {
 }
 
 
-.img {
-	object-fit: contain;
-}
-
-.image-main img {
+.images-main img {
 	width: 100%;
 	height: 40vh;
 	object-fit: contain;
@@ -142,4 +138,12 @@ body {
 	width: 8em;
 	height: 6em;
 	object-fit: contain;
+}
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
+	content: '(';
 }
