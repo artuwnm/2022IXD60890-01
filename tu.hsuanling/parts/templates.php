@@ -42,7 +42,7 @@ function cartListTemplate($r,$o){
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->title</strong>
-		<form action="cart_actions.php?action=delete-cart-item" methos="post">
+		<form action="cart_actions.php?action=delete-cart-item" method="post">
 			<input type="hidden" name="id" value="$o->id">
 			<input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">
 		</form>
@@ -50,7 +50,7 @@ function cartListTemplate($r,$o){
 
 	<div class="flex-none">
 		<div>&dollar;$totalfixed</div>
-		<form action="cart_actions.php?action=update-cart-item" methos="post" onchange="this.submit()">
+		<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
 		<input type="hidden" name="id" value="$o->id">
 			<div class="form-select" style="font-size:0.8em">
 				$selectamount

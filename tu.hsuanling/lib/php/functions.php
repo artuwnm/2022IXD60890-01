@@ -76,7 +76,7 @@ function makeCartBadge() {
 	if(count($cart)==0) {
 		return "";
 	} else {
-		return array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
+		return array_reduce($cart,function($r,$o){return (int)$r + (int)$o->amount;},0);
 	}
 		// return "(".array_reduce($cart,function($r,$o){return $r+$o->amount;},0).")";
 	
@@ -97,7 +97,7 @@ function getCartItems() {
 	return array_map(function($o) use ($cart) {
 		$p = cartItemById($o->id);
 		$o->amount = $p->amount;
-		$o->total = $p->amount * $o->price;
+		$o->total = (int)$p->amount * (int)$o->price;
 		return $o;
 	},$data);
 
