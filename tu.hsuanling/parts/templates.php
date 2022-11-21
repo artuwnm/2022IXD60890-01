@@ -23,6 +23,7 @@ HTML;
 };
 
 function cartListTemplate($r,$o){
+	$totalfixed = number_format($o->total,2,'.','');
 	return $r. <<<HTML
 <div class="display-flex">
 	<div class="flex-none images-thumbs">
@@ -30,14 +31,70 @@ function cartListTemplate($r,$o){
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->title</strong>
+		<div>Amount: $o->amount</div>
 		<div>Delete</div>
 	</div>
 
 	<div class="flex-none">
-		&dollar;$o->price
+		&dollar;$totalfixed
 	</div>
 </div>
 
 
 HTML;
 }
+
+
+function cartTotals() {
+	$cart = getCartItems();
+
+	$cartprice = array_reduce($cart,function($r,$o){return $r + $o->total;},0);
+
+	$pricefixed = number_format($cartprice,2,'.','');
+	$taxfixed = number_format($cartprice*0.0725,2,'.','');
+	$taxedfixed = number_format($cartprice*1.0725,2,'.','');
+
+
+	return <<<HTML
+
+	<div class="card-section display-flex">
+		<div class="flex-stretch"><strong>Subtotal</strong></div>
+		<div class="flex-none">&dollar;$pricefixed</div>
+	</div>
+	<div class="card-section display-flex">
+		<div class="flex-stretch"><strong>Taxes</strong></div>
+		<div class="flex-none">&dollar;$taxfixed</div>
+	</div>
+	<div class="card-section display-flex">
+		<div class="flex-stretch"><strong>Total</strong></div>
+		<div class="flex-none">&dollar;$taxedfixed</div>
+	</div>
+	<div class="card-section">
+		<a href="product_checkout.php" class="form-button">Checkout</a>
+	</div>
+
+
+	HTML;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
