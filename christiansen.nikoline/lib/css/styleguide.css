@@ -69,6 +69,10 @@ p {
 	font-weight: 200;
 }
 
+ .hr-cart {
+ 	width: 90%;
+ }
+
 
 
 
@@ -396,9 +400,10 @@ article {
     color: var(--color-neutral-medium);
     display: block;
     width: 100%;
+    padding-bottom: 3px;
   }
 
-  .form-control { margin: 1em 0; }
+ .form-control { margin: 1em 0; }
 
 
 															/* BUTTONS */
@@ -437,6 +442,12 @@ article {
 	background-color: var(--color-white);
 	color: var(--color-black);
 }
+
+.cart-select>select {
+    background-color: white !important;
+    border: 0.1em solid var(--color-neutral-medium);
+    margin-bottom: 0.5em; 
+    }
 
 .form-select>select {
 	padding: 0.7em 1.5em;
@@ -583,7 +594,7 @@ article {
 	object-fit: contain;
 }
 
-.images-thumbs {
+.images-thumbs img {
 	width: 8em;
 	height: 6em;
 	object-fit: contain;
