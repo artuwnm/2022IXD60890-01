@@ -279,7 +279,7 @@ margin-top: 5px;
 	background-repeat: no-repeat;	
 }
 #instagram {
-	background-image: url(../../img/MedicineBottle.png);
+	background-image: url(../../img/Burger.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;	
@@ -525,9 +525,21 @@ form > h4 {
 #checkout_btn{
 	padding: 0 1em;
 }
-span.badge:not(:empty)::before{
+span.badge:not(:empty){
+	width: 20px;
+	height: 20px;
+	background-color: var(--color-primary-dark);
+	border-radius: 2.5px;
+	color: var(--color-white);
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 0.8em;
+}
+
+/*span.badge:not(:empty)::before{
 	content: "(";
 }
 span.badge:not(:empty)::after{
 	content: ")";
-}
+}*/

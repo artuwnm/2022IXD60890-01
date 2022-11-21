@@ -525,9 +525,17 @@ form > h4 {
 #checkout_btn{
 	padding: 0 1em;
 }
-span.badge:not(:empty)::before{
+span.badge:not(:empty){
+	width: 20px;
+	height: 20px;
+	background-color: var(--color-primary-dark);
+	border-radius: 5px;
+	color: var(--color-white);
+}
+
+/*span.badge:not(:empty)::before{
 	content: "(";
 }
 span.badge:not(:empty)::after{
 	content: ")";
-}
+}*/
