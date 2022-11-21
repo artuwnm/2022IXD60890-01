@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Product List</title>
+	<title>Pet Cloth</title>
 	<?php include "parts/meta.php"; ?>
 </head>
 </head>
+
 <body>
 
 	<?php include "parts/navbar.php"; ?>
