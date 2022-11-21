@@ -230,6 +230,14 @@ p {
     margin-top: 15px;
 }
 
+
+.sort-button {
+
+}
+
+
+
+
 /* CARD */
 .card {
 	background-color: var(--color-white);
@@ -375,7 +383,8 @@ article {
 .hotdog,
 .form-input,
 .form-button,
-.form-item {
+.form-item,
+.filter-button {
     display: inline-block;
     background-color: transparent;
     border-width: 0;
@@ -425,6 +434,23 @@ article {
    	background-color: var(--color-main-dark);
    	color: var(--color-white);
    }
+
+.filter-button {
+    background-color: inherit;
+ 	cursor: pointer;
+ 	text-align: center;
+    padding: 0.5em 1em;
+    font-size: 0.7em;
+    }
+
+	.filter-button:active {
+   		border-bottom: 1px solid black;
+   		}
+
+	.filter-button:hover {
+	   	text-decoration: none;
+	   	border-bottom: 1px solid black;
+	   }
 
 .hotdog {
 	background-color: var(--color-neutral-light);

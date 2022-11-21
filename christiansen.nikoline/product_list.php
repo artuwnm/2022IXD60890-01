@@ -3,7 +3,6 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,31 +10,58 @@ include_once "parts/templates.php";
 	<title>Product List</title>
 
 	<?php include "parts/meta.php"; ?>
+
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/product_list.js"></script>
 </head>
 <body>
 
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-
 		<h2>Product List</h2>
 
+		<div class="form-control">
+			<form class="hotdog light" id="product-search">
+				<input type="search" placeholder="Search Products">
+			</form>
+		</div>
+		<div class="form-control">
+			<div class="card soft">
+				<div class="display-flex">
+					<div class="flex-stretch display-flex flex-align-center">
+							<div class="flex-none">
+								<button data-filter="category" data-value="" type="button" class="filter-button">All</button>
+							</div>
+							<div class="flex-none">/</div>
+							<div class="flex-none">
+								<button data-filter="category" data-value="ALE" type="button" class="filter-button">ALES</button>
+							</div>
+							<div class="flex-none">/</div>
+							<div class="flex-none">
+								<button data-filter="category" data-value="Pilsner" type="button" class="filter-button">PILSNER</button>
+							</div>
+							<div class="flex-none">/</div>
+							<div class="flex-none">
+								<button data-filter="category" data-value="Porter" type="button" class="filter-button">PORTER</button>
+							</div>
+						</div>
+					<div class="flex-none">
+						<div class="form-select">
+							<select class="js-sort" style="background-color: inherit; border: 1px solid black; font-size: 0.7em;">
+								<option value="1">Newest</option>
+								<option value="2">Oldest</option>
+								<option value="3">Price low to high</option>
+								<option value="4">Price high to low</option>								
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<?php
-
-		$result = makeQuery(
-			makeConn(),
-			"
-			SELECT *
-			FROM `products` 
-			ORDER BY `date_create` DESC
-			LIMIT 12
-			"
-		);
-
-		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
-
-		?>
+		<div class='productlist grid gap'></div>		
 
 	</div>
 </body>

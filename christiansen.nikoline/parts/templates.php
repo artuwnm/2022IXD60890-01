@@ -39,20 +39,20 @@ return $r.<<<HTML
     <div class="flex-stretch">
         <strong>$o->name</strong>
         <form action="cart_actions.php?action=delete-cart-item" method="post">
-        <input type="hidden" name="id" value="$o->id">
-        <input type="submit" class="form-button inline" value="Delete" style="font-size:0.8em">
+	        <input type="hidden" name="id" value="$o->id">
+	        <input type="submit" class="form-button inline" value="Delete" style="font-size:0.8em">
         </form>
-        </div>
-        <div class="flex-none">
+    </div>
+    <div class="flex-none">
         <div>&dollar;$totalfixed</div>
         <form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
         <input type="hidden" name="id" value="$o->id">
-            <div class="form-select" style="font-size:0.8em;">
+        <div class="form-select" style="font-size:0.8em;">
              $selectamount
-                </div>
-            </form>
-         </div>
-     </div>
+        </div>
+    </form>
+ </div>
+</div>
 HTML;
 
 }
