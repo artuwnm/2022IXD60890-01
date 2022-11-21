@@ -323,17 +323,16 @@ table td{
     width: 100%;
     outline: 0;
 }
-
 .form-input {
-    border-bottom: 1px solid var(--color-neutral-medium);
+    border-bottom: 1px solid var(--color-neutral-light);
     padding: 0.5em 1em;
 }
 .form-input:focus{
-   border-bottom-color: var(--color-main-medium);
+   border-bottom-color: var(--color-main-light);
 }
 .form-label{
     font-size: 0.8em;
-    color: var(--color-neutral-dark);
+    color: var(--color-neutral-medium);
     display: block;
     width: 100%;
 }
@@ -342,9 +341,12 @@ table td{
     display: inline-block;
     background-color: var(--color-neutral-light);
     padding: 0.5em 1em;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+}
+.form-button.inline {
+   width:initial;
 }
 .form-button:hover{
    text-decoration: none;
