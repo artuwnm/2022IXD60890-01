@@ -35,8 +35,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-7">
-					<div class="card soft">
+				<div class="col-xs-12 col-md-7" >
+					<form class="card soft" method="post" action="cart_actions.php?action=add-to-cart">
+
+						<input type="hidden" name="product-id" value="<?= $product->id ?>"/>
+
 						<h2 class="product-title">Product Title</h2>
 						<h3 class="product-name"><?= $product->name?></h3>
 						<span class="fa fa-star checked"></span>
@@ -52,10 +55,10 @@
 						<h4 class="product-benefits">Benefits</h4>
 						<div class="product-benefits"><?= $product->benefits?></div>
 
-						<form>
+						<div>
 							<h4><label for="product-amount">Amount</label></h4>
-							<div class="form-select" id="product-amount">
-								<select>
+							<div class="form-select">
+								<select id="product-amount" name="product-amount">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -68,15 +71,17 @@
 									<option>10</option>
 								</select>
 							</div>
-						</form>
+						</div>
 
 						<div class="form-control">
-							<a class="form-button" href="product_added_to_cart.php?id=<?= $product->id?>">Add to Cart</a>
+							<!-- <a class="form-button" href="product_added_to_cart.php?id=<?= $product->id?>">Add to Cart</a> -->
+							<input type="submit" class="form-button" value="Add to Cart" />
 						</div>
+						
 						<div class="form-control">
 							<a class="form-button" href="product_list.php">Continue Shopping</a>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -24,21 +24,70 @@ return $r.<<<HTML
 	</a>
 HTML;
 }
-
+function selectAmount($amount=1, $total=10){
+	$output = "<select name='amount'>";
+	for($i=1; $i<=$total;$i++){
+		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
+	}
+	
+	$output .= "</select>";
+	return $output;
+}
 function cartListTemplate($r,$o) {
-return $r.<<<HTML
-	<div class="display-flex">
-		<div class="flex-none images-thumbs">
-			<div>
-				<img src="/images/$o->thumbnail" />
+	$totalFixed = number_format($o->total,2,'.','');
+	$selectamount = selectAmount($o->amount, 10);
+	return $r.<<<HTML
+		<div class="display-flex">
+			<div class="flex-none images-thumbs">
+				<div>
+					<img src="/images/$o->thumbnail" />
+				</div>
+			</div>
+			<div class="flex-stretch card-product-section">
+				<strong>$o->name</strong>
+				<form action="cart_actions.php?action=update-cart-item" method="post" onchange="this.submit()">
+					<input type="hidden" name="id" value="$o->id">
+					<div class="form-select" style="font-size:0.8em">
+						$selectamount
+					</div>
+				</form>
+				<form action="cart_actions.php?action=delete-cart-item" method="post">
+					<input type="hidden" name="id" value="$o->id">
+					<input type="submit" class="form-button inline" value="Delete" style="font-size:0.8em">
+				</form>
+			</div>
+			<div class="flex-none card-product-section">
+				<strong>$totalFixed</strong>
+				<div>$o->amount x &dollar;$o->price</div>
 			</div>
 		</div>
-		<div class="flex-stretch card-product-section">
-			<strong>$o->name</strong>
-			<div>Edit</div>
-			<div>Delete</div>
-		</div>
-		<div class="flex-none card-product-section">&dollar;$o->price</div>
-	</div>
-HTML;
+	HTML;
+}
+
+function cartTotals() {
+    $cart = getCartItems();
+    $cart_price = array_reduce($cart, function($r, $o){return $r + $o->total;},0);
+    $priceFixed = number_format($cart_price,2,'.','');
+    $taxFixed = number_format($cart_price*0.13,2,'.','');
+    $taxedFixed = number_format($cart_price*1.13,2,'.','');
+    return <<<HTML
+     <div class="card soft flat">
+        <div class="card-section display-flex">
+            <div class="flex-stretch"><strong>Sub Total</strong></div>
+            <div class="flex-none">&dollar;$priceFixed</div>
+        </div>
+        <div class="card-section display-flex">
+            <div class="flex-stretch"><strong>Taxes</strong></div>
+            <div class="flex-none">&dollar;$taxFixed</div>
+        </div>
+        <div class="card-section display-flex">
+            <div class="flex-stretch"><strong>Total</strong></div>
+            <div class="flex-none">&dollar;$taxedFixed</div>
+        </div>
+        <div id="checkout_btn" class="form-control">
+            <a class="form-button" href="product_checkout.php">Check Out</a>
+        </div>
+    </div>
+
+    HTML;
 }

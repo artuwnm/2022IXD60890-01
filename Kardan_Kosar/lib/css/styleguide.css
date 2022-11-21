@@ -395,6 +395,9 @@ a:hover {
     width: 100%;
     outline: 0;
 }
+.form-button.inline {
+    width: initial;
+}
 
 .form-input {
     padding: 0.5em 0.1em;
