@@ -22,8 +22,19 @@ HTML;
 
 };
 
+function selectAmount($amount=1,$total=10) {
+	$output = "<select name='amount'>";
+	for($i=1;$i<=$total;$i++) {
+		$output .= "<option ".($i==$amount?"selected":"").">$i</option>";
+	}
+	$output .= "</select>";
+	return $output;
+}
+
+
 function cartListTemplate($r,$o){
 	$totalfixed = number_format($o->total,2,'.','');
+	$selectamount = selectAmount($o->amount,10);
 	return $r. <<<HTML
 <div class="display-flex">
 	<div class="flex-none images-thumbs">
@@ -31,12 +42,20 @@ function cartListTemplate($r,$o){
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->title</strong>
-		<div>Amount: $o->amount</div>
-		<div>Delete</div>
+		<form action="cart_actions.php?action=delete-cart-item" methos="post">
+			<input type="hidden" name="id" value="$o->id">
+			<input type="submit" class="form-button inline" value="Delete" style="font-size: 0.8em;">
+		</form>
 	</div>
 
 	<div class="flex-none">
-		&dollar;$totalfixed
+		<div>&dollar;$totalfixed</div>
+		<form action="cart_actions.php?action=update-cart-item" methos="post" onchange="this.submit()">
+		<input type="hidden" name="id" value="$o->id">
+			<div class="form-select" style="font-size:0.8em">
+				$selectamount
+			</div>
+		</form>
 	</div>
 </div>
 

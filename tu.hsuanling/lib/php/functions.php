@@ -77,8 +77,9 @@ function makeCartBadge() {
 		return "";
 	} else {
 		return array_reduce($cart,function($r,$o){return $r+$o->amount;},0);
-		// return "(".array_reduce($cart,function($r,$o){return $r+$o->amount;},0).")";
 	}
+		// return "(".array_reduce($cart,function($r,$o){return $r+$o->amount;},0).")";
+	
 }
 
 function getCartItems() {

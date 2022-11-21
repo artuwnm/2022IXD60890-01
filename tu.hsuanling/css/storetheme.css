@@ -200,11 +200,11 @@ p {
 }
 
 
-span.badge::after {
+span.badge:not(:empty)::after {
 	content: ')';
 }
 
-span.badge::before {
+span.badge:not(:empty)::before {
 	content: '(';
 }
 
