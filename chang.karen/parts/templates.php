@@ -9,7 +9,7 @@ function productListTemplate($r,$o){
 
 	<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<figure class="figure product">
-			<a href="product_item.php?id=$o->id"><img src="img/$o->thumbnail" alt=""></a>
+			<a href="product_item.php?id=$o->id"><img src="img/$o->images" alt=""></a>
 			<figcaption>
 				<div>$o->name</div>
 				<div>&dollar;$o->price</div>
@@ -39,7 +39,7 @@ function cartListTemplate($r,$o){
 
 	<div class="display-flex cart-item-form card-section-1">
 		<div class="flex-none images-thumbs">
-			<img src="img/$o->thumbnail" alt="">
+			<img src="img/$o->images" alt="">
 		</div>
 		<div class="flex-stretch">
 			<strong>$o->name ($o->amount)</strong>

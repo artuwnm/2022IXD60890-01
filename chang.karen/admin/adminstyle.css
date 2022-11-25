@@ -56,6 +56,77 @@ nav.display-flex {
 	height: 1.5rem;
 }
 
+#product-description{
+	border: 1px solid var(--color-neutral-medium);
+	margin-top: 8px;
+	border-radius: 5px;
+}
+
+
+.item_info_wrap{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.card.soft.info{
+	padding-top: 0;
+}
+
+
+.flex-none.back_and_delete{
+	font-family: josefin-slab, serif;
+}
+
+#back{
+	font-family: josefin-slab, serif;
+	color: inherit;
+	margin-top: 10px;
+}
+
+
+#delete{
+	margin-top: 10px;
+}
+
+#userlist_a{
+	margin-right: 30px;
+}
+
+/*.card.soft.list {
+	line-height: 1.8em;
+	color: var(--color-neutral-dark);
+}*/
+
+#product_list_header {
+	font-family: josefin-slab, serif;
+}
+
+#thumbnail_admin {
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

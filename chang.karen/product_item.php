@@ -22,7 +22,7 @@
 
 			<figure class="figure" id="item-figure">
 				<a href="product_list.php">< Back</a>
-				<img src="img/<?= $product->thumbnail ?>" alt="">
+				<img src="img/<?= $product->images ?>" alt="">
 			</figure>
 
 			<form class="content" method="post" action="cart_actions.php?action=add-to-cart">
