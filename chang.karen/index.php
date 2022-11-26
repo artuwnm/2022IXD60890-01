@@ -1,3 +1,7 @@
+<?php
+include_once "parts/templates.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +24,18 @@
 		<div class="container" id="home_container">
 			<h1 id="welcome">Welcome to T & 5 !</h1>
 		</div>
+
+		<div class="container recommeneded">
+			<h2 class="display-flex recommeneded-h2" id="recommeneded-h2">New Arrivals</h2>
+			<?php
+
+			recommendedCategory("bread");
+			?>
+		</div>
+
 	</div>
+
+	
 	
 
 	<!-- FOOTER -->

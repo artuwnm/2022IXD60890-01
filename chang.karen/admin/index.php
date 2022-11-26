@@ -5,9 +5,9 @@ include_once "../lib/php/functions.php";
 
 $empty_product = (object)[
 	"name"=>"Chocolate Donut",
-	"price"=>"3.15",
+	"price"=>"3.99",
 	"quantity"=>"25",
-	"description"=>"Our chocolate glazed donuts are best for parties!",
+	"description"=>"Our chocolate donuts go well with your breakfast milk and afternoon coffee!",
 	"images"=>"chocolatedonut.jpg",
 	"category"=>"dessert"
 ];

@@ -789,6 +789,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 #home_container {
@@ -1257,6 +1258,32 @@ body {
     color: var(--color-neutral-medium);
 }
 
+.container.recommeneded{
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.recommeneded-h2 {
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
+}
+
+.recommeneded_container {
+    margin-top: 30px;
+    max-width: 900px;
+    align-items: left;
+    text-align: left;
+    font-family: josefin-slab, serif;
+    font-size: 0.8em;
+}
+
 /* MEDIA QUERY */
 
 @media(max-width: 900px){
@@ -1265,8 +1292,26 @@ body {
         height: 400px;
     }
     #figure_container {
-    max-width: 900px;
-    padding-left: 20px;
+        max-width: 900px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .container.recommeneded{
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+        margin-right: 5px;
+    }
+    #recommeneded-h2 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
     }
 }
 
@@ -1276,11 +1321,11 @@ body {
         height: 335px;
     }
     #figure_container h1 {
-    font-family: josefin-slab, serif;
-    color: #000;
-    font-size: 1.4rem;
-    font-weight: 900;
-    line-height: 20px;
+        font-family: josefin-slab, serif;
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 900;
+        line-height: 20px;
     }
     #welcome {
         font-size: 4.2rem;
@@ -1294,6 +1339,23 @@ body {
         padding: 0;
         font-size: 0.8rem;
         line-height: 0.9rem;
+    }
+    .container.recommeneded{
+        max-width: 500px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    #recommeneded-h2 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
+    margin-right: 5px;
     }
 }
 
@@ -1330,6 +1392,23 @@ body {
     #total-card{
         width: 97.5%;
     }
+    .container.recommeneded{
+        max-width: 400px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+    }
+    #recommeneded-h2 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
+    margin-right: 5px;
+    }
 }
 
 @media(max-width: 360px){
@@ -1361,6 +1440,23 @@ body {
     #total-card{
         width: 97%;
     }
+    .container.recommeneded{
+        max-width: 200px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 5px;
+        bottom: 10px;
+    }
+    #recommeneded-h2 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
+    margin-right: 5px;
+    }
 }
 
 @media(max-width: 280px){
@@ -1384,7 +1480,40 @@ body {
     #total-card{
         width: 97%;
     }
+    .container.recommeneded{
+        max-width: 200px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 5px;
+        bottom: 10px;
+    }
+    #recommeneded-h2 {
+    margin-top: 5px;
+    font-size: 1em;
+    font-family: josefin-slab, serif;
+    margin-bottom: 5px;
+    color: var(--color-main-blue);
+    margin-right: 5px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

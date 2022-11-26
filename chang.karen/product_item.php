@@ -1,6 +1,7 @@
 <?php
 
 	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
 
 	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0];
 
@@ -27,7 +28,7 @@
 
 			<form class="content" method="post" action="cart_actions.php?action=add-to-cart">
 
-<input type="hidden" value="<?= $product->id ?>" name="product-id">
+			<input type="hidden" value="<?= $product->id ?>" name="product-id">
 
 				<h1><?= $product->name ?></h1>
 				<h1>&dollar;<?= $product->price ?></h1>
@@ -53,6 +54,15 @@
 
 				<div class="form-control">
 					<input type="submit" class="form-button" id="addtocart" value="Add To Cart">
+				</div>
+
+				<div class="recommeneded_container">
+					<h2>Recommended Products</h2>
+					<div class="grid gap col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<?php 
+								recommendedSimilar($product->category,$product->id);
+							?>
+					</div>
 				</div>
 
 			</form>
