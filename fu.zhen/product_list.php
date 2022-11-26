@@ -31,16 +31,16 @@ include_once "parts/templates.php";
 			<div class="card soft">
 				<div class="display-flex">
 					<div class="flex-stretch display-flex">
-						<div class="flex-none">
+						<div class="flex-none category-button">
 							<button data-filter="category" data-value="" type="button" class="form-button">All</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none category-button">
 							<button data-filter="category" data-value="ring" type="button" class="form-button">Ring</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none category-button">
 							<button data-filter="category" data-value="necklace" type="button" class="form-button">Necklace</button>
 						</div>
-						<div class="flex-none">
+						<div class="flex-none category-button">
 							<button data-filter="category" data-value="earring" type="button" class="form-button">Earring</button>
 						</div>
 					</div>

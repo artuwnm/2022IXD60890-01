@@ -8,7 +8,7 @@ const listItemTemplate = templater(o=>`
 		</div>
 		<figcaption class="flex-none">
 			<div>${o.name}</div>	
-			<div>&dollar;${o.price.toFixed(2)}</div>
+			<div>&dollar;${Number(o.price).toFixed(2)}</div>
 		</figcaption>
 	</figure>	
 </a>
