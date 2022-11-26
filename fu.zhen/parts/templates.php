@@ -17,6 +17,7 @@ function productListTemplate($r,$o) {
 HTML;
 }
 
+
 function selectAmount($amount=1,$total=10) {
 	$output = "<select name='amount'>";
 	for($i=1;$i<=$total;$i++) {
@@ -25,6 +26,7 @@ function selectAmount($amount=1,$total=10) {
 	$output .= "</select>";
 	return $output;
 }
+
 
 function cartListTemplate($r, $o){
 $totalfixed = number_format($o->total,2,'.','');
