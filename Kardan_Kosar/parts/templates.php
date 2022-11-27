@@ -20,7 +20,7 @@ HTML;
 function heroImage($r,$o) {
 return $r.<<<HTML
 	<a href="product_item.php?id=$o->id">
-		<img src="/images/$o->hero_images"  alt=""/>
+		<img src="/images/$o->hero_images"  alt="" id="heroImage"/>
 	</a>
 HTML;
 }

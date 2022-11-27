@@ -14,10 +14,10 @@ include_once "lib/php/functions.php";
 </head>
 <body>
 	<?php include "parts/navbar.php" ?>
-	<div class="container">
+	<main class="container">
 		<div class="card soft">
 			<h2>Product Checkout</h2>
-			<form>
+			<form id="checkout-form">
 				<h3>Address</h3>
 				<div class="form-control">
 					<input id="address_street" type="text" class="form-input interactive"/>
@@ -70,7 +70,7 @@ include_once "lib/php/functions.php";
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-6">
+				<div class="form-control col-xs-12 col-md-6">
 					<input id="payment_zip" type="text" class="form-input interactive"/>
 					<label for="payment_zip" class="form-label-animated">Zip Code</label>
 				</div>
@@ -81,7 +81,7 @@ include_once "lib/php/functions.php";
 
 			</form>
 		</div>
-	</div>
+	</main>
 	<?php include "parts/footer.php" ?>
 	<script src="js/main.js" type="text/javascript"></script>
 </body>

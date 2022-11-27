@@ -1,5 +1,5 @@
 <footer id="footer" class="display-flex flex-justify-center flex-wrap-wrap">
-	<ul class="display-flex flex-justify-start flex-align-center">
+	<ul class="display-flex">
 		<li class="display-flex flex-align-center">
 			<ul class="display-flex flex-align-center gap">
 				<li><a href="index.php">Home</a></li>
@@ -9,7 +9,7 @@
 		</li>
 		<li class="display-flex flex-align-center">
 			<form class="display-flex flex-justify-end flex-align-center" >
-				<ul class="form-control display-flex flex-justify-end flex-align-base gap">
+				<ul class="form-control display-flex gap">
 					<li>
 						<input id="nameInput" type="text" class="form-input interactive"/>
 						<label for="nameInput" class="form-label-animated">Name</label>
@@ -23,17 +23,17 @@
 			</form>
 		</li>
 	</ul>
-	<ul class="display-flex flex-justify-center flex-align-center">
-		<li class="display-flex flex-justify-start flex-align-center">
+	<ul class="display-flex">
+		<li class="display-flex">
 			<ul class="display-flex">
-				<li id="footerLogo"><a href="index.php"></a></li>
+				<li id="footerLogo"><a href="index.php"><img class="bgImage" src="img/Logo_2.svg" /></a></li>
 			</ul>
 		</li>
-		<li class="display-flex flex-justify-end flex-align-center">
+		<li class="display-flex">
 			<ul class="display-flex flex-justify-end flex-align-center gap">
-				<li id="twitter"><a href="index.php"><img class="bgImage" /></a></li>
-				<li id="instagram"><a href="index.php"><img class="bgImage" /></a></li>
-				<li id="facebook"><a href="index.php"><img class="bgImage" /></a></li>
+				<li id="twitter"><a href="index.php"><img class="bgImage" src="img/Twitter.svg" /></a></li>
+				<li id="instagram"><a href="index.php"><img class="bgImage" src="img/Instagram.svg" /></a></li>
+				<li id="facebook"><a href="index.php"><img class="bgImage" src="img/Facebook.svg" /></a></li>
 			</ul>
 		</li>
 	</ul>

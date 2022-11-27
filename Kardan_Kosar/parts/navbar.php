@@ -4,12 +4,11 @@
 
 ?>
 
-
 <header id="navigation" class="display-flex flex-align-center">
 	<nav class="container display-flex flex-justify-space-between flex-align-center">
 		<ul id="storeIcons" class="display-flex">
-			<li id="burger"><a href="index.php" class="bgImage"><img /></a></li>
-			<li id="logo"><a href="index.php" class="bgImage"><img /></a></li>
+			<!-- <li id="burger"><a href="index.php" class="bgImage"><img border="0" src="img/burger.svg" /></a></li> -->
+			<li id="logo"><a href="index.php" class="bgImage"><img src="img/Logo.svg" /></a></li>
 		</ul>
 		<div class="flex-stretch"></div>
 
@@ -22,7 +21,9 @@
 					<span>Cart</span>
 					<span class="badge"><?= makeCartBadge(); ?></span>
 				</a></li>
+
 			</ul>
 		</nav>
+
 	</nav>
 </header>

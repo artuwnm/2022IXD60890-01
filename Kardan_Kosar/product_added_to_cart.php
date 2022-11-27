@@ -16,7 +16,7 @@
 </head>
 <body>
 	<?php include "parts/navbar.php" ?>
-	<div class="container">
+	<main class="container">
 		<div class="card soft">
 			<h2>You Added <?= $product->name ?> To Your Cart</h2>
 			<p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart</p>
@@ -27,10 +27,11 @@
 				<div class="flex-none"><a href="cart.php">Go to Cart</a></div>	
 			</div>
 		</div>
-	</div>
+	</main>
 	<div class="to_cart_footer">
 		<?php include "parts/footer.php" ?>
 	</div>
 	<script src="js/main.js" type="text/javascript"></script>
 </body>
+
 </html>

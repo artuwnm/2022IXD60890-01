@@ -415,7 +415,7 @@ a:hover {
 }
 
 .form-button {
-    padding: 0.25em 0.1em;
+    padding: 0 0.1em;
     background-color: var(--color-primary-dark);
     border-radius: 0.2em;
     cursor: pointer;

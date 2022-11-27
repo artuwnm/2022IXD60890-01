@@ -17,7 +17,7 @@
 </head>
 <body class="cart_body">
 	<?php include "parts/navbar.php" ?>
-	<div class="container">
+	<main id="cartMain"	class="container">
 		<div class="card soft">
 			<div class="grid gap">
 				<div class="col-xs-12 col-md-7">
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</main>
 	<div class="cart_footer">
 		<?php include "parts/footer.php" ?>		
 	</div>

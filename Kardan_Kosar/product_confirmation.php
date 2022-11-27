@@ -12,14 +12,14 @@ resetCart();
 	<title>Product Confirmation Page</title>
 </head>
 <body>
+
 	<?php include "parts/navbar.php" ?>
-	<div class="container">
+	<main class="container">
 		<div class="card soft">
 			<h2>Thank You For Your Purchase</h2>
-			<p>There is no item in the cart.</p>
 			<p><a href="product_list.php">Continue Shopping</a></p>
 		</div>
-	</div>
+	</main>
 	<div class="confirm_footer">
 		<?php include "parts/footer.php" ?>		
 	</div>
