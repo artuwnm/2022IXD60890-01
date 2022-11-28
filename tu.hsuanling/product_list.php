@@ -145,6 +145,9 @@
 			</div>	 -->
 	</div>
 
+	<!-- Footer -->
+	<?php include "parts/footer.php" ?>
+
 
 
 

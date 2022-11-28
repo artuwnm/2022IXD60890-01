@@ -98,6 +98,9 @@
 		
 	</div>
 
+	<!-- Footer -->
+	<?php include "parts/footer.php" ?>
+
 
 </body>
 </html>
