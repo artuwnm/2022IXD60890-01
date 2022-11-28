@@ -9,7 +9,7 @@ const listItemTemplate = templater (o=>`
 	<figcaption class="flex-none">
 		<div style="font-weight: 700; font-size: 0.9em; padding-bottom: 0.5rem;">${o.title}</div>
 		<div style="font-size: 0.8em; font-weight: 300;">${o.size}</div>
-		<div>&dollar;${o.price}</div>
+		<div>&dollar;${o.price.toFixed(2)}</div>
 	</figcaption>
 	</figure>
 </a>

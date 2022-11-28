@@ -15,6 +15,7 @@ switch ($data->type) {
 			ORDER BY `id` DESC 
 			LIMIT 12");
 		break;
+
 	case "product_search":
 		$output['result'] = makeQuery(makeConn(),"SELECT * 
 			FROM `products` 
@@ -25,6 +26,22 @@ switch ($data->type) {
 			ORDER BY `id` DESC 
 			LIMIT 12");
 		break;
+
+	case "product_filter":
+		$output['result'] = makeQuery(makeConn(),"SELECT * 
+			FROM `products` 
+			WHERE `$data->column` LIKE '$data->value'
+			ORDER BY `id` DESC 
+			LIMIT 12");
+		break;
+
+	case "product_sort":
+		$output['result'] = makeQuery(makeConn(),"SELECT * 
+			FROM `products` 
+			ORDER BY `$data->column` $data->dir 
+			LIMIT 12");
+		break;
+
 	default: $output['error'] = "No Valid Type";
 };
 

@@ -43,9 +43,39 @@
 		 -->
 
 		 <div class="form-control">
+
 		 	<form class="hotdog light" id="product-search">
 		 		<input type="search" placeholder="Search Products">
 		 	</form>
+		 </div>
+
+		 <div class="form-control">
+		 	<div class="display-flex">
+		 		
+			 	<div class="flex-none">
+			 		<button data-filter="category" data-value="" type="button" class="form-button">All</button>
+			 	</div>
+			 	<div class="flex-none">
+			 		<button data-filter="category" data-value="Succulent" type="button" class="form-button">Succulent</button>
+			 	</div>
+			 	<div class="flex-none">
+			 		<button data-filter="category" data-value="Cactus" type="button" class="form-button">Cactus</button>
+			 	</div>
+			 	
+
+			 <div class="flex-stretch"></div>
+			 
+			 <div class="flex-none">
+
+			 	<div class="form-select">
+			 		<select class="js-sort">
+			 			<option value="1">Price-high to low</option>
+			 			<option value="2">Price-low to high</option>
+			 		</select>
+			 	</div>
+		 	</div>
+		 	</div>
+		 	
 		 </div>
 
 		 <div class='productlist grid gap'></div>
