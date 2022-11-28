@@ -208,10 +208,7 @@ span.badge:not(:empty)::before {
 	content: '(';
 }
 
-
-
-
-
-
-
-
+.succulent-filter button {
+	font-size: 0.8em;
+	font-weight: 300;
+}

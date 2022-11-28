@@ -32,7 +32,7 @@
 
 	<div class="container">
 		
-			<h2>Product List</h2>
+			<h2>Product List.</h2>
 
 			<!-- <ul>
 				<li><a href="product_item.php?id=1">Product 1</a></li>
@@ -52,14 +52,16 @@
 		 <div class="form-control">
 		 	<div class="display-flex">
 		 		
-			 	<div class="flex-none">
-			 		<button data-filter="category" data-value="" type="button" class="form-button">All</button>
-			 	</div>
-			 	<div class="flex-none">
-			 		<button data-filter="category" data-value="Succulent" type="button" class="form-button">Succulent</button>
-			 	</div>
-			 	<div class="flex-none">
-			 		<button data-filter="category" data-value="Cactus" type="button" class="form-button">Cactus</button>
+			 	<div class="succulent-filter display-flex">
+			 		<div class="flex-none">
+			 			<button data-filter="category" data-value="" type="button" class="form-button" style="background-color: transparent;">All</button>
+			 		</div>
+			 		<div class="flex-none">
+			 			<button data-filter="category" data-value="Succulent" type="button" class="form-button" style="background-color: transparent;">Succulent</button>
+			 		</div>
+			 		<div class="flex-none">
+			 			<button data-filter="category" data-value="Cactus" type="button" class="form-button" style="background-color: transparent;">Cactus</button>
+			 		</div>
 			 	</div>
 			 	
 
@@ -67,8 +69,8 @@
 			 
 			 <div class="flex-none">
 
-			 	<div class="form-select">
-			 		<select class="js-sort">
+			 	<div class="form-select" style="font-size: 0.8em;font-weight: 300;">
+			 		<select class="js-sort" style="background-color: var(--color-main-medium)">
 			 			<option value="1">Price-high to low</option>
 			 			<option value="2">Price-low to high</option>
 			 		</select>

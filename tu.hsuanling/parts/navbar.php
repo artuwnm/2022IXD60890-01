@@ -9,7 +9,7 @@
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-none">
-				<h1 style="color: var(--color-main-light);"><a href="index.php">SunnyPlants.</a></h1>
+				<h1 style="color: var(--color-main-light);"><a style="text-decoration: none;" href="index.php">SunnyPlants.</a></h1>
 			</div>
 			<div class="flex-stretch"></div>
 			<nav class="nav nav-flex flex-none" id="navigations">
