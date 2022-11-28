@@ -13,6 +13,11 @@
 
 	<?php include "parts/meta.php"; ?>
 
+	<script src="lib/js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/product_list.js"></script>
+
+
 </head>
 
 <body>
@@ -37,6 +42,13 @@
 			</ul>
 		 -->
 
+		 <div class="form-control">
+		 	<form class="hotdog light" id="product-search">
+		 		<input type="search" placeholder="Search Products">
+		 	</form>
+		 </div>
+
+		 <div class='productlist grid gap'></div>
 
 
 	<?php 
@@ -44,19 +56,19 @@
 
 		
 
-		$result = makeQuery(
-			makeConn(),
-			"
-			SELECT *
-			FROM `products`
-			ORDER BY `id` ASC
-			LIMIT 12
-			"
-		);
+		// $result = makeQuery(
+		// 	makeConn(),
+		// 	"
+		// 	SELECT *
+		// 	FROM `products`
+		// 	ORDER BY `id` ASC
+		// 	LIMIT 12
+		// 	"
+		// );
 
 		// print_p($result);
 
-		echo "<div class='productlist grid gap'>", array_reduce($result,'productlistTemplate'),"</div>";
+		// echo "<div class='productlist grid gap'>", array_reduce($result,'productlistTemplate'),"</div>";
 
 
 	 ?>
