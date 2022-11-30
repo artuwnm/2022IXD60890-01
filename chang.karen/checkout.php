@@ -1,6 +1,7 @@
 <?php 
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
+$isPromo = getPromo();
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +81,8 @@ include_once "parts/templates.php";
 			<div class="placeorder">
 				<div class="card soft cart-card" id="total-box">
 
-					<?= cartTotals() ?>
+					<?= cartTotals($isPromo) ?>
+					<?= checkPromoCode($isPromo) ?>
 
 					<div class="placeorder_button" id="place_order_container">
 						<a href="confirmation.php"><button type="button" class="form-button" id="checkout">Place Order</button></a>	

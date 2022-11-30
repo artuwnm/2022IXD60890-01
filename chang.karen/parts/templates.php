@@ -1,7 +1,5 @@
 <?php
 
-
-
 function productListTemplate($r,$o){
 
 
@@ -14,6 +12,20 @@ function productListTemplate($r,$o){
 				<div>$o->name</div>
 				<div>&dollar;$o->price</div>
 			</figcaption>
+		</figure>
+	</div>
+
+	HTML;
+}
+
+function productRecommended($r,$o){
+
+
+	return $r.<<<HTML
+
+	<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<figure class="figure product">
+			<a href="product_item.php?id=$o->id"><img src="img/$o->images" alt=""></a>
 		</figure>
 	</div>
 
@@ -79,8 +91,18 @@ function cartListTemplate($r,$o){
 
 	HTML;
 }
+function checkPromoCode($isPromo){
+	if($isPromo){
+		return <<<HTML
 
-function cartTotals(){
+	<div class="card-section display-flex">
+		<div class="flex-stretch applied"><strong>SWEET30 Applied</strong></div>	
+	</div>
+
+	HTML;
+	}
+}
+function cartTotals($isPromo){
 	$cart = getCartItems();
 	
 	$cartprice = array_reduce($cart,function($r,$o){return $r + $o->total;},0);
@@ -89,6 +111,14 @@ function cartTotals(){
 
 	$taxfixed = number_format($cartprice*0.0725,2,'.','');
 	$taxedfixed = number_format($cartprice*1.0725,2,'.','');
+	
+	if($isPromo){
+		$promo = number_format($taxedfixed*0.7,2,'.','');
+	} else {
+		$promo = number_format($taxedfixed*1,2,'.','');
+	}
+
+
 
 return <<<HTML
 
@@ -102,15 +132,16 @@ return <<<HTML
 	</div>
 	<div class="card-section display-flex">
 		<div class="flex-stretch"><strong>Total</strong></div>
-		<div class="flex-none">&dollar;$taxedfixed</div>
+		<div class="flex-none">&dollar;$promo</div>
 	</div>
+	
 
 	HTML;
 }
 
 
 function recommendedProducts($a){
-	$products = array_reduce($a,'productListTemplate');
+	$products = array_reduce($a,'productRecommended');
 	echo <<<HTML
 	<div class="grid gap productlist col-lg-12">$products</div>
 	HTML;
@@ -124,13 +155,18 @@ function recommendedSimilarProducts($a){
 }
 
 
-function recommendedCategory($cat,$limit=3){
+function recommendedCategory($cat,$limit=4){
 	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `date_create` DESC LIMIT $limit");
 	recommendedProducts($result);
 }
 
 function recommendedSimilar($cat,$id=0,$limit=4){
 	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+	recommendedSimilarProducts($result);
+}
+
+function cartRecommendation($limit=4){
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
 	recommendedSimilarProducts($result);
 }
 

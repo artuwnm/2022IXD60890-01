@@ -58,6 +58,11 @@ function file_update_json($filename,$file_contents){
 		return isset($_SESSION['cart']) ? $_SESSION['cart'] : [];
 	}
 
+	function getPromo(){
+		return isset($_SESSION['promo']) ? $_SESSION['promo'] : false;
+	}
+
+
 	function addToCart($id,$amount){
 		// $_SESSION['cart']=[];
 		$cart = getCart();
@@ -80,7 +85,9 @@ function file_update_json($filename,$file_contents){
 	}
 
 
-	function resetCart() { $_SESSION['cart'] = []; }
+	function resetCart() { $_SESSION['cart'] = [];
+							$_SESSION['promo'] = false;
+						 }
 
 	function makeCartBadge(){
 		$cart = getCart();

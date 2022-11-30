@@ -11,9 +11,9 @@ body {
     }
 }
 @media(max-width: 400px) {
-    .navbar .display-flex {
+    /*.navbar .display-flex {
         display: block;
-    }
+    }*/
     .navbar .nav li {
         line-height: 2em;
     }

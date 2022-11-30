@@ -17,7 +17,7 @@ include_once "parts/templates.php";
 
 		<div class="container">
 			<article id="article" class="article card soft">
-				<h2 id="news">Enter code  <span> SWEET30 </span>  to get 30% off your first order!</h2>
+				<h2 id="news">Enter code  <span> SWEET30 </span>  to get 30% off!</h2>
 			</article>
 		</div>
 
