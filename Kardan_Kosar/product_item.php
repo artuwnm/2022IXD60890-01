@@ -94,14 +94,17 @@
 			</div>
 			<figure class="col-xs-12 col-md-9"><img src="/images/<?= $product->benefit_image?>" /></figure>
 		</section>
-		<div class="container">
-			<h2>Recommended Product</h2>
+
+		<section id="bottom" class="container col-xs-12 col-md-4 productlist">
+			<h2>Recommanded Products</h2>
 			<?php
 
 			recommendedSimilar($product->category, $product->id);
 
 			?>
-		</div>
+		</section>
+
+
 		
 	</main>	
 	<div class="product_item_footer">

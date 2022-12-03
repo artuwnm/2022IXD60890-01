@@ -5,33 +5,32 @@
 
 
 	$empty_product = (object)[
-		"name"=>"vitamin BEE",
-		"price"=>"2.00",
-		"sku"=>"3021",
+		"name"=>"Multi Family",
+		"price"=>"40.00",
+		"sku"=>"2341",
 		"quantity"=>"2",		
-		"category"=>"Letter Vitamin",
-		"size"=>"60",
+		"category"=>"Multivitamin",
+		"size"=>"120",
 		"description"=>"nothing",
 		"ingredients"=>"nothing",
 		"benefits"=>"nothing",
-		"rating"=>"2",
-		"thumbnail"=>"KHealth_Vitamin_A_Hero.png",
-		"images"=>"KHealth_Vitamin_A_Hero.png",
-		"hero_images"=>"KHealth_Vitamin_A_Hero.png",
-		"direction"=>"nothing",
-		"benefit_image"=>"KHealth_Vitamin_A_Hero.png"
+		"rating"=>"3",
+		"thumbnail"=>"KHealth_Vitamin_B12.png",
+		"images"=>"KHealth_Vitamin_B12.png",
+		"hero_images"=>"KHealth_Vitamin_B12.png",
+		"direction"=>"Nothing",
+		"benefit_image"=>"KHealth_Vitamin_B12.png"
 	];
 
 
 	//LOGIC
 
-	try{
-		$conn = makePDOConn();
+	try {
+	$conn = makePDOConn();
 
 		$isFormUpdating = isset($_GET['action']) ? true : false;
 
-		if ($isFormUpdating) {
-			switch($_GET['action']){
+			switch($isFormUpdating){
 
 				case "update":
 					$statement = $conn->prepare("UPDATE `products` SET 
@@ -99,7 +98,7 @@
 						VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())
 					");
 					$statement->execute([
-							$_POST['product-name'],
+						$_POST['product-name'],
 						$_POST['product-price'],
 						$_POST['product-sku'],
 						$_POST['product-quantity'],
@@ -119,17 +118,16 @@
 					header("location:{$_SERVER['PHP_SELF']}?id=$id");
 				break;
 
-				case 'delete':
+				case "delete":
 					$statement = $conn->prepare("DELETE FROM `products` WHERE id=?");
-					$statement->execute([$GET_['id']]);
+					$statement->execute([$_GET['id']]);
 					header("location:{$_SERVER['PHP_SELF']}");
 				break;
 			}
 		}
-		 
-	}catch(PDOException $e){
-		die ($e->getMessage());
-	}
+ 		catch(PDOException $e){
+			die($e->getMessage());
+		}
 
 	//TEMPLATES
 	function productListItem ($r, $o) {
@@ -154,6 +152,7 @@
 		$createorupdate = $id == "new" ? "create" : "update";
 		$images = array_reduce (explode(", ",$o->images), function ($r, $o){
 			return $r."<img src='/images/$o'/>";});
+
 		$delete = $id =="new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete' class='form-button' style='padding:0.3em 2em'>Delete</a>";
 
 		//heredoc
@@ -278,7 +277,10 @@
 				<label for="" class="form-label" for="product-thumbnail">Product Thumbnail</label>
 				<input type="text" placeholder="Upload Thumbnail Image" class="form-input" name="product-thumbnail" id="product-thumbnail" value="$o->thumbnail" />
 			</div>
-			
+			<div class="form-control">
+				<label for="" class="form-label" for="product-images">Product Images</label>
+				<input type="text" placeholder="Upload Produts Images" class="form-input" name="product-images" id="product-images" value="$o->images" />
+			</div>
 			<div class="form-control">
 				<label for="" class="form-label" for="product-hero_images">Product Hero Image</label>
 				<input type="text" placeholder="Upload Hero Image" class="form-input" name="product-hero_images" id="product-hero_images" value="$o->hero_images" />
