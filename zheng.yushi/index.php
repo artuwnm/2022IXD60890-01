@@ -1,6 +1,7 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -79,6 +80,14 @@ include_once "lib/php/functions.php";
 				<p>Aliquam ea rem nihil excepturi et dolorum doloremque deserunt mollitia ex nam, perferendis provident! Ex excepturi placeat cumque impedit pariatur aspernatur corporis nisi tenetur fugiat officiis explicabo perspiciatis nam illo, id similique sed eius esse perferendis commodi, omnis magni accusantium.</p>
 			</div>
 		</article>
+
+		<div class="container">
+		<h2>Latest Drop</h2>
+		<?php recommendedCategory("album"); ?>
+		<h2>Latest Merch</h2>
+		<?php recommendedCategory("merch"); ?>
+		</div>
+		
 		<article id="article4" class="article card soft">
 			<h2>HOT CHART</h2>
 			<div class="article-body">
