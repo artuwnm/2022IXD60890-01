@@ -129,14 +129,16 @@ main {
 	width: 100vw;
 	flex-direction: row;
 	min-height: 70%;
-    min-height: -webkit-calc(100% - 280px);
-    min-height: -moz-calc(100% - 280px);
-    min-height: calc(100% - 280px);
+    min-height: -webkit-calc(100vh - 330px);
+    min-height: -moz-calc(100vh - 330px);
+    min-height: calc(100vh - 330px);
 
-/*	min-height: 70%;
+/*	
+	min-height: 70%;
     min-height: -webkit-calc(100% - 187px);
     min-height: -moz-calc(100% - 187px);
-    min-height: calc(100% - 187px);*/
+    min-height: calc(100% - 187px);
+*/
 
 }
 
@@ -200,8 +202,8 @@ main {
 
 
 .navbar {
-    background-color: var(--color);
-    color: var(--color-neutral-light);
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
     line-height: var(--header-height);
 }
     .navbar h1 {
@@ -261,7 +263,9 @@ ul, ol, li {
 	justify-content: flex-end;
 	align-items: center;
 }
-
+#footer > ul > li > form > ul {
+	align-items: baseline;
+}
 #footer > ul > li > form > ul > li:first-child {
 	width: 50%;
 }
@@ -296,13 +300,13 @@ ul, ol, li {
     display: block;
     width: 100%;
     position: relative;
-    top: -2em;
+    top: -2.8em;
     transition: all 0.3s ease-in-out;
     cursor: text;
 }
 #footer .form-label-motion {
-    font-size: 0.8em;
-    top: -6em;
+    font-size: 0.3em;
+    top: -4.5em;
 }
 
 @media screen and (max-width: 550px){
@@ -689,4 +693,57 @@ span.badge:not(:empty)::after{
 #productBenefits > figure > img {
 	width : 100%;
 	height: auto;
+}
+
+
+#product-edit {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#product-edit > form {
+	flex: 1;
+	border: 1px solid var(--color-primary-dark);
+	background-color: #003A6D06;
+	padding: 2em 2em 0 2em;
+	margin-bottom: 0;
+
+}
+textarea{
+	min-height: 100px;
+}
+#product-edit > ul {
+	flex: 2;
+	padding:2em 3em 0 2em ;
+	border: 1px solid var(--color-primary-dark);
+	background-color: #003A6D06;
+
+}
+@media screen and (max-width: 600px){
+	#product-edit {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+	#product-edit > form,#product-edit > ul{
+		flex: 1;
+	}
+}
+}
+.prodict-edit-list {
+	width: 380px;
+}
+.prodict-edit-list-container{
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.individual-product-edit{
+	width: 100%;
+	padding-left:16px ;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

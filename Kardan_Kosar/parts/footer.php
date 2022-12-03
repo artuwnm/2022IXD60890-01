@@ -11,12 +11,12 @@
 			<form class="display-flex flex-justify-end flex-align-center" >
 				<ul class="form-control display-flex gap">
 					<li>
-						<input id="nameInput" type="text" class="form-input interactive"/>
-						<label for="nameInput" class="form-label-animated">Name</label>
+						<input id="nameInput" type="text" class="form-input interactive" style="font-size: 1em;"/>
+						<label for="nameInput" class="form-label-animated" style="font-size: 1em;">Name</label>
 					</li>
 					<li>
 						<div class="form-control">
-							<button class="form-button">Button</button>
+							<button class="form-button" style='padding:0em 2em; font-size: 1em;'>Button</button>
 						</div>
 					</li>
 				</ul>

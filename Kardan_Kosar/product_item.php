@@ -1,5 +1,6 @@
 <?php
 	include_once "lib/php/functions.php";
+	include_once "parts/templates.php";
 
 	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" .$_GET['id'])[0];
 
@@ -93,6 +94,15 @@
 			</div>
 			<figure class="col-xs-12 col-md-9"><img src="/images/<?= $product->benefit_image?>" /></figure>
 		</section>
+		<div class="container">
+			<h2>Recommended Product</h2>
+			<?php
+
+			recommendedSimilar($product->category, $product->id);
+
+			?>
+		</div>
+		
 	</main>	
 	<div class="product_item_footer">
 		<?php include "parts/footer.php" ?>		
