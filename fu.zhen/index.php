@@ -1,4 +1,7 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php"; 
+include_once "parts/templates.php"; 
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -52,6 +55,14 @@
 			
 		</div>
 
+	</div>
+	<div class="container">
+		<h2>Latest Ring</h2>
+		<?php recommendedCategory("ring");?>
+		<h2>Latest Necklace</h2>
+		<?php recommendedCategory("necklace");?>
+		<h2>Latest Earring</h2>
+		<?php recommendedCategory("earring");?>
 	</div>
 
 </body>
