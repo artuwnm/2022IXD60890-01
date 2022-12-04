@@ -22,7 +22,9 @@ $empty_product = (object)[
 // LOGIC
 try {
 	$conn = makePDOConn();
-	switch($_GET['action']) {
+	$action = isset($_GET['action']) ? $_GET['action'] : "";
+
+	switch($action) {
 		case "update":
 			$statement = $conn->prepare("UPDATE
 				`products`
@@ -90,7 +92,7 @@ function productListItem($r,$o) {
 return $r.<<<HTML
 <div class="card soft">
 	<div class="display-flex">
-		<div class="flex-none images-thumbs"><img src='/img/$o->thumbnail'></div>
+		<div class="flex-none images-thumbs"><img src='img/$o->thumbnail'></div>
 		<div class="flex-stretch" style="padding: 1em">$o->name</div>
 		<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
 	</div>
@@ -104,7 +106,7 @@ function showProductPage($o) {
 $id = $_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
 $createorupdate = $id == "new" ? "create" : "update";
-$images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='/img/$o'>";});
+$images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='img/$o'>";});
 
 // heredoc
 
@@ -129,7 +131,7 @@ $display = <<<HTML
 		</div>
 		<div class="form-control">
 			<label class="form-label">Thumbnail</label>
-			<span class="images-thumbs"><img src='/img/$o->thumbnail'></span>
+			<span class="images-thumbs"><img src='img/$o->thumbnail'></span>
 		</div>
 		<div class="form-control">
 			<label class="form-label">Other Images</label>
@@ -208,6 +210,7 @@ HTML;
 	<title>Product Admin Page</title>
 
 	<?php include "../parts/meta.php"; ?>
+	<link rel="stylesheet" href="css/storetheme.css" />
 </head>
 <body>
 

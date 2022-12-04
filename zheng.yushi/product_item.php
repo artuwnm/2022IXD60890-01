@@ -22,6 +22,7 @@ $image_elements = array_reduce($images,function($r,$o){
 	<title>Product Item</title>
 
 	<?php include "parts/meta.php"; ?>
+	<link rel="stylesheet" href="css/storetheme.css" />
 
 	<script type="js/product_thumbs.js"></script>
 </head>
@@ -33,10 +34,10 @@ $image_elements = array_reduce($images,function($r,$o){
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
-					<div class="images-main">
+					<div class="images-main" id="item-figure">
 						<img src="img/<?= $product->thumbnail ?>">
 					</div>
-					<div class="images-thumbs">
+					<div class="images-thumbs" id="item-figure">
 						<?= $image_elements ?>
 					</div>
 				</div>

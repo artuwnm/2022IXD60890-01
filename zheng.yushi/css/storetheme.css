@@ -140,6 +140,14 @@ body {
 	object-fit: contain;
 }
 
+#item-figure img {
+	margin-top: 20px;
+	width: 600px;
+	height: 600px;
+	vertical-align: text-bottom;
+	border-radius: 10px;
+	border: solid 1.5px var(--color-main-light);
+}
 
 span.badge:not(:empty)::after {
 	content: ')';
