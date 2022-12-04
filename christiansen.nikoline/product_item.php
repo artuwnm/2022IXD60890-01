@@ -25,7 +25,11 @@ $images_elements = array_reduce($images,function($r,$o){
 </head>
 <body>
 
-	<?php include "parts/navbar.php"; ?>
+	<?php 
+	include "parts/navbar.php"; 
+	include_once"parts/templates.php";
+	?>
+
 
 	<div class="container">
 		<div class="grid gap">
@@ -46,6 +50,7 @@ $images_elements = array_reduce($images,function($r,$o){
 
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
+						<div class="product-category"><?= $product->category ?></div>
 						<div class="product-price">&dollar;<?= $product->price ?></div>
 							<p><?= $product->description ?></p>
 						</div>
@@ -75,6 +80,11 @@ $images_elements = array_reduce($images,function($r,$o){
 					</form>
 				</div>
 			</div>
+
+			<h2>Recommended Products</h2>
+			<?php 
+				recommendedSimilar($product->category,$product->id);
+			?>
 		</div>
 
 		

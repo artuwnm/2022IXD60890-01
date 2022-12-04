@@ -28,7 +28,7 @@ include_once "parts/templates.php";
 			</form>
 		</div>
 		<div class="form-control">
-			<div class="card soft">
+			<div class="container">
 				<div class="display-flex">
 					<div class="flex-stretch display-flex flex-align-center">
 							<div class="flex-none">
@@ -40,7 +40,7 @@ include_once "parts/templates.php";
 							</div>
 							<div class="flex-none">/</div>
 							<div class="flex-none">
-								<button data-filter="category" data-value="Pilsner" type="button" class="filter-button">PILSNER</button>
+								<button data-filter="category" data-value="Lager" type="button" class="filter-button">LAGER</button>
 							</div>
 							<div class="flex-none">/</div>
 							<div class="flex-none">
@@ -49,7 +49,7 @@ include_once "parts/templates.php";
 						</div>
 					<div class="flex-none">
 						<div class="form-select">
-							<select class="js-sort" style="background-color: inherit; border: 1px solid black; font-size: 0.7em;">
+							<select class="js-sort" style="background-color: inherit; border: 1px solid var(--color-main-dark); font-size: 0.7em;">
 								<option value="1">Newest</option>
 								<option value="2">Oldest</option>
 								<option value="3">Price low to high</option>
