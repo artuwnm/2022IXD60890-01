@@ -4,14 +4,14 @@ include "../lib/php/functions.php";
 
 $empty_product = (object) [
 
-	"title"=>"Succulent",
-	"description"=>"",
-	"price"=>"",
-	"category"=>"",
-	"thumbnail"=>"",
-	"images"=>"",
-	"size"=>"",
-	"quantity"=>""
+	"title"=>"Sedum Adolphii",
+	"description"=>"This trailing succulent forms miniature golden rosettes, with leaves shaped like footballs. Its tips turn red when exposed to lots of sun. You can expect white blossoms in the Spring.",
+	"price"=>"8.00",
+	"category"=>"Succulent",
+	"thumbnail"=>"Sedum adolphii.jpg",
+	"image"=>"Sedum adolphii.jpg",
+	"size"=>"1.5",
+	"quantity"=>"10"
 
 
 ];
@@ -22,6 +22,7 @@ $empty_product = (object) [
 
 try {
 	$conn = makePDOConn();
+
 	switch($_GET['action']) {
 		case "update":
 			$statement = $conn->prepare("UPDATE
@@ -32,7 +33,7 @@ try {
 					`description` = ?,
 					`category` = ?,
 					`thumbnail` = ?,
-					`images` = ?,
+					`image` = ?,
 					`size` = ?,
 					`quantity` = ?
 					-- `date_modify` = NOW()
@@ -44,7 +45,7 @@ try {
 				$_POST['product-description'],
 				$_POST['product-category'],
 				$_POST['product-thumbnail'],
-				$_POST['product-images'],
+				$_POST['product-image'],
 				$_POST['product-size'],
 				$_POST['product-quantity'],
 				$_GET['id']
@@ -54,18 +55,18 @@ try {
 		case "create":
 			$statement = $conn->prepare("INSERT INTO
 				`products`
-				SET
+				--SET
 					(
 						`title`,
 						`price`,
 						`description`,
 						`category`,
 						`thumbnail`,
-						`images`,
+						`image`,
 						`size`,
 						`quantity`,
-						`date_create`,
-						`date_modify`
+						`date_created`,
+						`date_modified`
 					)
 			
 				VALUES (?,?,?,?,?,?,?,?,NOW(),NOW())
@@ -76,7 +77,7 @@ try {
 				$_POST['product-description'],
 				$_POST['product-category'],
 				$_POST['product-thumbnail'],
-				$_POST['product-images'],
+				$_POST['product-image'],
 				$_POST['product-size'],
 				$_POST['product-quantity']
 			]);
@@ -99,6 +100,7 @@ try {
 // TEMPLATE
 
 function productListItem($r,$o) {
+
 
 return $r.<<<HTML
 		
@@ -127,7 +129,7 @@ function showProductPage($o) {
 $id = $_GET['id'];
 $addoredit = $id == "new" ? "Add" : "Edit";
 $createorupdate = $id == "new" ? "create" : "update";
-$images = array_reduce(explode(", ", $o->images),function($r,$o){return $r."<img src='img/$o'>";});
+$image = array_reduce(explode(", ", $o->image),function($r,$o){return $r."<img src='img/$o'>";});
 
 
 $display = <<<HTML
@@ -143,23 +145,23 @@ $display = <<<HTML
 	</div>
 	<div class="form-control">
 		<label class="form-label">Size</label>
-		<span>$o->$size</span>
+		<span>$o->size</span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Quantity</label>
-		<span>$o->$quantity</span>
+		<span>$o->quantity</span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Description</label>
-		<span>$o->$description</span>
+		<span>$o->description</span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Thumbnail</label>
-		<span class="images-thumb"><img src='../img/$o->$thumbnail'></span>
+		<span class="flex-none images-thumbs"><img src='img/$o->thumbnail'></span>
 	</div>
 	<div class="form-control">
 		<label class="form-label">Other Images</label>
-		<span class="images-thumb">$images</span>
+		<span class="flex-none images-thumbs">$image</span>
 	</div>
 </div>
 HTML;
@@ -198,8 +200,8 @@ $form = <<<HTML
 			<input class="form-input" name="product-thumbnail" id="product-thumbnail" type="text" value="$o->thumbnail" placeholder="Enter the Product Thumbnail">
 		</div>
 		<div class="form-control">
-			<label class="form-label" for="product-images">Other Images</label>
-			<input class="form-input" name="product-images" id="product-images" type="text" value="$o->images" placeholder="Enter the Product Images">
+			<label class="form-label" for="product-image">Other Images</label>
+			<input class="form-input" name="product-image" id="product-images" type="text" value="$o->image" placeholder="Enter the Product Image">
 		</div>
 	</form>
 HTML; 
@@ -281,8 +283,8 @@ HTML;
 
 				echo array_reduce($result,'productListItem');
 
-				?>
 
+				?>
 
 			<?php }?>
 

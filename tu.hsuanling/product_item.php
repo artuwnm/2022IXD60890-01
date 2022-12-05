@@ -95,7 +95,7 @@
 		</div>
 
 		<div class="card soft light">
-			<p><?= $product->description ?></p>
+			<p style="color: black; font-size:0.9em; line-height: 2em;"><?= $product->description ?></p>
 		</div>
 		
 		<h2>Similar Products.</h2>
