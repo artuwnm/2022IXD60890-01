@@ -3,9 +3,9 @@ Store Home: http://karenchangart.com/aau/ixd608/chang.karen/home.php
 
 Product Admin Page: http://karenchangart.com/aau/ixd608/chang.karen/admin/
 
-http://karenchangart.com/aau/ixd608/chang.karen/
+My Website: http://karenchangart.com/aau/ixd608/chang.karen/
 
-http://karenchangart.com/aau/ixd608/chang.karen/midterm/
+Store Style Guide: http://karenchangart.com/aau/ixd608/chang.karen/midterm/
 
-http://karenchangart.com/aau/ixd608/chang.karen/styleguide/
+General Style Guide: http://karenchangart.com/aau/ixd608/chang.karen/styleguide/
 
