@@ -96,7 +96,92 @@ function cartTotals() {
 	HTML;
 }
 
+function recommendedProducts($a) {
+	$products = array_reduce($a,'productlistTemplate');
 
+	echo <<<HTML
+	<div class="grid gap productlist">$products</div>
+
+
+
+	HTML;
+
+}
+
+
+function recommendedCategory($cat,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `id` DESC LIMIT 3");
+	recommendedProducts($result);
+}
+
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT 3");
+	recommendedProducts($result);
+}
+
+// Deals & Best Seller
+
+
+function dealsTemplate($r,$o) {
+
+return $r.<<<HTML
+<a class="col-xs-12 col-md-8" href="product_item.php?id=$o->id">
+	<figure class="figure product display-flex flex-column" style="height: 50vh;">
+	<div class="flex-stretch">
+		<img style="position: relative; top: -15em;" src="img/$o->thumbnail" alt="">
+	</div>
+	</figure>
+</a>
+
+
+HTML;
+};
+
+function bestSellerTemplate($r,$o) {
+
+return $r.<<<HTML
+<a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
+	<figure class="figure product display-flex flex-column" style="height: 50vh;">
+	<div class="flex-stretch">
+		<img src="img/$o->thumbnail" alt="">
+	</div>
+	</figure>
+</a>
+
+
+HTML;
+};
+
+function dealsProducts($a) {
+	$products = array_reduce($a,'dealsTemplate');
+
+	echo <<<HTML
+	<div>$products</div>
+
+	HTML;
+
+}
+
+function bestSellerProducts($a) {
+	$products = array_reduce($a,'bestSellerTemplate');
+
+	echo <<<HTML
+	<div>$products</div>
+
+	HTML;
+
+}
+
+function deals() {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `price` ASC LIMIT 1");
+	dealsProducts($result);
+}
+
+function bestSeller() {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `quantity` ASC LIMIT 1");
+	bestSellerProducts($result);
+}
 
 
 

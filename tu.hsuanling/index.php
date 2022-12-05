@@ -1,6 +1,7 @@
 <?php 
 
  include_once "lib/php/functions.php";
+ include_once "parts/templates.php";
 
 
 
@@ -33,16 +34,39 @@
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8" >
 				<h2>Deals.</h2>
-				<a href="product_item.php?id=12" class="card soft"></a>
+				<?php 
+					deals("price"); 
+				?>
 			</div>
 			<div class="col-xs-12 col-md-4" >
 				<h2>Best Seller.</h2>
-				<a href="product_item.php?id=4" class="card soft">
+				<?php 
+					bestSeller("quantity"); 
+				 ?>
 					
-				</a>
+				
 			</div>
 		</div>
 	</div>
+
+
+	<!-- Recommended Products -->
+
+	<div class="container">
+
+		<h2>Recommended Products.</h2>
+
+		<?php 
+
+		recommendedCategory("succulent");
+
+		 ?>
+
+	</div>
+
+
+
+
 
 	<!-- About -->
 	<div class="container" style="padding-top: 3em;">

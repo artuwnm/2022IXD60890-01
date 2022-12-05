@@ -1,6 +1,6 @@
 <?php 
 	include_once "lib/php/functions.php";
-	// include_once "parts/templates.php";
+	include_once "parts/templates.php";
 
 	$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` = ".$_GET['id'])[0];
 	$image = explode(",", $product->image);
@@ -83,6 +83,8 @@
 								</select>
 							</div>
 						</div>
+						
+						<div class="product-quantity" style="font-size: 0.7em; font-weight:300;">Only <?= $product->quantity ?> left</div>
 					</div>
 
 					<div class="card-section">
@@ -92,10 +94,20 @@
 			</div>
 		</div>
 
-		<!-- <div class="card soft light">
+		<div class="card soft light">
 			<p><?= $product->description ?></p>
-		</div> -->
+		</div>
 		
+		<h2>Similar Products.</h2>
+
+		<?php 
+
+		recommendedSimilar($product->category,$product->id);
+
+
+
+		 ?>
+
 	</div>
 
 	<!-- Footer -->
