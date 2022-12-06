@@ -15,8 +15,8 @@
     	<div class="card soft" id="paragraphs">
     		<h3>Welcome to Something Vintage!</h3>
     		<p>Something Vintage is a home of vintage clothing collection. We are not just a typical ecommerce site for online shopping. We pay tribute to every piece of clothing from our history. Every clothing has its own story.</p>
-    		<p>Optio reprehenderit expedita corporis ipsam quos illum iste velit debitis quas cum. Impedit, dolores quisquam asperiores totam voluptate quia unde iusto, similique quae enim. Doloribus nemo esse provident dicta iure.</p>
-    		<p>Iste ut tempore amet doloribus modi. Perferendis in reprehenderit tempore soluta minus labore autem adipisci, eveniet natus, perspiciatis repellendus illo deleniti blanditiis, modi, eligendi! Possimus, sunt. Sunt animi itaque, exercitationem!</p>
+    		<p>Every collection is collected by our designers who have rich knowledge when it comes to history clothing. We want our buyers to know that the clothings we selected by hands have meanings and are referenced from the correct era.  </p>
+    		<p>Enjoy shopping! Express yourself through our collections!</p>
     	</div>
     </div>
 
