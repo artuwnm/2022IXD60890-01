@@ -1,0 +1,61 @@
+/* CSS REST */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-light:#eee;
+    --color-neutral-medium:#999;
+    --color-neutral-dark:#555;
+
+    --header-height: 3rem;
+    --spacing:1rem;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* LAYOUT CLASSES */
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.display-fiex { display: flex;}
+.display-inline-flex { display: inline;}
+.display-block { display: flex;}
+.display-inline-block { display: inline-block;}
+
+.flex-stretch {flex:1 1 auto;}
+.flex-none {flex:none}
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}

@@ -1,0 +1,32 @@
+[
+	{
+		"name":"Karen Chang",
+		"type":"Student",
+		"email":"chang.karen@me.com",
+		"classes":[608]
+	},
+	{
+		"name":"Paul Wang",
+		"type":"Engineer",
+		"email":"wang.paul@me.com",
+		"classes":[609]
+	},
+	{
+		"name":"Michelle Chen",
+		"type":"Accountant",
+		"email":"chen.michelle@me.com",
+		"classes":[610]
+	},
+	{
+		"name":"Henry Sinclare",
+		"type":"Waiter",
+		"email":"sinclare.henry@me.com",
+		"classes":[611]
+	},
+	{
+		"name":"Max Weber",
+		"type":"Sociologist",
+		"email":"weber.max@me.com",
+		"classes":[612]
+	}
+]

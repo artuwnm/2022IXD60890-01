@@ -1,0 +1,180 @@
+/* CSS REST */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-neutral-light:#FFF3BA;
+    --color-neutral-medium:#636158;
+    --color-neutral-dark:#EE821D;
+
+    --color-main-light: #aee6f6;
+    --color-main-medium: #56a0cd;
+    --color-main-dark: darkblue;
+
+    --header-height: 3rem;
+    --spacing:1rem;
+
+    --font-serif: Georgia, "Times New Romen", serif;
+    --font-sans: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: omnes-pro, sans-serif;
+/*    background-image: url("../../img/candies.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+h1 {
+    font-family: pacifico, sans-serif;
+    font-size: 2rem;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*Small Class*/
+
+.media-image {
+    max-width: 100%;
+    vertical-align: text-bottom;
+}
+
+
+/* LAYOUT CLASSES */
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.display-flex { display: flex;}
+.display-inline-flex { display: inline;}
+.display-block { display: flex;}
+.display-inline-block { display: inline-block;}
+
+.flex-stretch {flex:1 1 auto;}
+.flex-none {flex:none}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+
+
+ /* COMPONENT */
+
+ .nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+ }
+
+     .nav a {
+        display: block;
+        padding: 0.2em 0.5em;
+     }
+
+     .nav a:hover {
+        background-color: ;
+     }
+
+.navbar {
+    background-color: var(--color-neutral-dark);
+    color: #fff;
+    line-height: var(--header-height);
+}
+
+    .navbar h1 {
+        font-size: 2em;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .navbar a {
+        font-size: 1.1em;
+        padding: 0 0.5em;
+    }
+
+
+.article h2 {
+    margin-left: 80px;
+    font-size: 1rem;
+}
+
+#news {
+    margin-left: 20px;
+}
+
+span {
+    color: var(--color-neutral-dark);
+}
+
+
+
+
+/* CARD */
+.card {
+    display: flex;
+    background-color: #fff;
+    margin: 3px auto;
+    color: var(--color-neutral-medium);
+    overflow: hidden;
+    position: relative;
+}
+    .card.soft {
+        margin-top: 8px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card.hard {
+        border-radius: 0.2em;
+        border: 2px solid var(--color-neutral-medium);
+    }
+
+    .card.dark {
+        background-color: var(--color-neutral-dark);
+        color: var(--color-neutral-light);
+    }
+
+    .card.flat {
+        padding: 0;
+        box-shadow: 0;
+    }
+
+
+
+.view-window {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+

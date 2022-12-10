@@ -1,0 +1,10 @@
+{
+	"notes":[
+		"JSON files always starts with either an array [] or an object {}",
+		"JSON files cannot have comments, so put any comment in this array",
+		"Commas go between items in an array or object, but there should never be a trailing comma",
+		"All property names must be in quotation marks",
+		"All string quotation marks must be double quotes",
+		"Use a linter like jsonlint.con to check your json"
+	]
+}

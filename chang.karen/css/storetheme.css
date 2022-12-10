@@ -1,0 +1,238 @@
+:root {
+	--color-offwhite: #f4f4f4;
+}
+
+body {
+	background-image: linear-gradient(
+        to top,
+        rgba(255,255,255,0.1) 0%,
+        rgba(255, 255, 255, 0.5) 100%), 
+        url("../img/candies.jpg"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.title {
+	font-size: 8rem;
+	/*font-family: pacifico, sans-serif;*/
+	color: var(--color-neutral-dark);
+	text-align: center;
+	white-space:nowrap;
+	}
+
+
+.container {
+/*    max-width: 800px;*/
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.logo {
+	height: 150px;
+	width: 600px;
+	background-image: url("../img/candyLogo.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 50px auto;
+	margin-bottom: 20px;
+}
+
+#logo {
+	text-decoration: none;
+	margin: 0;
+	padding: 0 0;
+}
+
+#logo a:hover {
+	text-decoration: none;
+}
+
+
+/* Services Section CSS */
+    
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.services h1 {
+    background-color: #ff6f6f;
+    background-image: linear-gradient(to right, #ff6f6f 0%, #ff5395 100% );
+    background-size: 100%;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services__container {
+    display: flex;
+}
+
+.services__card {
+    margin: 1rem;
+    margin-bottom: 5rem;
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to top,
+        rgba(238,130,29,0.3) 0%,
+        rgb(238, 130, 29) 100%), 
+        url("../img/candy-1.jpg"); 
+    background-size: cover;
+    position: relative;
+    color:#fff;
+}
+
+.services__card:nth-child(2){
+    background-image: linear-gradient(
+        to top,
+        rgba(238,130,29,0.3) 0%,
+        rgb(238, 130, 29) 100%),  
+        url("../img/candy-2.jpg"); 
+    background-size: cover;
+    position: relative;
+    color:#fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.services__card p{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 60px;
+    left:30px;
+    word-spacing: 0.1rem;
+}
+
+.services__card button {
+    color:#5C2466;
+    padding: 10px 20px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    background: #fff9fa;
+    position:absolute;
+    top: 380px;
+    left:30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}   
+
+
+
+/*FOOTER*/
+
+.footer__container {
+    background-color: var(--color-neutral-dark);
+    /*padding: 5rem 0;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.footer__link--items h2 {
+    margin-bottom: 16px;
+}
+
+.footer__link--items >h2 {
+    color: #ffffff;
+}
+
+.footer__link--items a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+}
+
+/* Social Icons*/
+
+.social__icon--link {
+    color: #fff;
+    font-size: 24px;
+}
+
+.social__media {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights {
+    color: #fff;
