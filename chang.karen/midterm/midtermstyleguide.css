@@ -477,6 +477,10 @@ body {
     outline: 0;
 }
 
+.form-select-small {
+    width: 2em;
+}
+
 .form-input {
     border-radius: 0;
     padding: 0.5em 0.5em;
@@ -1499,6 +1503,9 @@ body {
     }
 }
 
+.form-select-small>select{
+    padding: 5px;
+}
 
 
 
