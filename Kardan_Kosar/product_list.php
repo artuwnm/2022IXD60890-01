@@ -29,9 +29,9 @@
 				</div>
 			</form>
 		</div>
-		<div class="container form-control display-flex flex-justify-space-between" id="filterProducts">
+		<div class="container form-control display-flex flex-justify-space-between flex-wrap-wrap" id="filterProducts">
 
-			<div class="form-control display-flex gap">
+			<div class="form-control display-flex gap flex-wrap-wrap">
 				<div class="flex-none">
 					<button data-filter="category" data-value="" type="button" class="form-button">All Products</button>
 				</div>

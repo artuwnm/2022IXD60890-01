@@ -84,9 +84,6 @@ function cartTotals() {
             <div class="flex-stretch"><strong>Total</strong></div>
             <div class="flex-none">&dollar;$taxedFixed</div>
         </div>
-        <div id="checkout_btn" class="form-control">
-            <a class="form-button" href="product_checkout.php">Check Out</a>
-        </div>
     </div>
 
     HTML;
@@ -96,11 +93,16 @@ function recommendedProducts($a){
 	$products = array_reduce($a, 'productListTemplate');
 	echo <<<HTML
 
-	<div class="grid gap productlist">$products</div>
+	<div class="grid gap productlist" id="bottom">$products</div>
 
 	HTML;
 }
 
+function generalRecommendation($limit=3){
+	$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+
+			recommendedProducts($result);
+}
 function recommendedCategory($cat, $limit=3){
 	$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `date_created` DESC LIMIT $limit");
 

@@ -27,8 +27,8 @@
 		<div class="container">
 			<div class="container">
 				<div class="grid gap">
-					<div class="col-xs-12 col-md-5">
-						<div class="display-flex display-direction-column flex-justify-center card soft">
+					<div class="col-xs-12 col-md-5 product-item">
+						<div class="display-flex display-direction-column product-item-images">
 							<div class="images-main">
 								<img src="/images/<?= $product->thumbnail?>" />
 							</div>
@@ -37,8 +37,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-md-7" >
-						<form class="card soft" method="post" action="cart_actions.php?action=add-to-cart">
+					<div class="col-xs-12 col-md-7 product-item" >
+						<form class="product-item-form" method="post" action="cart_actions.php?action=add-to-cart">
 
 							<input type="hidden" name="product-id" value="<?= $product->id ?>"/>
 

@@ -16,7 +16,7 @@
 					</li>
 					<li>
 						<div class="form-control">
-							<button class="form-button" style='padding:0em 2em; font-size: 1em;'>Button</button>
+						<button class="form-button" style='padding:0em 2em; font-size: 1em;'>Button</button>
 						</div>
 					</li>
 				</ul>
@@ -30,7 +30,7 @@
 			</ul>
 		</li>
 		<li class="display-flex">
-			<ul class="display-flex flex-justify-end flex-align-center gap">
+			<ul class="display-flex">
 				<li id="twitter"><a href="index.php"><img class="bgImage" src="img/Twitter.svg" /></a></li>
 				<li id="instagram"><a href="index.php"><img class="bgImage" src="img/Instagram.svg" /></a></li>
 				<li id="facebook"><a href="index.php"><img class="bgImage" src="img/Facebook.svg" /></a></li>
