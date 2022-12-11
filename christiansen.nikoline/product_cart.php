@@ -3,7 +3,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-// $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (1,4,8)");
+$cart = getCart();
 
 $cart_items = getCartItems();
 
@@ -22,19 +22,45 @@ $cart_items = getCartItems();
 
 	<div class="container">
 		<h2>In Your Cart</h2>
-		<div class="grid gap">
-			<div class="col-xs-12 col-md-7">
-				<div class="card soft">
-					<?= array_reduce($cart_items,'cartListTemplate') ?>
+
+		<?php 
+
+		if (count($cart)) {
+			?>
+			<div class="grid gap">
+				<div class="col-xs-12 col-md-7">
+					<div class="card soft">
+						<?= array_reduce($cart_items,'cartListTemplate') ?>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-5">
+					<div class="card soft flat">
+						<?= cartTotals() ?>
+						<div class="card-section">
+                    		<a href="product_checkout.php" class="form-button">Checkout</a>
+                		</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
-					<?= cartTotals() ?>
-				</div>
+			<?php 
+		} else {
+			?>
+			<div class="card soft">
+				There are no items in your cart.
 			</div>
-		</div>
+			<div class="container">	
+				<h2 class="rec-products">Our Best Sellers</h2>
+				<?php recommendedAnything(6); ?>
+			</div>
+			<?php 
+		}
+
+		?>
+		
 	</div>
+	<div class="blank-space"></div>
+<?php include "parts/footer.php"?>
+
 
 
 </body>

@@ -8,6 +8,7 @@ include_once "parts/templates.php";
 <head>
 	<meta charset="UTF-8">
 	<title>Product List</title>
+	<link rel="shortcut icon" href="#">
 
 	<?php include "parts/meta.php"; ?>
 
@@ -29,7 +30,7 @@ include_once "parts/templates.php";
 		</div>
 		<div class="form-control">
 			<div class="container">
-				<div class="display-flex">
+				<div class="display-flex flex-wrap">
 					<div class="flex-stretch display-flex flex-align-center">
 							<div class="flex-none">
 								<button data-filter="category" data-value="" type="button" class="filter-button">All</button>
@@ -64,5 +65,6 @@ include_once "parts/templates.php";
 		<div class='productlist grid gap'></div>		
 
 	</div>
+	<?php include "parts/footer.php"?>
 </body>
 </html>

@@ -19,11 +19,12 @@ $images_elements = array_reduce($images,function($r,$o){
 	<meta charset="UTF-8">
 
 	<title>Product Item</title>
+	<link rel="shortcut icon" href="#">
 
 	<?php include "parts/meta.php"; ?>
-	<script src="js/product_thumbs.js"></script>
+	<!-- <script src="js/product_thumbs.js"></script> -->
 </head>
-<body>
+<body class="flush">
 
 	<?php 
 	include "parts/navbar.php"; 
@@ -75,18 +76,19 @@ $images_elements = array_reduce($images,function($r,$o){
 						</div>
 
 					
-							<input type="submit" class="form-button" value="Add to cart">
+							<input type="submit" class="form-button" value="Add to cat">
 						</div>
 					</form>
 				</div>
 			</div>
+			<div class="container"><br><br><hr></div>
 
-			<h2>Recommended Products</h2>
+			<h2 class="rec-products">Recommended Products</h2>
 			<?php 
 				recommendedSimilar($product->category,$product->id);
 			?>
 		</div>
-
+<?php include "parts/footer.php"?>
 		
 
 

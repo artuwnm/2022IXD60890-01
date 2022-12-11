@@ -21,9 +21,9 @@ $empty_product = (object) [
 // LOGIC
 try {
 	$conn = makePDOConn();
-		// $whatIsAction = isset($_GET['action']) ? true : false;
+		$whatIsAction = isset($_GET['action']) ? true : false;
 
-	switch($_GET['action']) {
+	switch($whatIsAction) {
 		case "update":
 			$statement = $conn->prepare("UPDATE
 				`products`
@@ -83,15 +83,6 @@ try {
 } catch(PDOException $e) {
 	die($e->getmessage());
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -176,7 +167,7 @@ $form = <<<HTML
 		<input class="form-input" name="product-images" id="product-images" type="text" value="$o->images" placeholder="Enter the Product Images">
 	</div>
 	<div class="form-control">
-		<input class="form-button" type="submit" value="Save Changes">
+		<input class="form-button3" type="submit" value="Save Changes">
 	</div>
 
 </form>
@@ -231,6 +222,7 @@ HTML;
 				<ul>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>">Product List</a></li>
 					<li><a href="<?= $_SERVER['PHP_SELF'] ?>?id=new">Add New Product</a></li>
+					<li><a href="http://www.nikoline.ch/aau/ixd608/christiansen.nikoline">Main Page</a></li>
 				</ul>
 			</nav>
 		</div>

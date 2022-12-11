@@ -31,68 +31,97 @@
 	<div class="container" id="tableofcontents">
 		<h2>Table of Contents</h2>
 		<div class="card">
-			<nav class="nav">
+			<nav class="nav styleguidenav">
 				<ul>
-					<li><a href="#typography"><strong>Typography</strong></a></li>
-					<ul>
-						<li style="text-indent: 10px"><a href="#headings">Headings</a></li>
-						<li style="text-indent: 10px"><a href="#paragraphs">Paragraphs</a></li>
-					</ul>
-					<li><a href="#cards"><strong>Card</strong></a></li>
-					<li><a href="#viewwindow"><strong>View Window</strong></a></li>
-					<li><a href="#navigations"><strong>Navigations</strong></a></li>
-					<ul>
-						<li style="text-indent: 10px"><a href="#nav">Basic Navigation</a></li>
-						<li style="text-indent: 10px"><a href="#nav-flex">Flex Navigation</a></li>
-						<li style="text-indent: 10px"><a href="#nav-stretch">Stretch Navigation</a></li>
-						<li style="text-indent: 10px"><a href="#nav-pills">Pill Navigation</a></li>
-						<li style="text-indent: 10px"><a href="#nav-crumbs">Crumbs Navigation</a></li>
-						<li style="text-indent: 10px"><a href="#nav-material">Materials Navigation</a></li>
-					</ul>
-					<li><a href="#gridsystem"><strong>Grid System</strong></a></li>
-					<li><a href="#flexsystem"><strong>Flex System</strong></a></li>
-					<li><a href="#typography"><strong>Tables</strong></a></li>
-					<ul>
-						<li style="text-indent: 10px"><a href="#basic-table">Basic Table</a></li>
-						<li style="text-indent: 10px"><a href="#striped-table">Striped Table</a></li>
-						<li style="text-indent: 10px"><a href="#lined-vertical">Lined Vertical Table</a></li>
-						<li style="text-indent: 10px"><a href="#lined-horizontal">Lined Horizontal Table</a></li>
-						<li style="text-indent: 10px"><a href="#lined-border">Lined Border Table</a></li>
-						<li style="text-indent: 10px"><a href="#lined-all">Lined All Table</a></li>
-					</ul>
-					<li><a href="#typography"><strong>Figures</strong></a></li>
-					<ul>
-						<li style="text-indent: 10px"><a href="#fig-single">Single Figure</a></li>
-						<li style="text-indent: 10px"><a href="#fig-grid">Figure Grid</a></li>
-						<li style="text-indent: 10px"><a href="#fig-product">Product Grid</a></li>
-						<li style="text-indent: 10px"><a href="#fig-overlay">Product Overlay</a></li>
-					</ul>
-					<li><a href="#forms"><strong>Forms</strong></a></li>
-						<ul>
-							<li style="text-indent: 10px"><a href="#default-input">Deafult Input</a></li>
-							<li style="text-indent: 10px"><a href="#form-input">Form Input</a></li>
-							<li style="text-indent: 10px"><a href="#form-labels">Form Label</a></li>
-							<li style="text-indent: 10px"><a href="#form-controls">From Control</a></li>
-						</ul>
-					<li><a href="#buttons"><strong>Buttons</strong></a></li>
-						<ul>
-							<li style="text-indent: 10px"><a href="#default-button">Deafult Button</a></li>
-							<li style="text-indent: 10px"><a href="#form-button">Form Button</a></li>
-						</ul>
-					<li><a href="#hotdog"><strong>Hotdog</strong></a></li>
-						<ul>
-							<li style="text-indent: 10px"><a href="#normal-hotdog">Normal Hotdog</a></li>
-							<li style="text-indent: 10px"><a href="#input-hotdog">Input Hotdog</a></li>
-						</ul>	
-					<li><a href="#select"><strong>Select</strong></a></li>
-					<li><a href="#checkboxes"><strong>Checkboxes</strong></a></li>
-						<ul>
-							<li style="text-indent: 10px"><a href="#basic-checkbox">Basic Checkbox</a></li>
-							<li style="text-indent: 10px"><a href="#heart-example1">Heart Example</a></li>
-						</ul>
-					<li><a href="#toggle"><strong>Toggle</strong></a></li>				
-
-
+					<div class="dropdown">
+						<span><li><a href="#typography"><strong>Typography ▾</strong></a></li></span>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#headings">Headings</a></li>
+								<li style="text-indent: 10px"><a href="#paragraphs">Paragraphs</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown"><li><a href="#cards"><strong>Card</strong></a></li></div>
+					<div class="dropdown"><li><a href="#viewwindow"><strong>View Window</strong></a></li></div>
+					<div class="dropdown">
+						<li><a href="#navigations"><strong>Navigations ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#nav">Basic Navigation</a></li>
+								<li style="text-indent: 10px"><a href="#nav-flex">Flex Navigation</a></li>
+								<li style="text-indent: 10px"><a href="#nav-stretch">Stretch Navigation</a></li>
+								<li style="text-indent: 10px"><a href="#nav-pills">Pill Navigation</a></li>
+								<li style="text-indent: 10px"><a href="#nav-crumbs">Crumbs Navigation</a></li>
+								<li style="text-indent: 10px"><a href="#nav-material">Materials Navigation</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown"><li><a href="#gridsystem"><strong>Grid System</strong></a></li></div>
+					<!-- <div class="dropdown"><li><a href="#flexsystem"><strong>Flex System</strong></a></li></div> -->
+					<div class="dropdown">
+						<li><a href="#tables"><strong>Tables ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#basic-table">Basic Table</a></li>
+								<li style="text-indent: 10px"><a href="#striped-table">Striped Table</a></li>
+								<li style="text-indent: 10px"><a href="#lined-vertical">Lined Vertical Table</a></li>
+								<li style="text-indent: 10px"><a href="#lined-horizontal">Lined Horizontal Table</a></li>
+								<li style="text-indent: 10px"><a href="#lined-border">Lined Border Table</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						<li><a href="#figures"><strong>Figures ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#fig-single">Single Figure</a></li>
+								<li style="text-indent: 10px"><a href="#fig-grid">Figure Grid</a></li>
+								<li style="text-indent: 10px"><a href="#fig-product">Product Grid</a></li>
+								<li style="text-indent: 10px"><a href="#fig-overlay">Product Overlay</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						<li><a href="#forms"><strong>Forms ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#default-input">Deafult Input</a></li>
+								<li style="text-indent: 10px"><a href="#form-input">Form Input</a></li>
+								<li style="text-indent: 10px"><a href="#form-labels">Form Label</a></li>
+								<li style="text-indent: 10px"><a href="#form-controls">From Control</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						<li><a href="#buttons"><strong>Buttons ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#default-button">Deafult Button</a></li>
+								<li style="text-indent: 10px"><a href="#form-button">Form Button</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown">
+						<li><a href="#hotdog"><strong>Hotdog ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#normal-hotdog">Normal Hotdog</a></li>
+								<li style="text-indent: 10px"><a href="#input-hotdog">Input Hotdog</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown"><li><a href="#select"><strong>Select</strong></a></li></div>
+					<div class="dropdown">
+						<li><a href="#checkboxes"><strong>Checkboxes ▾</strong></a></li>
+						<div class="dropdown-content">
+							<ul>
+								<li style="text-indent: 10px"><a href="#basic-checkbox">Basic Checkbox</a></li>
+								<li style="text-indent: 10px"><a href="#heart-example1">Heart Example</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="dropdown"><li><a href="#toggle"><strong>Toggle</strong></a></li></div>			
 				</ul>
 			</nav>
 		</div>
@@ -145,7 +174,7 @@
 	</div>
 <!---------------------------------------- VIEW WINDOW ---------------------------------------->
 	<div class="container" id="viewwindow">
-		<h2>View Window</h2>
+		<h2 class="view-window2">View Window</h2>
 
 		<div class="view-window" style="background-image: url('https://via.placeholder.com/400x400?text=product');"></div>
 	</div>
@@ -222,21 +251,33 @@
 
 		<div class="card soft">
 			<h3>Responsive Grid System</h3>
+			<div class="grid gap">
+				<div class="card medium col-xs-12">col-xs-12 col-md-12</div>
+			</div>
+			
+			<div class="column-3">
+				<h4>3 Column</h4>
 				<div class="grid gap">
-					<div class="card medium col-xs-6 col-md-2">1</div>
-					<div class="card medium col-xs-6 col-md-2">2</div>
-					<div class="card medium col-xs-6 col-md-2">3</div>
-					<div class="card medium col-xs-6 col-md-2">4</div>
-					<div class="card medium col-xs-6 col-md-2">5</div>
-					<div class="card medium col-xs-6 col-md-2">6</div>
+					<div class="card medium col-xs-12 col-md-4">col-xs-12 col-md-4</div>
+					<div class="card medium col-xs-12 col-md-4">col-xs-12 col-md-4</div>
+					<div class="card medium col-xs-12 col-md-4">col-xs-12 col-md-4</div>
 				</div>
-
+			</div>
+			<div class="column-3">
+				<h4 class="col-xs-12">4 Column</h4>
+				<div class="grid gap">
+					<div class="card medium col-xs-12 col-md-3">col-xs-12 col-md-3</div>
+					<div class="card medium col-xs-12 col-md-3">col-xs-12 col-md-3</div>
+					<div class="card medium col-xs-12 col-md-3">col-xs-12 col-md-3</div>
+					<div class="card medium col-xs-12 col-md-3">col-xs-12 col-md-3</div>
+				</div>
+			</div>
 		</div>
 	</div>
 <!---------------------------------------- FLEX SYSTEM ---------------------------------------->
-	<div class="container" id="flexsystem">
+	<!-- <div class="container" id="flexsystem">
 		<h2>Flex System</h2>
-	</div>
+	</div> -->
 <!---------------------------------------- TABLES ---------------------------------------->
 	<div class="container" id="tables">
 		<h2>Tables</h2>
