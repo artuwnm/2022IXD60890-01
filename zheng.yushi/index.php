@@ -12,7 +12,7 @@ include_once "parts/templates.php";
 	<?php include "parts/meta.php"; ?>
 
 </head>
-<body>
+<body class="flush">
 	
 	<?php include "parts/navbar.php"; ?>
 
@@ -33,32 +33,11 @@ include_once "parts/templates.php";
 				<p>Purchased items at the store ill cetainly be reflected on HANTEO CHART.</p>
 			</div>
 		</article>
-
-			<div class="container">
-		<div class="grid gap xs-small md-medium">
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src="https://via.placeholder.com/500" alt="" class="media-image">
-				</div>
-			</div>
-		</div>
+			<h2>Latest Drop</h2>
+		<?php recommendedCategory("album"); ?>
 	</div>
-	
+		
+		<div class="container">
 		<article id="article2" class="article card soft">
 			<h2>K-POP NEWS</h2>
 			<div class="article-body">
@@ -82,8 +61,6 @@ include_once "parts/templates.php";
 		</article>
 
 		<div class="container">
-		<h2>Latest Drop</h2>
-		<?php recommendedCategory("album"); ?>
 		<h2>Latest Merch</h2>
 		<?php recommendedCategory("merch"); ?>
 		</div>

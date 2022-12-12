@@ -1,6 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+$cart = getCartItems();
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -16,6 +18,8 @@ include_once "lib/php/functions.php";
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
+		<div class="grid gap">
+		<div class="col-xs-12 col-md-7">
 		<div class="card soft">
 		<h2>Check Out</h2>
 
@@ -76,12 +80,30 @@ include_once "lib/php/functions.php";
 						<label for="payment-zip" class="form-label">Zip Code</label>
 						<input id="payment-zip" type="text" placeholder="Zip Code" class="form-input">
 					</div>
-			<div class="form-control">
+		</form>
+
+		</div>
+		</div>
+		<div class="col-xs-12 col-md-5">
+			<div class="card soft">
+				<h2>Item Review</h2>
+				<div class="card-section">
+				<?php
+				echo array_reduce($cart,function($r,$o){
+					$totalfixed = number_format($o->total,2,'.','');
+					return $r."<div class='display-flex'>
+						<div class='flex-stretch'>$o->name</div>
+						<div class='flex-none'>&dollar;$totalfixed</div>
+					</div>";
+				}) ?>
+				</div>
+				<?= carTotals(); ?>
+				<div class="form-control">
 				<a href="confirmation.php" class="form-button">Complete Checkout</a>
 				<!-- <input type="submit" class="form-button" value="submit"> -->
 			</div>
-		</form>
-
+			</div>
+		</div>
 		</div>
 	</div>
 

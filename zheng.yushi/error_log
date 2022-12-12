@@ -1,0 +1,19 @@
+[03-Dec-2022 14:21:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function recommendedCategory() in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/index.php:103
+Stack trace:
+#0 {main}
+  thrown in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/index.php on line 103
+[03-Dec-2022 14:22:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function recommendedCategory() in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/index.php:103
+Stack trace:
+#0 {main}
+  thrown in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/index.php on line 103
+[12-Dec-2022 04:00:56 UTC] PHP Notice:  Undefined index: id in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/product_item.php on line 6
+[12-Dec-2022 04:23:20 UTC] PHP Notice:  Undefined index: product-color in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart_actions.php on line 8
+[12-Dec-2022 09:59:12 UTC] PHP Notice:  Undefined index: product-color in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart_actions.php on line 8
+[12-Dec-2022 09:59:15 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 49
+[12-Dec-2022 10:01:27 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 49
+[12-Dec-2022 10:01:33 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 49
+[12-Dec-2022 10:02:28 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 49
+[12-Dec-2022 10:02:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 49
+[12-Dec-2022 10:04:53 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 38
+[12-Dec-2022 10:04:56 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 38
+[12-Dec-2022 10:04:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/r9jej2gwbrbm/public_html/yushisite/AAU/ixd608/zheng.yushi/cart.php on line 38
