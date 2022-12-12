@@ -267,23 +267,23 @@ footer {
 
 }
 
-footer h3,h4,p,ul {
+.footer h3 h4 p ul {
 	color: white;
 }
 
-footer ul {
+.footer ul {
 	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
 
-footer p {
+.footer p {
 	font-size: 0.8em;
 	font-weight: 300;
 }
 
-footer li {
+.footer li {
 	font-size: 0.8em;
 	font-weight: 700;
 }
