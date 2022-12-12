@@ -55,7 +55,6 @@ try {
 		case "create":
 			$statement = $conn->prepare("INSERT INTO
 				`products`
-				SET
 					(
 						`title`,
 						`price`,
