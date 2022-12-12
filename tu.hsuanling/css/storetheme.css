@@ -59,13 +59,49 @@ p {
 	}
 }
 
+.menu-button label {
+	display: none;
+}
+
 @media(max-width: 400px){
-	.navbar .display-flex{
+
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul{
 		display: block;
 	}
 
 	.navbar .nav li{
 		line-height: 2em;
+		text-align: right;
+	}
+
+	/* MENU */
+
+	.menu-button label {
+		display: block;
+		padding: 0 0.5em;
+		font-size: 2em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+		padding-bottom: 0.5em;
+		padding-right: 0.8em;
+	}
+
+	/* VIEW WINDOW */
+	.view-window {
+		background-size: fit;
+		background-attachment: initial;
+
 	}
 
 }
@@ -214,6 +250,8 @@ span.badge:not(:empty)::before {
 	font-weight: 300;
 }
 
+
+/* FOOTER */
 
 footer {
 	margin-top: 5em;

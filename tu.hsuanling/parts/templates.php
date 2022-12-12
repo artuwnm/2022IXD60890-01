@@ -88,9 +88,7 @@ function cartTotals() {
 		<div class="flex-stretch"><strong>Total</strong></div>
 		<div class="flex-none">&dollar;$taxedfixed</div>
 	</div>
-	<div class="card-section">
-		<a href="product_checkout.php" class="form-button">Checkout</a>
-	</div>
+
 
 
 	HTML;
@@ -109,14 +107,19 @@ function recommendedProducts($a) {
 }
 
 
+function recommendedAnything($limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+	recommendedProducts($result);
+}
+
 function recommendedCategory($cat,$limit=3) {
-	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `id` DESC LIMIT 3");
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' ORDER BY `id` DESC LIMIT $limit");
 	recommendedProducts($result);
 }
 
 
 function recommendedSimilar($cat,$id=0,$limit=3) {
-	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT 3");
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category` = '$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT $limit");
 	recommendedProducts($result);
 }
 
@@ -136,7 +139,7 @@ return $r.<<<HTML
 
 
 HTML;
-};
+}
 
 function bestSellerTemplate($r,$o) {
 
@@ -151,7 +154,7 @@ return $r.<<<HTML
 
 
 HTML;
-};
+}
 
 function dealsProducts($a) {
 	$products = array_reduce($a,'dealsTemplate');

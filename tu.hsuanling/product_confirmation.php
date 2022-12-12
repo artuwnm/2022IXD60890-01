@@ -17,7 +17,7 @@ resetCart();
 
 </head>
 
-<body>
+<body class="flush">
 	<?php include "parts/navbar.php";?>
 
 	<div id="viewwindow">
@@ -27,7 +27,7 @@ resetCart();
 	<div class="container">
 		<div class="card soft">
 			<h2>Thank you for your purchase</h2>
-			<p><a href="product_list.php">Continue Shopping</a></p>
+			<p style="color:black;"><a href="product_list.php">Continue Shopping</a></p>
 		</div>
 	</div>
 

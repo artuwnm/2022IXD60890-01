@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="flush">
 
 	<!-- Navigation Bar -->
 
@@ -50,7 +50,7 @@
 		 </div>
 
 		 <div class="form-control">
-		 	<div class="display-flex">
+		 	<div class="display-flex flex-wrap">
 		 		
 			 	<div class="succulent-filter display-flex">
 			 		<div class="flex-none">

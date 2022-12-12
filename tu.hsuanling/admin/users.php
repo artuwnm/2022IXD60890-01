@@ -190,7 +190,7 @@ HTML;
 			<?php 
 
 			for($i=0;$i<count($users);$i++){
-				echo "<li>
+				echo "<li style='color: black;'>
 				<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
 				</li>";
 			}

@@ -55,7 +55,7 @@ try {
 		case "create":
 			$statement = $conn->prepare("INSERT INTO
 				`products`
-				--SET
+				SET
 					(
 						`title`,
 						`price`,
@@ -202,6 +202,9 @@ $form = <<<HTML
 		<div class="form-control">
 			<label class="form-label" for="product-image">Other Images</label>
 			<input class="form-input" name="product-image" id="product-images" type="text" value="$o->image" placeholder="Enter the Product Image">
+		</div>
+		<div class="form-control">
+			<input class="form-button" type="submit" value="Save Changes">
 		</div>
 	</form>
 HTML; 

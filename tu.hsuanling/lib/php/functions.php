@@ -4,13 +4,13 @@ session_start();
 
 function print_p($v) {
 	echo "<pre>",print_r($v),"</pre>";
-};
+}
 
 
 function file_get_json($filename) {
 	$file = file_get_contents($filename);
 	return json_decode($file);
-};
+}
 
 
 include_once "auth.php";
@@ -19,7 +19,7 @@ function makeConn() {
 	if($conn->connect_errno) die($conn->connect_error);
 	$conn->set_charset('utf8');
 	return $conn;
-};
+}
 
 
 function makePDOConn() {
@@ -30,7 +30,7 @@ function makePDOConn() {
 		die($e->getMessage());
 	}
 	return $conn;
-};
+}
 
 
 function makeQuery($conn, $qry) {
@@ -41,7 +41,7 @@ function makeQuery($conn, $qry) {
 		$a[] = $row;
 	};
 	return $a;
-};
+}
 
 // $result = $conn->query("SELECT * FROM `products`");
 

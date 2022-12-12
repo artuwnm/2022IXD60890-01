@@ -70,6 +70,7 @@ a:hover {
 .flex-justify-center {justify-content: center;}
 
 .flex-column{ flex-direction:column; }
+.flex-wrap{ flex-wrap:wrap; }
 
 
 
@@ -166,6 +167,7 @@ a:hover {
 	background-color: var(--color-neutral-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
 	.navbar h1{
@@ -176,6 +178,10 @@ a:hover {
 
 	.navbar a{
 		padding: 0 0.5em;
+	}
+
+	.flush>.navbar {
+		margin-bottom: 0;
 	}
 
 /* SMALL CLASSES */
@@ -222,6 +228,11 @@ a:hover {
 
 	.card.flat{
 		padding: 0;
+	}
+
+	[class*='col-']>.card {
+		height: 100% ;
+		margin: 0;
 	}
 
 	.card-section~.card-section {
