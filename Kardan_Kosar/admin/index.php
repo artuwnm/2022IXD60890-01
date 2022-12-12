@@ -5,32 +5,31 @@
 
 
 	$empty_product = (object)[
-		"name"=>"Multi Family",
-		"price"=>"40.00",
-		"sku"=>"2341",
+		"name"=>"vitamin BEE",
+		"price"=>"2.00",
+		"sku"=>"3021",
 		"quantity"=>"2",		
-		"category"=>"Multivitamin",
-		"size"=>"120",
+		"category"=>"Letter Vitamin",
+		"size"=>"60",
 		"description"=>"nothing",
 		"ingredients"=>"nothing",
 		"benefits"=>"nothing",
-		"rating"=>"3",
-		"thumbnail"=>"KHealth_Vitamin_B12.png",
-		"images"=>"KHealth_Vitamin_B12.png",
-		"hero_images"=>"KHealth_Vitamin_B12.png",
-		"direction"=>"Nothing",
-		"benefit_image"=>"KHealth_Vitamin_B12.png"
+		"rating"=>"2",
+		"thumbnail"=>"KHealth_Vitamin_A_Hero.png",
+		"images"=>"KHealth_Vitamin_A_Hero.png",
+		"hero_images"=>"KHealth_Vitamin_A_Hero.png",
+		"direction"=>"nothing",
+		"benefit_image"=>"KHealth_Vitamin_A_Hero.png"
 	];
-
 
 	//LOGIC
 
 	try {
 	$conn = makePDOConn();
 
-		$isFormUpdating = isset($_GET['action']) ? true : false;
+		$actionName = isset($_GET['action']) ? $_GET['action'] : false;
 
-			switch($isFormUpdating){
+			switch($actionName){
 
 				case "update":
 					$statement = $conn->prepare("UPDATE `products` SET 
@@ -98,7 +97,7 @@
 						VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NOW(),NOW())
 					");
 					$statement->execute([
-						$_POST['product-name'],
+							$_POST['product-name'],
 						$_POST['product-price'],
 						$_POST['product-sku'],
 						$_POST['product-quantity'],
@@ -267,7 +266,7 @@
 			</div>
 			<div class="form-control">
 				<label for="" class="form-label" for="product-benefits">Product Benefits</label>
-				<input type="text" placeholder="Enter the Benefits" class="form-input" name="product-benefits" id="product-benefits" value="$o->benefits" />
+				<textarea type="text" placeholder="Enter the Benefits" class="form-input" name="product-benefits" id="product-benefits" value="$o->benefits" ></textarea>
 			</div>
 			<div class="form-control">
 				<label for="" class="form-label" for="product-rating">Product Rating</label>
@@ -296,7 +295,7 @@
 			</div>
 
 			<div class="form-control">
-				<input type="submit" class="form-button" style='padding:0.3em 2em' value="UPDATE">
+				<input type="submit" id="adminProductSubmit" class="form-button" style='padding:0.3em 2em' value="{$createorupdate}">
 			</div>
 		</form>
 		</section>

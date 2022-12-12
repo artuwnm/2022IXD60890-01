@@ -52,7 +52,8 @@
 				<div class="cart-recommentation">
 					<h3>We Recommend:</h3>
 					<?php 
-					generalRecommendation(6); ?>
+					generalRecommendation(6); 
+					?>
 				</div>
 				<?php
 			}

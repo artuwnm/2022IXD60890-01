@@ -37,9 +37,8 @@
 				})?>
 				<div id="summaryTotal"><?= cartTotals()?></div>
 			</div>
-
-			
 		</div>
+		
 		<div class="col-xs-12 col-md-7">
 			<div class="checkOutForm">
 				<h2 class="form-legend">Product Checkout</h2>
@@ -54,7 +53,7 @@
 						<div class="grid gap">
 							<div class="col-xs-12 col-md-6">
 								<input id="address_city" type="text" class="form-input interactive"/>
-								<label for="address_city" class="form-label-animated"><span class="form-indicator">*</span>City</label>
+								<label for="address_city" class="form-label-animated interactive"><span class="form-indicator">*</span>City</label>
 							</div>
 							<div class="col-xs-12 col-md-6">
 								<input id="address_state" type="text" class="form-input interactive"/>
