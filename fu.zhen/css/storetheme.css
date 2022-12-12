@@ -13,7 +13,28 @@
 
 body {
 	background-color: var(--color-offwhite);
-	padding-bottom: 10em;
+	display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+
+footer{
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: lighter;
+	background-color: var(--color-neutral-light);
+	margin-top: 30px;
 }
 
 .favorite label {
@@ -36,16 +57,37 @@ body {
 		padding-left: 0.5em;
 	}
 }
+
+.menu-button label {display: none;}
 @media (max-width: 400px) {
 	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+	.navbar .nav-flex ul {
 		display: block;
 	}
 	.navbar .nav li {
 		line-height: 2em;
 	}
+
+	.menu-button label {
+		display: block;
+		padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+	}
 }
 
-
+.display {
+	display: block;
+	width: 100%;
+}
 
 
 
@@ -127,6 +169,7 @@ body {
 		padding: 0;
 	}
 }
+
 
 
 

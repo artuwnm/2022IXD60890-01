@@ -156,37 +156,40 @@ HTML;
 			</nav>
 		</div>
 	</header>
-	
-	<div class="container">
+	<div class="content">
+		<div class="container display">
 
-		<div class="card soft">
+			<div class="card soft">
 
-			<?php
+				<?php
 
-			if(isset($_GET['id'])) {
-				showUserPage($_GET['id'] == "new" ? $empty_user : $users[$_GET['id']]);
-			} else {
+				if(isset($_GET['id'])) {
+					showUserPage($_GET['id'] == "new" ? $empty_user : $users[$_GET['id']]);
+				} else {
 
-			?>
-			<h2>User List</h2>
+				?>
+				<h2>User List</h2>
 
-			<nav class="nav">
-				<ul>
-			<?php  
+				<nav class="nav">
+					<ul>
+				<?php  
 
-			for($i=0;$i<count($users);$i++){
-				echo "<li>
-					<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
-				</li>";
-			}
+				for($i=0;$i<count($users);$i++){
+					echo "<li>
+						<a href='admin/users.php?id=$i'>{$users[$i]->name}</a>
+					</li>";
+				}
 
-			?>
-				</ul>
-			</nav>
+				?>
+					</ul>
+				</nav>
 
-			<?php } ?>
+				<?php } ?>
+			</div>
 		</div>
 	</div>
+
+	<?php include "../parts/footer.php"; ?>
 
 </body>
 </html>

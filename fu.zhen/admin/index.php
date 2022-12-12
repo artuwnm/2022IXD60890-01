@@ -236,32 +236,38 @@ HTML;
 			</nav>
 		</div>
 	</header>
-
-	<div class="container">
-
-
-			<?php
-
-			if(isset($_GET['id'])) {
-				showProductPage(
-					$_GET['id']=="new" ?
-						$empty_product :
-						makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0]
-				);
-			} else {
-
-				?>
-				<h2>Product List</h2>
-				<?php  
-
-				$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
-
-				echo array_reduce($result, 'productListItem');
-
-				?>
+	<div class="content">
+		<div class="container display">
 
 
-			<?php } ?>
+				<?php
 
+				if(isset($_GET['id'])) {
+					showProductPage(
+						$_GET['id']=="new" ?
+							$empty_product :
+							makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=".$_GET['id'])[0]
+					);
+				} else {
+
+					?>
+					<h2>Product List</h2>
+
+					<?php  
+
+					$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY `date_create` DESC");
+
+					echo array_reduce($result, 'productListItem');
+
+					?>
+
+
+				<?php } ?>
+
+		</div>
 	</div>
+
+	<?php include "../parts/footer.php"; ?>
+
 </body>
+</html>

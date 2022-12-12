@@ -12,13 +12,16 @@ resetCart();
 <body>
 
 	<?php include "parts/navbar.php"; ?>
-	
-	<div class="container">
-		<div class="card soft">
-			<h2>Thank you for your purchase</h2>
-			<p><a href="product_list.php">Continue Shopping</a></p>
+	<div class="content">
+		<div class="container">
+			<div class="card soft">
+				<h2>Thank you for your purchase</h2>
+				<p><a href="product_list.php">Continue Shopping</a></p>
+			</div>
 		</div>
 	</div>
+
+	<?php include "parts/footer.php"; ?>
 
 </body>
 </html>
