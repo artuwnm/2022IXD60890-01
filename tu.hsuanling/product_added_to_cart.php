@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="flush">
 	<?php include "parts/navbar.php";?>
 
 	<div id="viewwindow">
