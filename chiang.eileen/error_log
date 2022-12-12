@@ -1,0 +1,180 @@
+[24-Oct-2022 05:30:41 UTC] PHP Notice:  Undefined index: id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 18
+[07-Nov-2022 04:47:48 UTC] PHP Notice:  Undefined index: id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 18
+[14-Nov-2022 04:40:29 UTC] PHP Warning:  include_once(parts/templates.php): failed to open stream: No such file or directory in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 4
+[14-Nov-2022 04:40:29 UTC] PHP Warning:  include_once(): Failed opening 'parts/templates.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 4
+[14-Nov-2022 04:40:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function makeQuery() in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 6
+[14-Nov-2022 04:40:37 UTC] PHP Warning:  include_once(parts/templates.php): failed to open stream: No such file or directory in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 4
+[14-Nov-2022 04:40:37 UTC] PHP Warning:  include_once(): Failed opening 'parts/templates.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 4
+[14-Nov-2022 04:40:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function makeQuery() in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_cart.php on line 6
+[14-Nov-2022 04:54:54 UTC] PHP Notice:  Undefined variable: database in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 31
+[14-Nov-2022 04:54:54 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'echiang_ixd608'@'localhost' (using password: YES) in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 31
+[14-Nov-2022 04:55:56 UTC] PHP Notice:  Undefined variable: database in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 31
+[14-Nov-2022 04:56:30 UTC] PHP Notice:  Undefined variable: database in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 31
+[14-Nov-2022 05:00:25 UTC] PHP Notice:  Undefined variable: database in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 31
+[14-Nov-2022 05:18:03 UTC] PHP Notice:  Undefined variable: host in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/lib/php/functions.php on line 22
+[14-Nov-2022 05:18:03 UTC] PHP Notice:  Undefined variable: user in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/lib/php/functions.php on line 22
+[14-Nov-2022 05:18:03 UTC] PHP Notice:  Undefined variable: pass in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/lib/php/functions.php on line 22
+[14-Nov-2022 05:18:03 UTC] PHP Notice:  Undefined variable: database in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/lib/php/functions.php on line 22
+[14-Nov-2022 05:18:03 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'xne6nieqfkjk'@'localhost' (using password: NO) in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/lib/php/functions.php on line 22
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:33:36 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:50 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:35:52 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:38:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:41:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 10
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:43:48 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 12
+[14-Nov-2022 05:44:49 UTC] PHP Warning:  array_reduce() expects parameter 2 to be a valid callback, function 'productListTemplate' not found or invalid function name in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 33
+[14-Nov-2022 05:44:55 UTC] PHP Warning:  array_reduce() expects parameter 2 to be a valid callback, function 'productListTemplate' not found or invalid function name in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_list.php on line 33
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:46:59 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 05:54:12 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 6
+[14-Nov-2022 06:24:14 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 44
+[14-Nov-2022 06:38:42 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 44
+[14-Nov-2022 06:49:19 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 44
+[14-Nov-2022 06:50:54 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 44
+[14-Nov-2022 09:27:21 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 21
+[20-Nov-2022 13:40:37 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 23
+[20-Nov-2022 13:40:37 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 24
+[20-Nov-2022 13:47:09 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 39
+[20-Nov-2022 13:47:09 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 39
+[20-Nov-2022 13:47:14 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 39
+[20-Nov-2022 13:47:14 UTC] PHP Notice:  Undefined property: stdClass::$title in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/parts/templates.php on line 39
+[20-Nov-2022 13:48:30 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 13:48:30 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:12:17 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:12:17 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:12:21 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:12:21 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:12:34 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:12:34 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:13:30 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:13:30 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:13:41 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:13:41 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:14:56 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:14:56 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:15:00 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:15:00 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:15:02 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:15:02 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:15:06 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:15:06 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:20:18 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:20:18 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:20:23 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:20:23 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:21:22 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:21:22 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:21:40 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:21:40 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:21:42 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:21:42 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:25:40 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:25:40 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:25:58 UTC] PHP Notice:  Undefined index: [id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 12
+[20-Nov-2022 14:25:58 UTC] PHP Warning:  Creating default object from empty value in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 13
+[20-Nov-2022 14:27:17 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[20-Nov-2022 14:27:22 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[20-Nov-2022 19:53:01 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[20-Nov-2022 19:53:10 UTC] PHP Notice:  Trying to get property 'amount' of non-object in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 24
+[21-Nov-2022 07:08:15 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[21-Nov-2022 07:08:24 UTC] PHP Notice:  Trying to get property 'amount' of non-object in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 24
+[21-Nov-2022 07:20:57 UTC] PHP Notice:  Undefined index: id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_item.php on line 5
+[21-Nov-2022 07:22:38 UTC] PHP Notice:  Undefined index: id in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 5
+[21-Nov-2022 08:02:16 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[21-Nov-2022 08:02:34 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9
+[21-Nov-2022 08:02:44 UTC] PHP Notice:  Trying to get property 'amount' of non-object in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 24
+[21-Nov-2022 08:02:47 UTC] PHP Notice:  Trying to get property 'amount' of non-object in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/product_added_to_cart.php on line 24
+[21-Nov-2022 21:13:50 UTC] PHP Notice:  Undefined index: product-surface in /home/xne6nieqfkjk/public_html/aau/ixd608/chiang.eileen/cart_actions.php on line 9

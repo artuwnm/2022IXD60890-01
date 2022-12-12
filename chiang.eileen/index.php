@@ -1,16 +1,19 @@
-<?php include_once "lib/php/functions.php"; ?><!DOCTYPE html>
+<?php 
+include_once "lib/php/functions.php"; 
+include_once "parts/templates.php"; 
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Something Vintage</title>
 	<?php include "parts/meta.php"; ?>
 </head>
-</head>
-<body>
+<body class="flush">
 
-	<?php include "parts/navbar.php"; ?>
-	
-	<div class="container" id="#typography">
+  <?php include "parts/navbar.php"; ?>
+
+  <div class="container" id="#typography">
     	
     	<div class="card soft" id="paragraphs">
     		<h3>Welcome to Something Vintage!</h3>
@@ -28,29 +31,12 @@
 
   <h3>Featured Fashion of The Month</h3>
 
-        <div class="container">
-    <div class="card soft">
-      <h2>Winter Collection</h2>
-
-      <?php
-
-      include_once "lib/php/functions.php";
-      include_once "parts/templates.php";
-
-      $result = makeQuery(
-        makeConn(),
-        "
-        SELECT *
-        FROM `products`
-        ORDER BY `date_create` 
-        LIMIT 6
-        "
-      );
-
-      echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
-
-      ?>
-
+  <div class="container">
+    <h2>Latest Collection</h2>
+    <?php recommendedCategory("1950s"); ?>
+    <h2>Latest Summber Collection</h2>
+    <?php recommendedCategory("1980s"); ?>
+  </div>
 
 
 

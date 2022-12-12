@@ -24,24 +24,42 @@ body {
 
 
 
-
-@media (max-width: 800px) {
-	.container {
+@media (max-width: 800px){
+	.container{
 		padding-left: 1em;
 		padding-right: 1em;
 	}
-	.navbar h1 {
+	.navbar h1{
 		padding-left: 0.5em;
 	}
 }
-@media (max-width: 400px) {
+
+.menu-button label{display:none;}
+@media (max-width:400px) {
 	.navbar .display-flex {
-		display: block;
+	   flex-wrap: wrap;
 	}
+	.navbar .nav {
+		width:100%;
+		display:none;
+	}
+	 .navbar .nav-flex ul {
+	   display:block;
+	} 
 	.navbar .nav li {
 		line-height: 2em;
 	}
-}
+
+	.menu-button label{
+	   display: block;
+	   padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+	   display:block;
+	}
+} 
+
 
 
 
