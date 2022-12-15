@@ -1,0 +1,38 @@
+[
+	{
+		"name":"Zhen Fu",
+		"type":"Student",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	},
+	{
+		"name":"Zhen Fu1",
+		"type":"Student1",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	},
+	{
+		"name":"Zhen Fu2",
+		"type":"Student2",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	},
+	{
+		"name":"Zhen Fu3",
+		"type":"Student3",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	},
+	{
+		"name":"Zhen Fu4",
+		"type":"Student4",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	},
+	{
+		"name":"Zhen Fu5",
+		"type":"Student5",
+		"email":"arielfu612@gmail.com",
+		"classes":[608,605,613]
+	}
+]
