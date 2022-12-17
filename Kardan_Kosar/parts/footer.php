@@ -25,9 +25,7 @@
 	</ul>
 	<ul class="display-flex">
 		<li class="display-flex">
-			<ul class="display-flex">
-				<li id="footerLogo"><a href="index.php"><img class="bgImage" src="img/Logo_2.svg" /></a></li>
-			</ul>
+			<a href="index.php"><img class="bgImage" src="img/Logo_2.svg" /></a>
 		</li>
 		<li class="display-flex">
 			<ul class="display-flex">

@@ -51,12 +51,12 @@ function cartListTemplate($r,$o) {
 						$selectamount
 					</div>
 				</form>
-				<form action="cart_actions.php?action=delete-cart-item" method="post">
+				<form id="cart_delete_btn" action="cart_actions.php?action=delete-cart-item" method="post">
 					<input type="hidden" name="id" value="$o->id">
 					<input type="submit" class="form-button inline" value="Delete" style="font-size:0.8em">
 				</form>
 			</div>
-			<div class="flex-none card-product-section">
+			<div class="flex-none card-product-section cart-product-price">
 				<strong>$totalFixed</strong>
 				<div>$o->amount x &dollar;$o->price</div>
 			</div>

@@ -26,12 +26,12 @@
 		?>
 				<div class="cart-info">
 					<div class="grid gap">
-						<div class="col-xs-12 col-md-7">
+						<div class="col-xs-12 col-md-12 col-lg-7" >
 							<div class="card soft">
 								<?= array_reduce($cart_items, 'cartListTemplate')?>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-5">
+						<div class="col-xs-12 col-md-12 col-lg-5">
 							<?= cartTotals()?>
 						  	<div id="checkout_btn" class="form-control">
 				            	<a class="form-button" href="product_checkout.php">Check Out</a>
