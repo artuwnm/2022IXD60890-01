@@ -191,14 +191,6 @@ main {
     min-height: -webkit-calc(100vh - 300px);
     min-height: -moz-calc(100vh - 300px);
     min-height: calc(100vh - 300px);
-
-/*	
-	min-height: 70%;
-    min-height: -webkit-calc(100% - 187px);
-    min-height: -moz-calc(100% - 187px);
-    min-height: calc(100% - 187px);
-*/
-
 }
 
 #feature, #mission, #footer {
@@ -250,10 +242,6 @@ main {
 	margin-bottom: 20px;
 }
 
-
-
-
-
 /* MISSION SECTION */
 #mission {
 	background-color: var(--color-primary-dark);
@@ -264,14 +252,6 @@ main {
 #mission h2 {
 	color: var(--color-white);
 }
-
-
-
-
-
-
-
-
 
 .navbar {
     background-color: var(--color-primary-dark);
@@ -289,8 +269,6 @@ main {
 ul, ol, li {
 	list-style: none;
 }
-
-
 
 /* FOOOTER */
 #footer{
@@ -512,20 +490,6 @@ ul, ol, li {
 	text-decoration: none;
 	font-weight: initial;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FAVOURITE HEART */
 
@@ -802,12 +766,7 @@ span.badge:not(:empty){
 	font-size: 0.8em;
 	padding: 0 2em;
 }
-/*span.badge:not(:empty)::before{
-	content: "(";
-}
-span.badge:not(:empty)::after{
-	content: ")";
-}*/
+
 #filterProducts .form-button {
 	padding:  0.5em 1em;
 }
@@ -972,7 +931,7 @@ textarea{
 	#cartMain >div > div> div> div> div input {
 		width: 100%;
 	}
-		#cartMain .cart-product-price {
+	#cartMain .cart-product-price {
 		order:  2;
 		width: 100%;
 		display: flex;

@@ -358,16 +358,14 @@
 			<?php
 
 			recommendedCategory("Multivitamin");
-			//recommendedCategory("Letter Vitamin");
-			//recommendedCategory("Solutions");
+
 
 			?>
 			<h2>Latest Letter Vitamins:</h2>
 				<?php
 
-			// recommendedCategory("Multivitamin");
 			recommendedCategory("Letter Vitamin");
-			//recommendedCategory("Solutions");
+
 
 			?>
 		</div>

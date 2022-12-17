@@ -4,7 +4,6 @@
 	$product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" .$_GET['id'])[0];
 
 	$cart_product = cartItemById($_GET['id']);
-	//$cart_product = array_find(getCart(),function($o){return $o->id==$_GET['id'];});
 ?>
 <!DOCTYPE html>
 <html lang="en">

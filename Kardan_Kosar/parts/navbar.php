@@ -20,8 +20,6 @@
 <header id="navigation" class="display-flex flex-align-center">
 	<nav class="container display-flex flex-justify-space-between flex-align-center">
 		<ul id="storeIcons" class="display-flex">
-			<!-- <li id="burger"><a href="index.php" class="bgImage"><img border="0" src="img/burger.svg" /></a></li> -->
-			
 			<li id="logo"><a href="index.php" class="bgImage"><img id="logoImg" src="img/Logo.svg" /></a></li>
 			<img id="burger" src="img/burger.svg" />
 			<img id="close" src="img/close.svg" />

@@ -2,7 +2,6 @@
 	include_once "lib/php/functions.php";
 	include_once "parts/templates.php";
 
-	// $cart = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` IN (10,7,2)");
 	$cart = getCart();
 
 	$cart_items = getCartItems();

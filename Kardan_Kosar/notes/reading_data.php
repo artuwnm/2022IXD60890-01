@@ -1,16 +1,6 @@
 <?php
 include "../lib/php/functions.php";
 
-//$filename = "notes.json";
-
-//$file = file_get_contents($filename);
-//we cannot echo an object so we need to use our predefined function print_p
-// echo $file;
-
-//$notes_object = json_decode($file);
-//print_p ($notes_object);
-
-
 $notes_object = file_get_json("notes.json");
 $users_array = file_get_json("../data/users.json");
 
