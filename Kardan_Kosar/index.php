@@ -9,8 +9,6 @@ include_once "lib/php/functions.php";
 	<?php 
 	include "parts/meta.php";
 
-	// include_once "lib/php/functions.php";
-
 	include_once "parts/templates.php";
 	?>
 
@@ -35,7 +33,6 @@ include_once "lib/php/functions.php";
 
 				$result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY `date_created` DESC LIMIT 6"); //DESC decending //ASC assending
 
-				// echo "<div id='bottom' class='container'><div class='grid gap'>" ,array_reduce($result, 'productListTemplate')."</div></div>";
 
 				echo "<div id='bottom'><div class='grid gap'>" ,array_reduce($result, 'productListTemplate')."</div></div>";
 

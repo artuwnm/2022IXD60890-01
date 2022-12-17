@@ -10,7 +10,7 @@
 
 
 	})
-	//print_p($product);
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,7 +75,7 @@
 							</div>
 
 							<div class="form-control">
-								<!-- <a class="form-button" href="product_added_to_cart.php?id=<?= $product->id?>">Add to Cart</a> -->
+								
 								<input type="submit" class="form-button" value="Add to Cart" />
 							</div>
 							

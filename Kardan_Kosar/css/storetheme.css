@@ -61,6 +61,15 @@ body {
 	height: 100%; 
 	overflow-y: hidden !important;
 }
+
+.is-menu-open {
+	overflow-y: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	position: fixed;
+}
+
+
 h1,h2,h3,h4,h5,h6{
 	font-family: var(--font-heading);
 	color: var(--color-primary-dark);
@@ -116,7 +125,7 @@ justify-content: space-between;
 	background-color: var(--color-primary-dark);
 	color: var(--color-white);
 
-	position: absolute;
+	position: fixed;
 	left: 100vw;
 	top: 0;
 	z-index: 2000;

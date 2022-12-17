@@ -49,6 +49,7 @@ let navListBurger = document.getElementById('navListBurger');
 
 
 
+
 // function disableScroll() {
 
 //     // Get the current page scroll position
@@ -78,10 +79,12 @@ function _showMenu (e){
 
     setTimeout(function () {navListBurger.classList.add("slide");},10);
     setTimeout(function () {logoImg.src='img/whiteLogo.svg';},50);
-
     //document.body.style.overflow = "hidden";
     // document.body.classList.add('disableScroll');
     //disableScroll();
+
+    document.body.classList.add(`is-menu-open`);
+    document.getElementsByTagName( 'html' )[0].classList.add(`is-menu-open`);
 }
 
 
@@ -98,9 +101,29 @@ function _hideMenu (){
 
     setTimeout(function () {logoImg.src='img/Logo.svg';}, 50);
     setTimeout(function () {navListBurger.style.display = "none";}, 300);
+
+    document.body.classList.remove(`is-menu-open`);
+    document.getElementsByTagName( 'html' )[0].classList.remove(`is-menu-open`);
     //document.body.style.overflow = "auto";
     // document.body.classList.remove('disableScroll');
     //enableScroll();
 }
+
+
+function stopScrollingWhenMenuOpen() {
+    if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        return false;
+    }
+
+    document.addEventListener('touchmove', e => {
+        const hasMenuOpenClass = document.body.classList.contains(`is-menu-open`);
+
+        if (hasMenuOpenClass) {
+            e.preventDefault();
+        }
+    });
+}
+
+stopScrollingWhenMenuOpen();
 
 
