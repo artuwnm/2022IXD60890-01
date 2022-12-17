@@ -1,5 +1,4 @@
 <?php
-
 include "../lib/php/functions.php";
 
 //$filename = "notes.json";
@@ -26,7 +25,7 @@ $users_array = file_get_json("../data/users.json");
 	<title>Product  Page</title>
 </head>
 <body>
-	<?php include "../parts/navbar.php" ?>
+
 	<div class="container">
 		<div class="card soft">
 			<h2>Reading Data</h2>

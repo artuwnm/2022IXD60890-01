@@ -6,10 +6,8 @@
 	<title>Document</title>
 </head>
 <body>
-	<?php include "parts/navbar.php" ?>
 	<?php 
-	hello
-	phpinfo();
+		phpinfo();
 	?>
 </body>
 </html>
