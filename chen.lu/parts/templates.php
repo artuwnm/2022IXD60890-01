@@ -55,6 +55,28 @@ HTML;
 
 }
 
+
+function bestsellerTemplate($r,$o) {
+return $r.<<<HTML
+<div class="col-xs-12 col-md-4">
+    <figure class="figure product-overlay">
+        <img src="img/$o->thumbnail">
+        <figcaption>
+            <div class="caption-body" href="product_item.php?id=$o->id">
+                <div>
+                    <a href="product_item.php?id=$o->id">$o->name</a>
+                </div>
+            </div>
+        </figcaption>
+    </figure>   
+</div>
+HTML;
+} 
+
+
+
+
+
 function cartTotals() {
     $cart = getCartItems();
 
@@ -85,6 +107,9 @@ function cartTotals() {
     HTML;
 }
 
+
+
+
 function recommendedProducts($a) {
 $products = array_reduce($a, 'productListTemplate');
 echo <<<HTML
@@ -92,6 +117,10 @@ echo <<<HTML
 HTML;
 }
 
+function recommendedAnything($limit=3) {
+   $result = makeQuery(makeConn(),"SELECT * FROM `products` ORDER BY rand() LIMIT $limit");
+   recommendedProducts($result);
+}
 
 function recommendedCategory($cat,$limit=6) {
    $result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
