@@ -75,8 +75,8 @@ a:hover {
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
 
-.flec-column {flex-direction: column;}
-.flec-wrap {flex-wrap: wrap;}
+.flex-column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
 
 
 /*Small Classes*/
@@ -301,7 +301,7 @@ a:hover {
 	position: relative;
 	width: 100%;
 	margin: 0;
-	background-color: var(--color-white);
+	background-color: #F6F6F6;
 }
 .figure img {
 	width: 100%;
@@ -430,4 +430,48 @@ a:hover {
 }
 .toggle input:checked + label::after {
 	transform: translateX(1em);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 56px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caption {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FAFBFB;
+   text-transform:uppercase;
+   height:65px;
+  line-height:65px;
+}
+
+.header {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-bottom:2px solid #e3e3e3;
+    border-top:2px solid #e3e3e3;
+}
+
+.music-table {
+    width: 100%;
+}
+
+.cell {
+    display: inline-block;
+}
+.number {
+    width: 3%;
+    text-align: center;
 }

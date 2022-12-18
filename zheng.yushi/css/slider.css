@@ -1,0 +1,147 @@
+a {
+    text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.slider-wrap {
+    margin: 0 auto;
+    position: relative;
+    width: 800px;
+    height: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+    .slider-wrap {
+        height: 460px;
+    }
+}
+
+.slider {
+    height:100%;
+}
+
+.slider .slider-list {
+    position: relative;
+    height: 100%;
+}
+
+.slider .slider-list .item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider .slider-list .item.cur {
+    display: block;
+}
+
+.yuan {
+    position: absolute;
+    left: 50%;
+    bottom: 34px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+.yuan .yuan-item {
+    display: block;
+    position: relative;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.yuan .yuan-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.yuan .yuan-item.cur::after {
+    background: #fff;
+}
+
+.yuan .yuan-item::before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+
+.yuan .yuan-item.cur::before {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn-group .btn-left,
+.btn-group .btn-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.btn-group .btn-left {
+    left: -80px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.btn-group .btn-right {
+    right: -80px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 27px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jk {
+    width: 20%;
+    margin-right: 20px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+}

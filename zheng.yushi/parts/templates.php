@@ -12,7 +12,7 @@ function productListTemplate($r,$o) {
 			<div>$o->name</div>
 			<div>&dollar;$o->price</div>
 		</figcaption>
-	</figure>	
+	</figure>
 </a>
 HTML;
 }

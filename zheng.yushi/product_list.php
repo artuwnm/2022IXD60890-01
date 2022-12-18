@@ -22,6 +22,7 @@ include_once "parts/templates.php";
 
 
 	<div class="container">
+		<div class="card soft">
 			<h2>Shop</h2>
 
 			<div class="form-control">
@@ -64,6 +65,7 @@ include_once "parts/templates.php";
 
 	<div class='productlist grid gap'></div>
 
+	</div>
 	</div>
 </body>
 </html>

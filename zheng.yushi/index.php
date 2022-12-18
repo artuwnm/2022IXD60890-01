@@ -10,12 +10,54 @@ include_once "parts/templates.php";
 	<title>Product Item</title>
 
 	<?php include "parts/meta.php"; ?>
-
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 </head>
 <body class="flush">
 	
 	<?php include "parts/navbar.php"; ?>
+<div class="slider-wrap  J_sliderWrap">
+		<div class="slider">
+			<ul class="slider-list">
+				<li class="item cur">
+				<img class="item-img" src="./img/rmindigo.jpg" alt="" /></li>
+				<li class="item">
+				<img class="item-img" src="./img/jk.jpg" alt="" /></li>
+				<li class="item">
+				<img class="item-img" src="./img/anti.jpg" alt="" /></li>
+				<li class="item">
+				<img class="item-img" src="./img/bp.jpg" alt="" /></li>
+			</ul>
+		</div>
+		<div class="pic">
+			<div class="yuan">
+				<i class="yuan-item cur"></i>
+				<i class="yuan-item"></i>
+				<i class="yuan-item"></i>
+				<i class="yuan-item"></i>
+			</div>
+		</div>
 
+		<div class="btn-group">
+			<div class="btn-left">&lt;</div>
+			<div class="btn-right">&gt;</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/mySlider.js"></script>
+	<script>
+		new Slider({
+			oSliderWrap: $('.J_sliderWrap'),
+			sliderItems: $('.item'),
+			yuan: $('.yuan'),
+			yuanItems: $('.yuan-item'),
+			btnGroupLeft: $('.btn-left'),
+			btnGroupRight: $('.btn-right')
+		}).init();
+	</script>
+		</div>		
+	</div>
 	
 	<div class="container">
 		<article id="article1" class="article card hard">
@@ -23,6 +65,7 @@ include_once "parts/templates.php";
 				<div class="flex-stretch">
 					<h2>IPDEOK</h2>
 				</div>
+
 				<div class="flex-none">
 					<small>6:13am</small>
 				</div>
@@ -40,10 +83,11 @@ include_once "parts/templates.php";
 		<div class="container">
 		<article id="article2" class="article card soft">
 			<h2>K-POP NEWS</h2>
-			<div class="article-body">
-				<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Ut numquam velit saepe alias optio aut voluptate, facilis eaque delectus natus, eius quam rerum eos facere sunt sapiente error tempore praesentium itaque enim excepturi blanditiis? Aspernatur quos animi sapiente, ex nisi?</p>
-				<p>Iusto harum natus laboriosam nesciunt fugiat asperiores esse molestiae rerum facilis reprehenderit, minima, id veniam odit, quasi ea deserunt numquam earum vitae. Doloremque id voluptates perferendis sit et, quaerat soluta atque beatae quisquam amet rem repellat eaque odit suscipit, ipsam!</p>
-				<p>Facilis nemo repellendus saepe eos ipsam harum explicabo pariatur qui eaque enim praesentium, doloribus esse consequatur iste nihil, ut neque itaque nesciunt, culpa! Distinctio nobis recusandae mollitia minus at rerum quos reiciendis minima! Numquam est blanditiis soluta molestias aspernatur commodi?</p>
+			<div class="article-body card soft">
+				<h3>BTS' Jungkook 'Dreamers' becomes highest debut K-pop soloist on global Spotify</h3>
+				<p><img class="jk" src="img/dreamers_thumb.jpg" alt="alt text" style="float: left">According to Spotify on November 21, BTS member Jungkook's new single Dreamers debuted at No. 2.</p>
+				<p>The K-pop member set new records with a total of 4.8 million streams, his highest-charting song as well.</p>
+				<p>With this, Jungkook's new track scored the highest debut for a FIFA World Cup song. </p>
 			</div>
 		</article>
 	</div>
@@ -53,10 +97,11 @@ include_once "parts/templates.php";
 	<div class="container">
 		<article id="article3" class="article card soft">
 			<h2>NEW ALBUMS</h2>
-			<div class="article-body">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus modi maiores adipisci error iure voluptate laborum, ratione nisi a deserunt ut et, ad aperiam quia recusandae tenetur dolorem placeat excepturi laudantium dicta dolores sapiente quibusdam officiis numquam! Tenetur laudantium, ipsum.</p>
-				<p>Veritatis quibusdam quisquam aut eos aperiam consectetur sint tenetur suscipit iste laudantium dolor rerum hic impedit voluptas, facere assumenda provident ipsa! Tempora numquam magnam aliquam dolor soluta. Consequuntur et a numquam quis laudantium, asperiores ipsa sequi incidunt doloribus, alias blanditiis.</p>
-				<p>Aliquam ea rem nihil excepturi et dolorum doloremque deserunt mollitia ex nam, perferendis provident! Ex excepturi placeat cumque impedit pariatur aspernatur corporis nisi tenetur fugiat officiis explicabo perspiciatis nam illo, id similique sed eius esse perferendis commodi, omnis magni accusantium.</p>
+			<div class="article-body card soft">
+				<h3>RM 1st Solo Album ‘Indigo’</h3>
+				<p><img class="jk" src="img/indigo_set_thumb.jpg" alt="alt text" style="float: left">RM(BTS)</p>
+				<p>Title Track:"Wild Flower (with youjeen)"</p>
+				<p>Release date: December 2, 2022</p>
 			</div>
 		</article>
 
@@ -66,11 +111,12 @@ include_once "parts/templates.php";
 		</div>
 		
 		<article id="article4" class="article card soft">
-			<h2>HOT CHART</h2>
-			<div class="article-body">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus optio eligendi eius doloribus delectus dignissimos obcaecati officiis ipsam repellat assumenda, quod perferendis ipsum mollitia sequi magnam sit quia unde quas. Consequatur ab nobis tempora deserunt illum iusto qui amet nulla?</p>
-				<p>Fugit autem voluptas soluta, commodi eveniet at rerum incidunt in quam praesentium nemo velit aliquam sapiente unde voluptate eaque ea rem voluptates perferendis. Quis dolores rerum aut delectus quaerat, inventore sapiente blanditiis recusandae nisi veniam dicta odio reiciendis fugiat expedita.</p>
-				<p>Possimus itaque cumque enim nemo quisquam, aperiam sequi facilis officia provident quaerat magnam molestias ipsam, maiores. Sit placeat magni fugiat enim. Veritatis inventore corporis, laudantium, consequuntur fuga accusamus, at quam reiciendis aspernatur magni laboriosam? Iure voluptatum minima omnis, deserunt inventore?</p>
+			<h2>K-POP WORLD TOUR 2022</h2>
+			<div class="article-body card soft">
+				<h3>BLACKPINK</h3>
+				<p><img class="jk" src="img/bptour.jpg" alt="alt text" style="float: left">Tour: BLACKPINK "BORN PINK" World Tour</p>
+				<p>Date: December 1, 2022 - June 21, 2023</p>
+				<p>Countries: the UK, Spain, Germany, France, the Netherlands, Thailand, Hong Kong, Saudi Arabia, UAE, Malaysia, Indonesia, Taiwan, the Philippines, Singapore, Australia</p>
 			</div>
 		</article>
 	</div>
