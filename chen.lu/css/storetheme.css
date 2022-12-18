@@ -5,9 +5,9 @@
 	--color-neutral-medium: #f3c9bb;
 	--color-neutral-dark: #D59C8F;
 
-	--color-main-light: #FDC731;
+	--color-main-light: #ffe278;
 	--color-main-medium: #FDC731;
-	--color-main-dark: #FDC731;
+	--color-main-dark: #ffaf00;
 }
 
 body {
@@ -38,14 +38,31 @@ body {
 	}
 }
 
-@media (max-width: 400px){
-	.navbar .display-flex{
-		display: block;
+.menu-button label{display:none;}
+@media (max-width:400px) {
+	.navbar .display-flex {
+	   flex-wrap: wrap;
 	}
-	.navbar .nav li{
+	.navbar .nav {
+		width:100%;
+		display:none;
+	}
+	 .navbar .nav-flex ul {
+	   display:block;
+	} 
+	.navbar .nav li {
 		line-height: 2em;
 	}
-}
+
+	.menu-button label{
+	   display: block;
+	   padding: 0 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+	   display:block;
+	}
+} 
 
 
 .figure.product{
@@ -140,7 +157,12 @@ body {
 	object-fit: contain;
 }
 
-
+span.badge:not(:empty)::after {
+    content: ')';
+}
+span.badge:not(:empty)::before {
+    content: '(';
+}
 
 
 
