@@ -31,7 +31,14 @@ body {
 	color:#394B5D;
 }
 
-h1,
+
+
+h1 {
+	font-family: 'Hoss Round'; 
+	font-weight: 800;
+	color:#394B5D;
+}
+
 h2,
 h3,
 h4,
@@ -60,11 +67,12 @@ a:hover {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 1em;
 }
 
 
 
-.display-flex { display:flex; }
+.display-flex { display:flex; padding: 0;}
 .display-inline-flex { display:inline-flex; }
 .display-block { display:block; }
 .display-inline-block { display:inline-block; }
@@ -76,6 +84,7 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 .flex-column{flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
 
 
 /* small classes */
@@ -191,6 +200,10 @@ a:hover {
 }
 
 
+.flush>.navbar{
+   margin-bottom: 0;
+  }
+
 .navbar h1{
 	font-size: 1.5em;
 	margin: 0;
@@ -198,7 +211,7 @@ a:hover {
 }
 
 .navbar a {
-	padding: 0 0.5em;
+	padding: 0, 0.5em;
 }
 
 
@@ -244,6 +257,12 @@ a:hover {
    .card-section{
        padding:1em;
     }
+
+
+ 	[class*='col-']>.card{
+   	height: 100%;
+   	margin: 0;
+   }
 
 
 .view-window{
