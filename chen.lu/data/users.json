@@ -1,0 +1,38 @@
+[
+	{
+       "name":"Lu Chen",
+       "type":"Student",
+       "email":"lchen70@art.edu",
+       "classes":[123,456,789]
+	},
+	{
+       "name":"Hui Hui",
+       "type":"Cat",
+       "email":"huihui@cat.com",
+       "classes":[123,567,789]
+	},
+	{
+       "name":"Mi Mi",
+       "type":"Cat",
+       "email":"mimi@cat.com",
+       "classes":[123,456,789]
+	},
+	{
+       "name":"Ricky Li",
+       "type":"Dog",
+       "email":"ricky@dog.com",
+       "classes":[123,456,789]
+	},
+	{
+       "name":"Quntas Lu",
+       "type":"Cat",
+       "email":"Quntas@cat.com",
+       "classes":[123,456,789]
+	},
+	{
+       "name":"Lucy Chen",
+       "type":"CatParent",
+       "email":"lchen8@art.com",
+       "classes":[123,456,789]
+	}
+]
