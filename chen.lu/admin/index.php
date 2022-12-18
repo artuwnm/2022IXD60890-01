@@ -4,7 +4,7 @@
 include "../lib/php/functions.php";
 
 $empty_product = (object)[
-   "title"=>"Cat Dress",
+   "name"=>"Cat Dress",
    "description"=>"Turn inside out, machine wash cold with like colors on a gentle cycle. Only non-chlorine bleach when needed. Tumble dry low. Do not iron. ",
    "category"=>"cat",
    "price"=>"12.99",
@@ -117,7 +117,7 @@ $images = array_reduce(explode(",", $o->images),function($r,$o){
 // heredoc
 $display = <<<HTML
 <div>
-   <h2>$o->title</h2>
+   <h2>$o->name</h2>
    <div class="form-control">
       <label class="form-label">Price</label>
       <span>&dollar;$o->price</span>
@@ -148,7 +148,7 @@ $form = <<<HTML
    		
 	<div class="form-control">
 	   <label class="form-label" for="product-name">Name</label>
-	   <input class="form-input" name="product-title" id="product-title" type="text" value="$o->title" placeholder="Enter the Product Title">
+	   <input class="form-input" name="product-name" id="product-name" type="text" value="$o->name" placeholder="Enter the Product Name">
    </div>
    <div class="form-control">
 	   <label class="form-label" for="product-price">Price</label>
