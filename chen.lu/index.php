@@ -6,12 +6,13 @@ include_once "parts/templates.php";
 <head>
     <meta charset="UTF-8">
 
-    <title>Home</title>
+    <title>Pet Cloth</title>
     <?php include "parts/meta.php"; ?>
 </head>
     <?php include "parts/navbar.php"; ?>
 
-<body>
+<body class="flush">
+    
  <div class="view-window" style="background-image: url(img/main.png);"></div>
 
     <div class="container">
