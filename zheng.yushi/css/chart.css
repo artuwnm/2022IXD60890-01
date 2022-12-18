@@ -1,0 +1,125 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* Variables */
+$whiteColor: #FBFBFB;
+$grayColor: #DFE2E4;
+$blackColor: #A3A8CD;
+$yellowColor: #F5CE64;
+$sizeH: 150px;
+
+/* Basic */
+html, body {
+	background-color: $grayColor;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Card */
+.card {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	background-color: $whiteColor;
+	padding: 50px; margin-top: 50px; margin-bottom: 50px;
+	box-shadow: 1px 1px 30px 10px $grayColor;
+	border-radius: 5px;
+}
+
+/* Title */
+.title {
+	text-align: center;
+	h1 {
+		color: $yellowColor;
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+	p {
+		color: $blackColor;
+		margin-top: 8px; margin-bottom: 25px;
+	}
+}
+
+/* Rancking */
+.box {
+	display: block;
+	width: 80%; height: $sizeH;
+	margin: 20px auto 20px auto;
+}
+
+/* Number */
+.number {
+	float: left;
+	font-weight: bold;
+	font-size: 50px;
+	width: 50px; height: $sizeH;
+	line-height: $sizeH;
+	color: $grayColor;
+	margin-right: 25px; margin-left: 25px;
+}
+
+/* Cover */
+.cover {
+	float: left;
+	height: $sizeH;
+	margin-right: 25px;
+	padding-top: 12px;
+}
+.cover img {
+	height: 125px;
+	border-radius: 100%;
+}
+
+/* Name */
+.name {
+	float: left;
+	height: $sizeH;
+	line-height: $sizeH;
+	font-size: 18px;
+	color: $blackColor;
+	span {
+		font-weight: bold;
+		color: black;
+	}
+}
+
+/* Button */
+.link {
+	text-align: right;
+	line-height: $sizeH;
+	margin-right: 25px;
+}
+.link a {
+	padding: 9px 12px;
+	border: 1px solid $grayColor;
+	color: $blackColor;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/* Separator */
+.separator {
+	width: 80%; height: 1px;
+	margin: auto;
+	background-color: $grayColor;
+}
+
+/* :hover */
+.box:hover {
+	box-shadow: 1px 1px 40px 0px $grayColor;
+	.number {
+		color: $yellowColor;
+	}
+	span {
+		color: $yellowColor;
+	}
+}
+.link a:hover {
+	background-color: $yellowColor; color: #fff;
+	border: none;
+}
+.link a:focus {
+	background-color: #fff; color: $yellowColor;
+	border: none;
+}
